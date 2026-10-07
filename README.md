@@ -2,7 +2,8 @@
 
 An optional final-mask rule for Villa's
 [`spiral-fitting/grow_track_graph.py`](https://github.com/ScrollPrize/villa/blob/fb8c2c4c2705746eefb42e9bb359560906f391e2/spiral-fitting/grow_track_graph.py):
-`--coarse-mask-mode support`.
+`--coarse-mask-mode support`. Proposed upstream in
+[ScrollPrize/villa#1996](https://github.com/ScrollPrize/villa/pull/1996).
 
 With it, a surface written at output spacing 10 reaches almost the same
 registered-reference coverage as one written at spacing 5, at half the
