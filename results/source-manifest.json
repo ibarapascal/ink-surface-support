@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "evidence_sha256": "f8b324219f0a251eb8bf7bdd1f105bb11dee122b056031105b8d912956ab83ee",
+  "original_sources": [
+    {
+      "id": "main10-V1-20231210121321",
+      "sha256": "bc5ab73c2b04c8c2a43770c7972d52677c100fb2a854fa67ae975dffdaff1634",
+      "archive_member": "main10-V1-20231210121321.json",
+      "bytes": 223829
+    },
+    {
+      "id": "main10-V1-20230702185753",
+      "sha256": "3aab5cd94f09a3afde1551d4ddb51dbf603e9c0d64db813f18260374b418589a",
+      "archive_member": "main10-V1-20230702185753.json",
+      "bytes": 221031
+    },
+    {
+      "id": "main10-V1-20230929220926",
+      "sha256": "4c71ffef7c51fa7d3c2118170f0bf2308c1be53697a449ecc05a6d29ae55024b",
+      "archive_member": "main10-V1-20230929220926.json",
+      "bytes": 243590
+    },
+    {
+      "id": "main10-V1-geometry",
+      "sha256": "07b4c30af2d5d8b0b624ceccf4cced752df99b78432858e9d7c8203ecc233353",
+      "archive_member": "main10-V1-geometry.json",
+      "bytes": 1114667
+    },
+    {
+      "id": "main10-V2-20231210121321",
+      "sha256": "40e29982038aebe7ba68dcbf56f561788fc56214d682bbae8d7b3ba6f08c41a8",
+      "archive_member": "main10-V2-20231210121321.json",
+      "bytes": 228854
+    },
+    {
+      "id": "main10-V2-20230702185753",
+      "sha256": "47559362b3b8bfab8d6d7a67db7fe1dff6a5e698e682c5a27239336e5dafe906",
+      "archive_member": "main10-V2-20230702185753.json",
+      "bytes": 229724
+    },
+    {
+      "id": "main10-V2-20230929220926",
+      "sha256": "0b22bf6944a779f515021fced3186a6cd8a37e722ba71c64a257fa54a4b2f960",
+      "archive_member": "main10-V2-20230929220926.json",
+      "bytes": 237612
+    },
+    {
+      "id": "main10-V2-geometry",
+      "sha256": "36f79dd4a5a27bcd7362e22c23fa25bdf9ca536bcb7ce457fbf2675f394e75f9",
+      "archive_member": "main10-V2-geometry.json",
+      "bytes": 1157268
+    },
+    {
+      "id": "main10-V3-20231210121321",
+      "sha256": "c4c90cfe9734fc5222c44818e8ba2d5b8fefdbcf6272d994b1fb81863e8b7a1d",
+      "archive_member": "main10-V3-20231210121321.json",
+      "bytes": 175973
+    },
+    {
+      "id": "main10-V3-20230702185753",
+      "sha256": "036219350c4ac354abf1bb4b79d6cdf12f29c75bc2a856d4c56b171fd99e874c",
+      "archive_member": "main10-V3-20230702185753.json",
+      "bytes": 172326
+    },
+    {
+      "id": "main10-V3-20230929220926",
+      "sha256": "52e03645ad3a6a841cb86f4d1df4d0f1bf1971ad7410e4615f509c1147f84149",
+      "archive_member": "main10-V3-20230929220926.json",
+      "bytes": 178762
+    },
+    {
+      "id": "main10-V3-geometry",
+      "sha256": "99cc4575dda15e6aef0adc155b5decfa312973f1254a8392ece1c5cff9f11c34",
+      "archive_member": "main10-V3-geometry.json",
+      "bytes": 958615
+    },
+    {
+      "id": "spacing5-mechanism-20231210121321",
+      "sha256": "000efd3a535f878ee6b5d7fb0c7366c49edae27a8f22b210d8c785c7c31250b5",
+      "archive_member": "spacing5-mechanism-20231210121321.json",
+      "bytes": 131276
+    },
+    {
+      "id": "spacing5-mechanism-20230702185753",
+      "sha256": "ac1c2a5f2eb6a07d2eda5334b95a7f15305636968adf031e6dc97b4cc90ca6ec",
+      "archive_member": "spacing5-mechanism-20230702185753.json",
+      "bytes": 136720
+    },
+    {
+      "id": "spacing5-mechanism-20230929220926",
+      "sha256": "6134141f6b86927fad08616bcbda0884b04d5df5fa196276b0d7485b87c7a15c",
+      "archive_member": "spacing5-mechanism-20230929220926.json",
+      "bytes": 170316
+    },
+    {
+      "id": "spacing5-development-C0-P05",
+      "sha256": "8ccebe30e9daa67cc6a18e3bf305aa64fbe0fa5d859ac739692ab95b84deab18",
+      "archive_member": "spacing5-development-C0-P05.json",
+      "bytes": 53993
+    },
+    {
+      "id": "spacing5-development-C0-P29",
+      "sha256": "f90a4253a348b582cbb6c48d01fda28106466fff5d84d7857586b0576d38f0c8",
+      "archive_member": "spacing5-development-C0-P29.json",
+      "bytes": 52063
+    },
+    {
+      "id": "spacing5-mechanism-cost",
+      "sha256": "335d6f466adcae29d62234beddfa77906381ddd2bcf551de2eea07636225e538",
+      "archive_member": "spacing5-mechanism-cost.json",
+      "bytes": 12291
+    },
+    {
+      "id": "spacing5-development-cost",
+      "sha256": "a5fc3d4087f89ae0e0e3be4f851db043e3b961fdbc2aa28b1a827526edaea43b",
+      "archive_member": "spacing5-development-cost.json",
+      "bytes": 29345
+    },
+    {
+      "id": "P05-existing-output-step",
+      "sha256": "c004df5761de687698f664b25d6df7c66bde0f8033680be248b1a165dd8b0e51",
+      "archive_member": "P05-existing-output-step.json",
+      "bytes": 9199
+    },
+    {
+      "id": "P05-existing-output-step-raw",
+      "sha256": "01bcd592bb1df597bc8bd5541cdcdf051e16c90cc5d579cc38b68a8757447071",
+      "archive_member": "P05-existing-output-step-raw.json",
+      "bytes": 129486
+    },
+    {
+      "id": "main10-common65",
+      "sha256": "37acb13d2f9d3fb76a63e3a59b55d0fec5378e6275f7a759f54cf0f620c8053b",
+      "archive_member": "main10-common65.json",
+      "bytes": 360407
+    },
+    {
+      "id": "spacing5-mechanism-common2",
+      "sha256": "0aed153705120bc8a5866784315b32471629c372c14a3ac0b27b5fbb6a1ca5ae",
+      "archive_member": "spacing5-mechanism-common2.json",
+      "bytes": 13384
+    },
+    {
+      "id": "spacing5-development-common2",
+      "sha256": "233b8e39dbc304eea6a73169189b120f01eb04888726b5e932e263ae2b4b515c",
+      "archive_member": "spacing5-development-common2.json",
+      "bytes": 13590
+    },
+    {
+      "id": "P29-CT-diagnostic",
+      "sha256": "e6f8e904c3c14f8bc87fe59f56f3e6ec991a901efa5eb090e093124ef58f4cd9",
+      "archive_member": "P29-CT-diagnostic.json",
+      "bytes": 604312
+    },
+    {
+      "id": "P29-CT-frame-audit",
+      "sha256": "05a03a95995a20b98d146732e103ea8c795d991a956f7468defc06b8e0f5a7a3",
+      "archive_member": "P29-CT-frame-audit.json",
+      "bytes": 3966
+    },
+    {
+      "id": "common65-raw-alignment",
+      "sha256": "3b1f37681a13dc9503a7ce71a587fff0485769e0241211d149c117349ecfe9ac",
+      "archive_member": "common65-raw-alignment.json",
+      "bytes": 26052
+    }
+  ],
+  "transform": "Scalar measurements extracted from the checksum-identified scoring records. All recorded tolerances, reference denominators, component results, case losses, failures, and unknown/outside measurements are retained."
+}

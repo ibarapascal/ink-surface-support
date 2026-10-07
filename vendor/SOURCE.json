@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "upstream_repository": "https://github.com/ScrollPrize/villa",
+  "upstream_commit": "fb8c2c4c2705746eefb42e9bb359560906f391e2",
+  "upstream_path": "spiral-fitting/grow_track_graph.py",
+  "upstream_url": "https://github.com/ScrollPrize/villa/blob/fb8c2c4c2705746eefb42e9bb359560906f391e2/spiral-fitting/grow_track_graph.py",
+  "base_sha256": "8156f58f3a7cf1ff5301a211935e63280304328e729f4bbc6f4699dbb0c734e6",
+  "parameter_units": "input-volume voxels",
+  "resample_spacing": 5,
+  "input_voxel_size_um_in_pinned_producer": 9.6,
+  "configurations": {
+    "10": {
+      "files": [
+        {
+          "source": "vendor/output-spacing-10/grow_track_graph.py",
+          "target": "spiral-fitting/grow_track_graph.py",
+          "sha256": "d7d018915f876c1e295e536d172f0cb55ef4d873c005fa03ef30ce4596a7fafe"
+        },
+        {
+          "source": "vendor/output-spacing-10/support_safe_finalize.py",
+          "target": "spiral-fitting/support_safe_finalize.py",
+          "sha256": "0f153adcbaa2bd64ca14511d430f226b4bde365237da9bcb7a42fc874196095b"
+        },
+        {
+          "source": "vendor/output-spacing-10/test_support_safe_finalize.py",
+          "target": "spiral-fitting/test_support_safe_finalize.py",
+          "sha256": "5f76b41f42d971af898b060e2c48d1f1d470ef77a37f14df795e29e0fd0e2ebb"
+        }
+      ],
+      "patch": "patches/fine-support-output-spacing-10.patch",
+      "patch_sha256": "d5adb0fc9bade55af6b9ca86f79a2ce38acb53708566d4aeaedc6ba787918cc2",
+      "basis": "Direct patch from the pinned upstream producer; no prerequisite patch.",
+      "output_spacing": 10,
+      "resample_spacing": 5
+    },
+    "5": {
+      "files": [
+        {
+          "source": "vendor/output-spacing-5/grow_track_graph.py",
+          "target": "spiral-fitting/grow_track_graph.py",
+          "sha256": "4e1a5c11e91cb487b66564e573aa225efc460e2505547e4540d5a46fb41b2f49"
+        },
+        {
+          "source": "vendor/output-spacing-5/frozen_support_safe_finalize.py",
+          "target": "spiral-fitting/frozen_support_safe_finalize.py",
+          "sha256": "473f7d70797123d2ecc04db797084b0b73b4892dd4e241a3a69daffc5712776c"
+        }
+      ],
+      "patch": "patches/fine-support-output-spacing-5.patch",
+      "patch_sha256": "341d9472cdf2ef79e3df657bdf48d2f47cc02cc83753705745431c5237c67353",
+      "basis": "Direct patch from the pinned upstream producer; no prerequisite patch.",
+      "output_spacing": 5,
+      "resample_spacing": 5
+    }
+  }
+}

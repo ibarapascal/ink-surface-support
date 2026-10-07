@@ -1,0 +1,460 @@
+--- a/spiral-fitting/grow_track_graph.py
++++ b/spiral-fitting/grow_track_graph.py
+@@ -12,6 +12,7 @@
+ import collections
+ import dataclasses
+ import functools
++import hashlib
+ import json
+ import math
+ import struct
+@@ -2367,6 +2368,17 @@
+         stage_start = now
+ 
+     try:
++        coarse_mask_mode = getattr(args, "coarse_mask_mode", "erode")
++        if coarse_mask_mode not in ("erode", "support"):
++            raise ValueError("coarse_mask_mode must be erode or support")
++        if coarse_mask_mode == "support" and (
++            args.resample_spacing != 5.0 or args.output_spacing != 10.0
++        ):
++            raise ValueError(
++                "experimental support mode is qualified only for "
++                "resample-spacing 5 and output-spacing 10"
++            )
++        coarse_support_certificate = None
+         grower = GraphLatticeGrower(
+             tracks,
+             crossings,
+@@ -2539,7 +2551,36 @@
+             )
+             grid = grid.copy()
+             grid[~cleaned] = -1.0
+-            grid = finalize_coarse_grid(resample_grid(grid, factor))
++            if coarse_mask_mode == "support":
++                import support_safe_finalize
++
++                helper_sha256 = hashlib.sha256(
++                    Path(support_safe_finalize.__file__).read_bytes()
++                ).hexdigest()
++                if not math.isfinite(factor) or factor <= 1.0:
++                    raise ValueError("experimental support mode requires coarsening factor > 1")
++                fine_valid = grid[..., 0] >= 0
++                coarse_grid = resample_grid(grid, factor)
++                grid, coarse_support_certificate = support_safe_finalize.finalize(
++                    coarse_grid, fine_valid, factor, voxel_um=VOXEL_SIZE_UM
++                )
++                coarse_support_certificate.update({
++                    "helper_sha256": helper_sha256,
++                    "producer_source_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
++                    "fine_grid_shape": list(fine_valid.shape),
++                    "fine_valid_sha256": hashlib.sha256(
++                        np.ascontiguousarray(fine_valid).tobytes()
++                    ).hexdigest(),
++                    "coarse_input_shape": list(coarse_grid.shape),
++                    "coarse_input_dtype": str(coarse_grid.dtype),
++                    "coarse_input_sha256": hashlib.sha256(
++                        np.ascontiguousarray(coarse_grid).tobytes()
++                    ).hexdigest(),
++                    "certificate_scope": "full cleaned-fine support of final quads; not sheet identity or geometric accuracy",
++                    "upstream_quality_scope": "quality and raster fold/trim/SLIM fields describe unchanged shared upstream stages",
++                })
++            else:
++                grid = finalize_coarse_grid(resample_grid(grid, factor))
+             # tifxyz scale = grid units per voxel (20vx spacing -> 0.05)
+             scale = (1.0 / args.output_spacing, 1.0 / args.output_spacing)
+             stats["resample"] = {
+@@ -2548,6 +2589,14 @@
+                 "border_erode_px": erode_px,
+                 "coarse_valid_vertices": int((grid[..., 0] >= 0).sum()),
+             }
++        final_valid = grid[..., 0] >= 0
++        stats["final_grid_shape_unpadded"] = list(grid.shape[:2])
++        stats["final_valid_vertices"] = int(final_valid.sum())
++        stats["final_full_quads"] = int((
++            final_valid[:-1, :-1] & final_valid[:-1, 1:]
++            & final_valid[1:, :-1] & final_valid[1:, 1:]
++        ).sum())
++        # raster.valid_vertices retains its original working-raster meaning.
+         stage("cleanup_and_resample")
+         area_cm2 = area_vx2_to_cm2(surface_area_vx2(grid))
+         stats["area_cm2"] = area_cm2
+@@ -2569,6 +2618,8 @@
+                 "seed_track_row": seed,
+                 "tracks_path": str(tracks.path.resolve()),
+                 "mode": "graph",
++                "coarse_mask_mode": coarse_mask_mode,
++                "coarse_support_certificate": coarse_support_certificate,
+                 "accepted_tracks": len(grower.accepted),
+                 "surface_points": int(len(uv)),
+                 "min_size_cm2": args.min_size,
+@@ -2786,6 +2837,15 @@
+         default=1,
+         help="grow this many seeds concurrently (default: 1, in-process)",
+     )
++    parser.add_argument(
++        "--coarse-mask-mode",
++        choices=("erode", "support"),
++        default="erode",
++        help=(
++            "coarse finalization: legacy one-cell erosion (default), or "
++            "experimental full-fine-support mode bounded to spacing 5/10"
++        ),
++    )
+     parser.add_argument("--overwrite", action="store_true")
+     args = parser.parse_args(argv)
+     if (args.seeds is None) == (args.random_count is None):
+--- /dev/null
++++ b/spiral-fitting/support_safe_finalize.py
+@@ -0,0 +1,194 @@
++"""Experimental coarse-mask finalization using cleaned fine-grid support.
++
++This operation only removes coarse vertices. It does not move XYZ coordinates,
++restore invalid vertices, or change the upstream growth and fine-grid cleaning.
++The certificate concerns parameter-domain support, not physical sheet identity.
++"""
++from __future__ import annotations
++
++import numpy as np
++from scipy import ndimage
++
++# Match resample_grid's endpoint and interpolation convention exactly.
++EPS = 1e-9
++
++
++def axes(fine_shape, factor):
++    """Return the fine-grid coordinates used by the original resampler."""
++    if not np.isfinite(factor) or factor <= 0:
++        raise ValueError('factor must be finite positive')
++    return tuple(np.arange(0, n - 1 + EPS, factor) for n in fine_shape)
++
++
++def _upper(values, n):
++    """Include the next bilinear support vertex only beyond the epsilon."""
++    lo = np.floor(values).astype(np.int64)
++    return np.where(values - lo > EPS, np.minimum(lo + 1, n - 1), lo)
++
++
++def footprint_bounds(fine_shape, factor):
++    """Inclusive fine-index bounds of each coarse quad's support rectangle."""
++    rows, cols = axes(fine_shape, factor)
++    return (
++        np.floor(rows[:-1]).astype(np.int64),
++        _upper(rows[1:], fine_shape[0]),
++        np.floor(cols[:-1]).astype(np.int64),
++        _upper(cols[1:], fine_shape[1]),
++    )
++
++
++def full_support(fine_valid, factor):
++    """Certify whole rectangles, including fine vertices between corners."""
++    fine_valid = np.asarray(fine_valid, dtype=bool)
++    r0, r1, c0, c1 = footprint_bounds(fine_valid.shape, factor)
++    # Integral image counts invalid vertices in each inclusive rectangle.
++    prefix = np.pad(
++        (~fine_valid).astype(np.int64), ((1, 0), (1, 0))
++    ).cumsum(0).cumsum(1)
++    counts = (
++        prefix[(r1 + 1)[:, None], (c1 + 1)[None, :]]
++        - prefix[r0[:, None], (c1 + 1)[None, :]]
++        - prefix[(r1 + 1)[:, None], c0[None, :]]
++        + prefix[r0[:, None], c0[None, :]]
++    )
++    return counts == 0
++
++
++def _complete(mask):
++    return mask[:-1, :-1] & mask[1:, :-1] & mask[:-1, 1:] & mask[1:, 1:]
++
++
++def _quad_area(grid, voxel_um):
++    """Two-triangle physical area in mm²; preserve the original diagonal."""
++    a = grid[:-1, :-1].astype(float)
++    b = grid[:-1, 1:].astype(float)
++    c = grid[1:, :-1].astype(float)
++    d = grid[1:, 1:].astype(float)
++    return .5 * (
++        np.linalg.norm(np.cross(c - a, b - a), axis=-1)
++        + np.linalg.norm(np.cross(b - d, c - d), axis=-1)
++    ) * (float(voxel_um) ** 2 / 1e6)
++
++
++def brute_support_check(fine_valid, factor, keep):
++    """Check each retained quad independently of prefix sums/helper bounds."""
++    nv, nu = np.asarray(fine_valid).shape
++    rows = np.arange(0, nv - 1 + 1e-9, factor)
++    cols = np.arange(0, nu - 1 + 1e-9, factor)
++    checked = 0
++    bad = []
++    for r, c in zip(*np.where(_complete(keep))):
++        lo_r = int(np.floor(rows[r]))
++        lo_c = int(np.floor(cols[c]))
++        end_r = float(rows[r + 1])
++        end_c = float(cols[c + 1])
++        hi_r = int(np.floor(end_r))
++        hi_c = int(np.floor(end_c))
++        if end_r - hi_r > 1e-9:
++            hi_r = min(hi_r + 1, nv - 1)
++        if end_c - hi_c > 1e-9:
++            hi_c = min(hi_c + 1, nu - 1)
++        checked += 1
++        if not bool(np.asarray(fine_valid)[lo_r:hi_r + 1, lo_c:hi_c + 1].all()):
++            bad.append([int(r), int(c)])
++    return {'checked_quads': checked, 'bad_quads': bad, 'passed': not bad}
++
++
++def finalize(coarse_xyz, fine_valid, factor, voxel_um=9.6):
++    """Remove unsupported quads, then retain the largest 4-connected mask.
++
++    Repeatedly delete the corner with the smallest immediate loss of adjacent
++    supported-quad area. Exact numeric ties use row/column order. This greedy
++    choice is not a global area optimum. The largest-component rule can select
++    a different component from the original erosion-based finalizer.
++    """
++    grid = np.asarray(coarse_xyz)
++    fine = np.asarray(fine_valid, dtype=bool)
++    if grid.ndim != 3 or grid.shape[-1] != 3 or grid.shape[0] * grid.shape[1] > 250000:
++        raise ValueError('bounded XYZ grid required')
++    rows, cols = axes(fine.shape, factor)
++    if grid.shape[:2] != (len(rows), len(cols)):
++        raise ValueError('coarse/fine/factor lattice mismatch')
++
++    # Native validity convention. Do not replace it with a new geometric gate.
++    valid = grid[..., 0] >= 0
++    keep = valid.copy()
++    safe = full_support(fine, factor)
++    area = _quad_area(grid, voxel_um)
++    initial_complete = _complete(keep)
++    initial_bad = initial_complete & ~safe
++    deleted = []
++    while True:
++        complete = _complete(keep)
++        bad = complete & ~safe
++        if not bad.any():
++            break
++        corners = set()
++        for r, c in zip(*np.where(bad)):
++            corners.update([
++                (int(r), int(c)), (int(r + 1), int(c)),
++                (int(r), int(c + 1)), (int(r + 1), int(c + 1)),
++            ])
++        choices = []
++        for r, c in sorted(corners):
++            loss = 0.
++            for qr in (r - 1, r):
++                for qc in (c - 1, c):
++                    if (
++                        0 <= qr < safe.shape[0] and 0 <= qc < safe.shape[1]
++                        and safe[qr, qc] and complete[qr, qc]
++                    ):
++                        loss += float(area[qr, qc])
++            choices.append((loss, r, c))
++        loss, r, c = min(choices)
++        keep[r, c] = False
++        deleted.append({
++            'vertex': [r, c],
++            'destroyed_adjacent_safe_quad_area_mm2': loss,
++        })
++
++    # Preserve scipy's default 4-connectivity and first-argmax tie behavior.
++    before_component = keep.copy()
++    labels, count = ndimage.label(keep)
++    if count > 1:
++        sizes = np.bincount(labels.ravel())
++        sizes[0] = 0
++        keep = labels == sizes.argmax()
++    out = grid.copy()
++    out[~keep] = -1.
++    assert not np.any(keep & ~valid)
++    assert np.array_equal(out[keep], grid[keep])
++    independent = brute_support_check(fine, factor, keep)
++    if not independent['passed']:
++        raise AssertionError(independent)
++
++    # Preserve frozen certificate fields; they describe support, not identity.
++    diagnostics = {
++        'prototype': 'support-safe coarse finalization',
++        'factor': float(factor),
++        'epsilon': EPS,
++        'voxel_um': float(voxel_um),
++        'initial_valid_vertices': int(valid.sum()),
++        'initial_complete_quads': int(initial_complete.sum()),
++        'initial_bad_footprint_quads': int(initial_bad.sum()),
++        'deleted_greedily': deleted,
++        'greedy_rule': (
++            'global min sum of adjacent current complete safequad physical areas; '
++            'exact numeric tie then row,column lex'
++        ),
++        'largest_component_rule': (
++            'scipy.ndimage.label default4connected; retain first argmax by original source rule'
++        ),
++        'components_before_largest': int(count),
++        'vertices_removed_by_component_rule': int(before_component.sum() - keep.sum()),
++        'final_valid_vertices': int(keep.sum()),
++        'final_complete_quads': int(_complete(keep).sum()),
++        'no_invalid_restored': True,
++        'retained_xyz_unchanged': True,
++        'independent_brute_support': independent,
++        'limitations': (
++            'full fine support is not geometric/sheet identity truth; '
++            'arbitrary-mask examples do not prove a default40clean bug'
++        ),
++    }
++    return out, diagnostics
+--- /dev/null
++++ b/spiral-fitting/test_support_safe_finalize.py
+@@ -0,0 +1,154 @@
++"""Portable known-answer tests; run: python spiral-fitting/test_support_safe_finalize.py.
++
++Requires only Python, NumPy, SciPy and the adjacent producer/helper sources.
++No frozen implementation, local experiment paths, reference meshes or downloads.
++"""
++import unittest
++from types import SimpleNamespace
++
++import numpy as np
++
++import grow_track_graph as producer
++import support_safe_finalize as support
++
++
++def plane(shape):
++    rows, columns = np.indices(shape)
++    return np.stack((columns + 100., rows + 100., np.full(shape, 100.)), axis=-1)
++
++
++def masked_plane(mask, spacing=1.):
++    grid = plane(mask.shape) * spacing
++    grid[~mask] = -1.
++    return grid
++
++
++class SupportFinalizationTests(unittest.TestCase):
++    def test_complete_plane_is_unchanged(self):
++        fine = plane((13, 13))
++        coarse = producer.resample_grid(fine, 4.)
++        result, certificate = support.finalize(coarse, fine[..., 0] >= 0, 4.)
++        np.testing.assert_array_equal(result, coarse)
++        self.assertEqual(certificate['final_valid_vertices'], 16)
++        self.assertEqual(certificate['final_complete_quads'], 9)
++        self.assertEqual(certificate['deleted_greedily'], [])
++
++    def test_fractional_lattice_full_planes(self):
++        fine = plane((15, 17))
++        for factor in (2.5, 4.00000000001, 4.000000002, .75):
++            with self.subTest(factor=factor):
++                coarse = producer.resample_grid(fine, factor)
++                result, _ = support.finalize(coarse, fine[..., 0] >= 0, factor)
++                np.testing.assert_array_equal(result, coarse)
++
++    def test_endpoint_epsilon_changes_support_footprint(self):
++        valid = np.ones((13, 13), dtype=bool)
++        valid[5, 1] = False
++        # End4+1e-11 snaps support to row4. End4+2e-9 includes row5.
++        self.assertTrue(support.full_support(valid, 4.00000000001)[0, 0])
++        self.assertFalse(support.full_support(valid, 4.000000002)[0, 0])
++        # An exact endpoint excludes row5 as well.
++        self.assertTrue(support.full_support(valid, 4.)[0, 0])
++
++    def test_interior_hole_with_valid_coarse_corners(self):
++        valid = np.ones((13, 13), dtype=bool)
++        valid[2, 2] = False
++        coarse = producer.resample_grid(masked_plane(valid), 4.)
++        self.assertTrue((coarse[..., 0] >= 0).all())
++        result, certificate = support.finalize(coarse, valid, 4.)
++        # Only the top-left rectangle includes the hole. Its top-left vertex
++        # touches no supported neighbor, so deletion has unique zero loss.
++        expected = coarse.copy()
++        expected[0, 0] = -1.
++        np.testing.assert_array_equal(result, expected)
++        self.assertEqual(certificate['initial_bad_footprint_quads'], 1)
++        self.assertEqual(certificate['deleted_greedily'], [{
++            'vertex': [0, 0], 'destroyed_adjacent_safe_quad_area_mm2': 0.,
++        }])
++
++    def test_equal_components_keep_first_scan_order(self):
++        valid = np.zeros((13, 21), dtype=bool)
++        valid[:5, :5] = True
++        valid[8:13, 16:21] = True
++        coarse = producer.resample_grid(masked_plane(valid), 2.)
++        result, certificate = support.finalize(coarse, valid, 2.)
++        expected = np.full(coarse.shape, -1.)
++        expected[:3, :3] = coarse[:3, :3]
++        np.testing.assert_array_equal(result, expected)
++        self.assertEqual(certificate['components_before_largest'], 2)
++        self.assertEqual(certificate['vertices_removed_by_component_rule'], 9)
++        self.assertEqual(certificate['deleted_greedily'], [])
++
++    def test_four_connectivity_excludes_diagonal_only_neighbor(self):
++        coarse = np.full((3, 3, 3), -1.)
++        coarse[0, 0] = (100., 100., 100.)
++        coarse[1, 1] = (104., 104., 100.)
++        result, certificate = support.finalize(coarse, np.ones((9, 9), bool), 4.)
++        expected = np.full(coarse.shape, -1.)
++        expected[0, 0] = coarse[0, 0]
++        np.testing.assert_array_equal(result, expected)
++        self.assertEqual(certificate['components_before_largest'], 2)
++
++    def test_no_restore_no_coordinate_change_no_input_mutation(self):
++        valid = np.ones((13, 13), dtype=bool)
++        valid[2, 2] = False
++        coarse = producer.resample_grid(masked_plane(valid), 4.)
++        coarse[3, 3] = -1.
++        before = coarse.copy()
++        fine_before = valid.copy()
++        result, _ = support.finalize(coarse, valid, 4.)
++        keep = result[..., 0] >= 0
++        self.assertFalse(np.any(keep & (before[..., 0] < 0)))
++        np.testing.assert_array_equal(result[keep], before[keep])
++        np.testing.assert_array_equal(coarse, before)
++        np.testing.assert_array_equal(valid, fine_before)
++
++    def test_hole_reachable_after_original_fine40_clean(self):
++        raw = np.ones((64, 64), dtype=bool)
++        raw[25, 26] = False
++        clean = producer.clean_valid_mask(raw, erode_px=8, min_component_px=320)
++        coarse = producer.resample_grid(masked_plane(clean, spacing=5.), 4.)
++        self.assertTrue((coarse[8:10, 6:8, 0] >= 0).all())
++        self.assertFalse(clean[32:37, 24:29].all())
++        result, certificate = support.finalize(coarse, clean, 4.)
++        self.assertGreater(certificate['initial_bad_footprint_quads'], 0)
++        self.assertFalse((result[8:10, 6:8, 0] >= 0).all())
++        # The original finalizer also removes this cell. This is a known
++        # no-erosion hazard, NOT evidence that the original algorithm is broken.
++        original = producer.finalize_coarse_grid(coarse)
++        self.assertFalse((original[8:10, 6:8, 0] >= 0).all())
++
++    def test_invalid_factor_and_lattice_rejected(self):
++        for factor in (0., -1., float('nan'), float('inf')):
++            with self.subTest(factor=factor), self.assertRaises(ValueError):
++                support.finalize(plane((4, 4)), np.ones((13, 13), bool), factor)
++        with self.assertRaises(ValueError):
++            support.finalize(plane((3, 4)), np.ones((13, 13), bool), 4.)
++
++
++    def test_exact_two_factor_hole_is_not_globally_safe(self):
++        valid = np.ones((7, 7), dtype=bool)
++        valid[1, 1] = False
++        coarse = producer.resample_grid(masked_plane(valid), 2.)
++        self.assertTrue((coarse[..., 0] >= 0).all())
++        result, certificate = support.finalize(coarse, valid, 2.)
++        expected = coarse.copy()
++        expected[0, 0] = -1.
++        np.testing.assert_array_equal(result, expected)
++        self.assertEqual(certificate['initial_bad_footprint_quads'], 1)
++        self.assertTrue(certificate['independent_brute_support']['passed'])
++
++    def test_producer_rejects_unqualified_spacing_before_growth(self):
++        for working, output in ((5., 20.), (5., 5.), (4., 10.)):
++            with self.subTest(working=working, output=output):
++                args = SimpleNamespace(coarse_mask_mode='support',
++                    resample_spacing=working, output_spacing=output)
++                result = producer.process_seed(0, None, args, None, None)
++                self.assertFalse(result['ok'])
++                self.assertEqual(result['error'],
++                    'ValueError: experimental support mode is qualified only for '
++                    'resample-spacing 5 and output-spacing 10')
++
++
++if __name__ == '__main__':
++    unittest.main(verbosity=2)

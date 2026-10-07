@@ -1,0 +1,196 @@
+region,case,arm,arm_label,source_quads,export_quads,gross_source_mm2,gross_export_mm2,angle_rejected_quads,det_rejected_quads,export_zero_area_triangles,source_SDir_mean,native32_vs64_mask_equal,source_id
+V1,V1-P01,existing10_native,Uniform final erosion (output spacing 10 voxels),97,73,0.8937653763193824,0.6723699334775326,0,0,0,3.992063044697558e-06,True,main10-V1-geometry
+V1,V1-P01,support10_native,Fine-support finalization (output spacing 10 voxels),144,111,1.3267421493786937,1.02260362553112,0,0,0,5.240327472023079e-06,True,main10-V1-geometry
+V1,V1-P01,existing5_native,Uniform final erosion (output spacing 5 voxels),495,442,1.141247014677175,1.0182037832519628,0,0,0,1.0893017138852267e-05,True,main10-V1-geometry
+V1,V1-P02,existing10_native,Uniform final erosion (output spacing 10 voxels),404,316,3.7274324619404626,2.9105643419512788,0,0,0,3.4649761471936904e-05,True,main10-V1-geometry
+V1,V1-P02,support10_native,Fine-support finalization (output spacing 10 voxels),529,442,4.879931094761513,4.070913302718743,0,0,0,4.7813594294496174e-05,True,main10-V1-geometry
+V1,V1-P02,existing5_native,Uniform final erosion (output spacing 5 voxels),2076,1886,4.790631278905226,4.343848492511828,0,0,0,4.995157107832596e-05,True,main10-V1-geometry
+V1,V1-P03,existing10_native,Uniform final erosion (output spacing 10 voxels),687,586,6.335746669323784,5.396422528871855,0,0,0,4.5395749537745064e-05,True,main10-V1-geometry
+V1,V1-P03,support10_native,Fine-support finalization (output spacing 10 voxels),864,754,7.968340780046544,6.945227487678592,0,0,0,6.65478205761209e-05,True,main10-V1-geometry
+V1,V1-P03,existing5_native,Uniform final erosion (output spacing 5 voxels),3390,3162,7.821956179447662,7.282036389684607,0,0,0,7.896861684173122e-05,True,main10-V1-geometry
+V1,V1-P04,existing10_native,Uniform final erosion (output spacing 10 voxels),2442,2252,22.465798398601226,20.741320236849017,0,0,0,9.901260834640181e-05,True,main10-V1-geometry
+V1,V1-P04,support10_native,Fine-support finalization (output spacing 10 voxels),2707,2509,24.910533809641095,23.100260510387027,0,0,0,0.00011332394241429095,True,main10-V1-geometry
+V1,V1-P04,existing5_native,Uniform final erosion (output spacing 5 voxels),10632,10226,24.477020574248424,23.545801291134893,0,0,0,0.00012502418661736544,True,main10-V1-geometry
+V1,V1-P05,existing10_native,Uniform final erosion (output spacing 10 voxels),1765,1642,16.252796212880057,15.12169807823653,0,0,0,4.8252566715404664e-05,True,main10-V1-geometry
+V1,V1-P05,support10_native,Fine-support finalization (output spacing 10 voxels),1950,1822,17.959508306693188,16.773219753053787,0,0,0,5.326021270741002e-05,True,main10-V1-geometry
+V1,V1-P05,existing5_native,Uniform final erosion (output spacing 5 voxels),7679,7420,17.692902628861688,17.087673427903866,0,0,0,6.087982753234886e-05,True,main10-V1-geometry
+V1,V1-P06,existing10_native,Uniform final erosion (output spacing 10 voxels),109,73,1.0068739878118802,0.6725794246674102,0,0,0,7.194812835944482e-06,True,main10-V1-geometry
+V1,V1-P06,support10_native,Fine-support finalization (output spacing 10 voxels),168,128,1.5513933094671986,1.1789398562909077,0,0,0,6.998072858863325e-06,True,main10-V1-geometry
+V1,V1-P06,existing5_native,Uniform final erosion (output spacing 5 voxels),652,571,1.5063745312094308,1.3150646736726683,0,0,0,1.1672641272781737e-05,True,main10-V1-geometry
+V1,V1-P07,existing10_native,Uniform final erosion (output spacing 10 voxels),734,607,6.764785002105441,5.587053696330782,0,0,0,1.4682059168408535e-05,True,main10-V1-geometry
+V1,V1-P07,support10_native,Fine-support finalization (output spacing 10 voxels),908,773,8.366582010619414,7.1162136944995265,0,0,0,1.9009299691905854e-05,True,main10-V1-geometry
+V1,V1-P07,existing5_native,Uniform final erosion (output spacing 5 voxels),3557,3276,8.200205875005755,7.54459748325498,0,0,0,2.4918081833922144e-05,True,main10-V1-geometry
+V1,V1-P08,existing10_native,Uniform final erosion (output spacing 10 voxels),2025,1806,18.65269891572859,16.625933332254515,0,0,0,3.121637537397673e-05,True,main10-V1-geometry
+V1,V1-P08,support10_native,Fine-support finalization (output spacing 10 voxels),2334,2111,21.498794507129865,19.424494705204047,0,0,0,3.398915468220881e-05,True,main10-V1-geometry
+V1,V1-P08,existing5_native,Uniform final erosion (output spacing 5 voxels),9196,8745,21.198930637313683,20.137425119024883,0,0,0,5.0263083995222015e-05,True,main10-V1-geometry
+V1,V1-P09,existing10_native,Uniform final erosion (output spacing 10 voxels),1333,1192,12.267350282891526,10.980435374747154,0,0,0,7.354889701189732e-05,True,main10-V1-geometry
+V1,V1-P09,support10_native,Fine-support finalization (output spacing 10 voxels),1561,1413,14.36588980653338,13.013879774642195,0,0,0,7.717230115463652e-05,True,main10-V1-geometry
+V1,V1-P09,existing5_native,Uniform final erosion (output spacing 5 voxels),6136,5841,14.125868574103924,13.452326176603115,0,0,0,8.808039415250725e-05,True,main10-V1-geometry
+V1,V1-P10,existing10_native,Uniform final erosion (output spacing 10 voxels),4076,3833,37.53437286818283,35.285376410387805,0,0,0,0.00012067558112110492,True,main10-V1-geometry
+V1,V1-P10,support10_native,Fine-support finalization (output spacing 10 voxels),4437,4170,40.86273176999704,38.38223056067477,0,0,0,0.00012370705392269574,True,main10-V1-geometry
+V1,V1-P10,existing5_native,Uniform final erosion (output spacing 5 voxels),17534,17030,40.40276901049868,39.21439240700181,0,0,0,0.00014230220301854663,True,main10-V1-geometry
+V1,V1-P14,existing10_native,Uniform final erosion (output spacing 10 voxels),105,77,0.9731885597614041,0.7088643588540722,0,0,0,1.5543302263430143e-05,True,main10-V1-geometry
+V1,V1-P14,support10_native,Fine-support finalization (output spacing 10 voxels),152,119,1.4082149328349616,1.094876934337155,0,0,0,2.4197193883050835e-05,True,main10-V1-geometry
+V1,V1-P14,existing5_native,Uniform final erosion (output spacing 5 voxels),551,486,1.276964853965139,1.1191403698804667,0,0,0,2.3104564393639626e-05,True,main10-V1-geometry
+V1,V1-P15,existing10_native,Uniform final erosion (output spacing 10 voxels),893,795,8.213544248213454,7.3188008171429155,0,0,0,5.1994071753610036e-05,True,main10-V1-geometry
+V1,V1-P15,support10_native,Fine-support finalization (output spacing 10 voxels),1048,939,9.639819013971849,8.643788381512046,0,0,0,7.070624610148503e-05,True,main10-V1-geometry
+V1,V1-P15,existing5_native,Uniform final erosion (output spacing 5 voxels),4069,3849,9.363381556091339,8.863038562572163,0,0,0,6.983213265706149e-05,True,main10-V1-geometry
+V1,V1-P16,existing10_native,Uniform final erosion (output spacing 10 voxels),1453,1333,13.378415996190851,12.266660050730067,0,0,0,1.899318495308213e-05,True,main10-V1-geometry
+V1,V1-P16,support10_native,Fine-support finalization (output spacing 10 voxels),1645,1515,15.145955895363146,13.944694102027832,0,0,0,2.062853699068429e-05,True,main10-V1-geometry
+V1,V1-P16,existing5_native,Uniform final erosion (output spacing 5 voxels),6475,6229,14.918702471749699,14.342804790973249,0,0,0,2.997709752937824e-05,True,main10-V1-geometry
+V1,V1-P18,existing10_native,Uniform final erosion (output spacing 10 voxels),1198,1099,11.044234579281913,10.12102171240391,0,0,0,4.2456398626078755e-05,True,main10-V1-geometry
+V1,V1-P18,support10_native,Fine-support finalization (output spacing 10 voxels),1358,1245,12.51862394091632,11.465550916799891,0,0,0,5.161263684001889e-05,True,main10-V1-geometry
+V1,V1-P18,existing5_native,Uniform final erosion (output spacing 5 voxels),5362,5149,12.3664223222317,11.857678210871793,0,0,0,6.099468458309689e-05,True,main10-V1-geometry
+V1,V1-P19,existing10_native,Uniform final erosion (output spacing 10 voxels),1741,1619,16.039677598119898,14.90280512685142,0,0,0,0.0004078440997657902,True,main10-V1-geometry
+V1,V1-P19,support10_native,Fine-support finalization (output spacing 10 voxels),1925,1788,17.74366557763645,16.455780516857917,0,0,0,0.00041765916213587284,True,main10-V1-geometry
+V1,V1-P19,existing5_native,Uniform final erosion (output spacing 5 voxels),7590,7348,17.504911513730764,16.91820109419877,0,0,0,0.0004391335984325129,True,main10-V1-geometry
+V1,V1-P20,existing10_native,Uniform final erosion (output spacing 10 voxels),4169,3955,38.42060802883739,36.411797640468805,0,0,0,0.0001302209709926973,True,main10-V1-geometry
+V1,V1-P20,support10_native,Fine-support finalization (output spacing 10 voxels),4504,4274,41.49629767286468,39.35287205252886,0,0,0,0.00015073576247897732,True,main10-V1-geometry
+V1,V1-P20,existing5_native,Uniform final erosion (output spacing 5 voxels),17800,17376,41.03985085128782,40.01202773715662,0,0,0,0.00016519340057475994,True,main10-V1-geometry
+V1,V1-P21,existing10_native,Uniform final erosion (output spacing 10 voxels),510,460,4.720011824774882,4.2382207742214275,0,0,0,7.36921115492913e-05,True,main10-V1-geometry
+V1,V1-P21,support10_native,Fine-support finalization (output spacing 10 voxels),601,544,5.5578138276107705,5.0133721116876515,0,0,0,0.0001062293060096263,True,main10-V1-geometry
+V1,V1-P21,existing5_native,Uniform final erosion (output spacing 5 voxels),2366,2244,5.473882867129486,5.1684498695463565,0,0,0,0.00011052487361446354,True,main10-V1-geometry
+V1,V1-P22,existing10_native,Uniform final erosion (output spacing 10 voxels),148,99,1.3660991621584182,0.9115489370274865,0,0,0,2.261431926769586e-05,True,main10-V1-geometry
+V1,V1-P22,support10_native,Fine-support finalization (output spacing 10 voxels),271,200,2.500932492652914,1.8398489509424605,0,0,0,2.1184556863973864e-05,True,main10-V1-geometry
+V1,V1-P22,existing5_native,Uniform final erosion (output spacing 5 voxels),1003,869,2.3179143150642436,2.000448805075786,0,0,0,3.9060113666897437e-05,True,main10-V1-geometry
+V1,V1-P24,existing10_native,Uniform final erosion (output spacing 10 voxels),207,153,1.9106241789738287,1.408918701101871,0,0,0,1.7683378655825045e-05,True,main10-V1-geometry
+V1,V1-P24,support10_native,Fine-support finalization (output spacing 10 voxels),298,241,2.749182187871229,2.2214608064626304,0,0,0,2.4006345351640365e-05,True,main10-V1-geometry
+V1,V1-P24,existing5_native,Uniform final erosion (output spacing 5 voxels),1178,1067,2.7191443092668726,2.4580917208717583,0,0,0,2.9443359808868758e-05,True,main10-V1-geometry
+V1,V1-P26,existing10_native,Uniform final erosion (output spacing 10 voxels),1913,1725,17.633025063008876,15.880642710094309,0,0,0,0.000148468402525577,True,main10-V1-geometry
+V1,V1-P26,support10_native,Fine-support finalization (output spacing 10 voxels),2187,1983,20.160745961229242,18.254865110619807,0,0,0,0.00017239693571760524,True,main10-V1-geometry
+V1,V1-P26,existing5_native,Uniform final erosion (output spacing 5 voxels),8557,8163,19.7387563494655,18.797578112159336,0,0,0,0.0001968225415224584,True,main10-V1-geometry
+V1,V1-P28,existing10_native,Uniform final erosion (output spacing 10 voxels),59,31,0.5449709569268666,0.2855794475329767,0,0,0,-1.616752876691539e-08,True,main10-V1-geometry
+V1,V1-P28,support10_native,Fine-support finalization (output spacing 10 voxels),113,80,1.0437511863241837,0.7368027957152551,0,0,0,3.846323688747411e-07,True,main10-V1-geometry
+V1,V1-P28,existing5_native,Uniform final erosion (output spacing 5 voxels),409,343,0.9450576689690706,0.7900102759381017,0,0,0,7.158580284944602e-07,True,main10-V1-geometry
+V1,V1-P29,existing10_native,Uniform final erosion (output spacing 10 voxels),409,337,3.773835981842634,3.1037291009674366,0,0,0,1.365258666713978e-05,True,main10-V1-geometry
+V1,V1-P29,support10_native,Fine-support finalization (output spacing 10 voxels),559,465,5.153194144107191,4.283459040427092,0,0,0,1.572012394434729e-05,True,main10-V1-geometry
+V1,V1-P29,existing5_native,Uniform final erosion (output spacing 5 voxels),2190,1995,5.0511256703039225,4.595244162046857,0,0,0,1.9814566692214175e-05,True,main10-V1-geometry
+V1,V1-P30,existing10_native,Uniform final erosion (output spacing 10 voxels),418,339,3.8350843864297404,3.11377772747644,0,0,0,0.0001090967508659192,True,main10-V1-geometry
+V1,V1-P30,support10_native,Fine-support finalization (output spacing 10 voxels),549,465,5.0416587395385495,4.271776151926756,0,0,0,0.00019484319938610156,True,main10-V1-geometry
+V1,V1-P30,existing5_native,Uniform final erosion (output spacing 5 voxels),2106,1939,4.839681185094835,4.461067231550349,0,0,0,0.00020529206787617426,True,main10-V1-geometry
+V2,V2-P01,existing10_native,Uniform final erosion (output spacing 10 voxels),806,741,7.437163506374276,6.828467925151491,0,0,0,6.659339186211375e-05,True,main10-V2-geometry
+V2,V2-P01,support10_native,Fine-support finalization (output spacing 10 voxels),918,842,8.466443789549679,7.75592374680264,0,0,0,8.725476572716016e-05,True,main10-V2-geometry
+V2,V2-P01,existing5_native,Uniform final erosion (output spacing 5 voxels),3604,3445,8.31576555138704,7.934527072934576,0,0,0,9.020237101254205e-05,True,main10-V2-geometry
+V2,V2-P02,existing10_native,Uniform final erosion (output spacing 10 voxels),861,748,7.935763032232881,6.888029698337151,0,0,0,4.045803073001188e-05,True,main10-V2-geometry
+V2,V2-P02,support10_native,Fine-support finalization (output spacing 10 voxels),1024,914,9.436770902124003,8.41335348324979,0,0,0,4.553923929498947e-05,True,main10-V2-geometry
+V2,V2-P02,existing5_native,Uniform final erosion (output spacing 5 voxels),4026,3784,9.283114488707826,8.71559071064323,0,0,0,5.318571964101227e-05,True,main10-V2-geometry
+V2,V2-P03,existing10_native,Uniform final erosion (output spacing 10 voxels),3578,3367,32.90071293423302,30.993505261591906,0,0,0,0.00023727930885623065,True,main10-V2-geometry
+V2,V2-P03,support10_native,Fine-support finalization (output spacing 10 voxels),3865,3662,35.54153906642684,33.708060422094725,0,0,0,0.0002449630859832912,True,main10-V2-geometry
+V2,V2-P03,existing5_native,Uniform final erosion (output spacing 5 voxels),15304,14897,35.21628556254719,34.299954274255114,0,0,0,0.00026633054348625183,True,main10-V2-geometry
+V2,V2-P05,existing10_native,Uniform final erosion (output spacing 10 voxels),389,325,3.579690297458759,2.9929704831528494,0,0,0,8.059810094192211e-06,True,main10-V2-geometry
+V2,V2-P05,support10_native,Fine-support finalization (output spacing 10 voxels),496,425,4.5661938258110055,3.915720701520108,0,0,0,1.3840450272454865e-05,True,main10-V2-geometry
+V2,V2-P05,existing5_native,Uniform final erosion (output spacing 5 voxels),1920,1779,4.420838848049801,4.097551241178382,0,0,0,1.4814124995832136e-05,True,main10-V2-geometry
+V2,V2-P08,existing10_native,Uniform final erosion (output spacing 10 voxels),915,818,8.455291723511403,7.533375764459309,0,0,0,0.0001927904049605522,True,main10-V2-geometry
+V2,V2-P08,support10_native,Fine-support finalization (output spacing 10 voxels),1060,956,9.789527061172144,8.804739874697205,0,0,0,0.0002030961309180844,True,main10-V2-geometry
+V2,V2-P08,existing5_native,Uniform final erosion (output spacing 5 voxels),4158,3959,9.610375815869888,9.117128053675701,0,0,0,0.00021784722789127583,True,main10-V2-geometry
+V2,V2-P09,existing10_native,Uniform final erosion (output spacing 10 voxels),1038,930,9.618109473903923,8.562089705572024,0,0,0,0.0002464328978179521,True,main10-V2-geometry
+V2,V2-P09,support10_native,Fine-support finalization (output spacing 10 voxels),1219,1108,11.283343080199604,10.198637501338984,0,0,0,0.00026447581566264026,True,main10-V2-geometry
+V2,V2-P09,existing5_native,Uniform final erosion (output spacing 5 voxels),4748,4513,10.999513806201922,10.393430783998724,0,0,0,0.0002779684321999458,True,main10-V2-geometry
+V2,V2-P10,existing10_native,Uniform final erosion (output spacing 10 voxels),807,734,7.438662310380696,6.761340600006945,0,0,0,0.0002444276318542342,True,main10-V2-geometry
+V2,V2-P10,support10_native,Fine-support finalization (output spacing 10 voxels),933,850,8.600220974046131,7.821421631891482,0,0,0,0.0004281560297745239,True,main10-V2-geometry
+V2,V2-P10,existing5_native,Uniform final erosion (output spacing 5 voxels),3660,3492,8.440486055767062,8.040686180869228,0,0,0,0.0004033462875340627,True,main10-V2-geometry
+V2,V2-P13,existing10_native,Uniform final erosion (output spacing 10 voxels),499,445,4.600286826745772,4.097968842122659,0,0,0,0.00021403541158335128,True,main10-V2-geometry
+V2,V2-P13,support10_native,Fine-support finalization (output spacing 10 voxels),589,532,5.428695639115719,4.903760674590034,0,0,0,0.00019731696107591778,True,main10-V2-geometry
+V2,V2-P13,existing5_native,Uniform final erosion (output spacing 5 voxels),2291,2168,5.283415287771171,4.993405861584318,0,0,0,0.00022784527507257004,True,main10-V2-geometry
+V2,V2-P14,existing10_native,Uniform final erosion (output spacing 10 voxels),1581,1383,14.58773043808043,12.733826227899792,0,0,0,4.7903429073664835e-05,True,main10-V2-geometry
+V2,V2-P14,support10_native,Fine-support finalization (output spacing 10 voxels),1863,1660,17.18397244650158,15.284035522082393,0,0,0,5.780393416884688e-05,True,main10-V2-geometry
+V2,V2-P14,existing5_native,Uniform final erosion (output spacing 5 voxels),7317,6897,16.887474944686204,15.88279520706382,0,0,0,7.288856533950691e-05,True,main10-V2-geometry
+V2,V2-P15,existing10_native,Uniform final erosion (output spacing 10 voxels),2952,2757,27.185620617004233,25.375977679101215,0,0,0,0.00014662894387766856,True,main10-V2-geometry
+V2,V2-P15,support10_native,Fine-support finalization (output spacing 10 voxels),3237,3052,29.8145693298148,28.091271470875114,0,0,0,0.00017939838333474626,True,main10-V2-geometry
+V2,V2-P15,existing5_native,Uniform final erosion (output spacing 5 voxels),12754,12384,29.395901663923475,28.513167776920234,0,0,0,0.00018524699429155685,True,main10-V2-geometry
+V2,V2-P16,existing10_native,Uniform final erosion (output spacing 10 voxels),3603,3365,33.25223399140119,30.976984253478324,0,0,0,0.0003495367768849367,True,main10-V2-geometry
+V2,V2-P16,support10_native,Fine-support finalization (output spacing 10 voxels),3935,3703,36.31201263244535,34.09922188608772,0,0,0,0.00037536243544288695,True,main10-V2-geometry
+V2,V2-P16,existing5_native,Uniform final erosion (output spacing 5 voxels),15584,15118,35.98223877533769,34.818940324532,0,0,0,0.00039518210503373073,True,main10-V2-geometry
+V2,V2-P18,existing10_native,Uniform final erosion (output spacing 10 voxels),1044,972,9.62694184038647,8.945293329325914,0,0,0,0.00021975889187697418,True,main10-V2-geometry
+V2,V2-P18,support10_native,Fine-support finalization (output spacing 10 voxels),1161,1085,10.700164954451816,9.983441701137059,0,0,0,0.0002552852055446118,True,main10-V2-geometry
+V2,V2-P18,existing5_native,Uniform final erosion (output spacing 5 voxels),4567,4398,10.533964672177081,10.131277206297918,0,0,0,0.00027059387641622525,True,main10-V2-geometry
+V2,V2-P19,existing10_native,Uniform final erosion (output spacing 10 voxels),601,507,5.528784918097983,4.664399615266613,0,0,0,0.00015283642620261617,True,main10-V2-geometry
+V2,V2-P19,support10_native,Fine-support finalization (output spacing 10 voxels),754,645,6.938586788301184,5.934961840238121,0,0,0,0.0001753034946214436,True,main10-V2-geometry
+V2,V2-P19,existing5_native,Uniform final erosion (output spacing 5 voxels),2922,2696,6.724491714820897,6.208806771040036,0,0,0,0.00017731455115990377,True,main10-V2-geometry
+V2,V2-P20,existing10_native,Uniform final erosion (output spacing 10 voxels),710,616,6.545259824296477,5.670394191577771,0,0,0,1.6825525248139652e-05,True,main10-V2-geometry
+V2,V2-P20,support10_native,Fine-support finalization (output spacing 10 voxels),884,785,8.1507017665811,7.226516845967716,0,0,0,2.2077781266967247e-05,True,main10-V2-geometry
+V2,V2-P20,existing5_native,Uniform final erosion (output spacing 5 voxels),3393,3193,7.825241103462738,7.35222320591164,0,0,0,2.7769453964122225e-05,True,main10-V2-geometry
+V2,V2-P21,existing10_native,Uniform final erosion (output spacing 10 voxels),2118,1955,19.562698112001957,18.01127803084236,0,0,0,0.0003139389847363427,True,main10-V2-geometry
+V2,V2-P21,support10_native,Fine-support finalization (output spacing 10 voxels),2358,2190,21.75997182722134,20.17534601978482,0,0,0,0.0004402290256174951,True,main10-V2-geometry
+V2,V2-P21,existing5_native,Uniform final erosion (output spacing 5 voxels),9257,8910,21.38257180287785,20.52359961673933,0,0,0,0.00039972425169279525,True,main10-V2-geometry
+V2,V2-P22,existing10_native,Uniform final erosion (output spacing 10 voxels),715,624,6.6034243698368975,5.745620915945524,0,0,0,0.00018099760796301507,True,main10-V2-geometry
+V2,V2-P22,support10_native,Fine-support finalization (output spacing 10 voxels),868,765,8.012090123359448,7.047772214865152,0,0,0,0.00019056731524374324,True,main10-V2-geometry
+V2,V2-P22,existing5_native,Uniform final erosion (output spacing 5 voxels),3389,3202,7.826318447941102,7.373792393732599,0,0,0,0.0001969961706972159,True,main10-V2-geometry
+V2,V2-P23,existing10_native,Uniform final erosion (output spacing 10 voxels),2184,2040,20.147905339806,18.768331448414074,0,0,0,0.0005397724332944517,True,main10-V2-geometry
+V2,V2-P23,support10_native,Fine-support finalization (output spacing 10 voxels),2430,2262,22.41985535156049,20.812806107832287,0,0,0,0.0005517400545727716,True,main10-V2-geometry
+V2,V2-P23,existing5_native,Uniform final erosion (output spacing 5 voxels),9529,9234,21.999066275938834,21.26015437068397,0,0,0,0.0005978016515822011,True,main10-V2-geometry
+V2,V2-P25,existing10_native,Uniform final erosion (output spacing 10 voxels),722,653,6.632284707198604,6.003167323503554,0,0,0,0.0002564610956213297,True,main10-V2-geometry
+V2,V2-P25,support10_native,Fine-support finalization (output spacing 10 voxels),836,750,7.682968333968804,6.9014867976039875,0,0,0,0.00025992930243295,True,main10-V2-geometry
+V2,V2-P25,existing5_native,Uniform final erosion (output spacing 5 voxels),3249,3070,7.472877200748439,7.067738973648084,0,0,0,0.0002793637839364087,True,main10-V2-geometry
+V2,V2-P26,existing10_native,Uniform final erosion (output spacing 10 voxels),2554,2376,23.58846524667303,21.880084959679735,0,0,0,0.0008353313399791278,True,main10-V2-geometry
+V2,V2-P26,support10_native,Fine-support finalization (output spacing 10 voxels),2788,2629,25.72316433125198,24.210660794828865,0,0,0,0.0009257596969063294,True,main10-V2-geometry
+V2,V2-P26,existing5_native,Uniform final erosion (output spacing 5 voxels),11004,10708,25.412724001969963,24.659110112134556,0,0,0,0.0009500676496065994,True,main10-V2-geometry
+V2,V2-P28,existing10_native,Uniform final erosion (output spacing 10 voxels),160,105,1.4485841991805195,0.9624798188074705,0,0,0,0.00045208081222291094,True,main10-V2-geometry
+V2,V2-P28,support10_native,Fine-support finalization (output spacing 10 voxels),240,183,2.1872205472630917,1.6789208523729415,0,0,0,0.0007843960611311516,True,main10-V2-geometry
+V2,V2-P28,existing5_native,Uniform final erosion (output spacing 5 voxels),923,794,2.101925651378785,1.8255761535102843,0,0,0,0.0009504387628983593,True,main10-V2-geometry
+V2,V2-P29,existing10_native,Uniform final erosion (output spacing 10 voxels),2264,2090,20.910157227104403,19.243004890876772,0,0,0,0.0002629349660664342,True,main10-V2-geometry
+V2,V2-P29,support10_native,Fine-support finalization (output spacing 10 voxels),2506,2326,23.1263883804861,21.41140237009295,0,0,0,0.0003159941596501516,True,main10-V2-geometry
+V2,V2-P29,existing5_native,Uniform final erosion (output spacing 5 voxels),9914,9556,22.90162347689686,22.004445258872,0,0,0,0.0003423846957009309,True,main10-V2-geometry
+V2,V2-P30,existing10_native,Uniform final erosion (output spacing 10 voxels),995,873,9.181152639323741,8.039472533579868,0,0,0,8.661770838963271e-05,True,main10-V2-geometry
+V2,V2-P30,support10_native,Fine-support finalization (output spacing 10 voxels),1204,1072,11.109420977682333,9.868352101996372,0,0,0,0.00012401197947652613,True,main10-V2-geometry
+V2,V2-P30,existing5_native,Uniform final erosion (output spacing 5 voxels),4697,4449,10.844276220768002,10.244218146037035,0,0,0,0.00013258106140510395,True,main10-V2-geometry
+V2,V2-P31,existing10_native,Uniform final erosion (output spacing 10 voxels),473,375,4.366589871134176,3.4535649055233826,0,0,0,6.03701663339186e-05,True,main10-V2-geometry
+V2,V2-P31,support10_native,Fine-support finalization (output spacing 10 voxels),625,523,5.768189376436373,4.814824323006286,0,0,0,8.373033875367619e-05,True,main10-V2-geometry
+V2,V2-P31,existing5_native,Uniform final erosion (output spacing 5 voxels),2406,2192,5.557638919676671,5.048052413011631,0,0,0,9.649150522852812e-05,True,main10-V2-geometry
+V2,V2-P32,existing10_native,Uniform final erosion (output spacing 10 voxels),667,555,6.15284401323163,5.109037779826862,0,0,0,7.880537108575195e-05,True,main10-V2-geometry
+V2,V2-P32,support10_native,Fine-support finalization (output spacing 10 voxels),819,709,7.556136852018516,6.526336920453586,0,0,0,0.00010328591315001514,True,main10-V2-geometry
+V2,V2-P32,existing5_native,Uniform final erosion (output spacing 5 voxels),3192,2981,7.367974874032391,6.865936104924415,0,0,0,0.00011238470378091118,True,main10-V2-geometry
+V3,V3-P01,existing10_native,Uniform final erosion (output spacing 10 voxels),1556,1428,14.33213204338633,13.154569940734469,0,0,0,0.00017052154668140528,True,main10-V3-geometry
+V3,V3-P01,support10_native,Fine-support finalization (output spacing 10 voxels),1737,1610,16.00130112036071,14.822746549256951,0,0,0,0.00019429113383801025,True,main10-V3-geometry
+V3,V3-P01,existing5_native,Uniform final erosion (output spacing 5 voxels),6850,6594,15.794037452791875,15.182523105481314,0,0,0,0.00020945404506486534,True,main10-V3-geometry
+V3,V3-P04,existing10_native,Uniform final erosion (output spacing 10 voxels),867,764,8.022653632864806,7.034356270749187,0,0,0,0.0001237796287320748,True,main10-V3-geometry
+V3,V3-P04,support10_native,Fine-support finalization (output spacing 10 voxels),1030,919,9.522692229117233,8.463392859768126,0,0,0,0.00016254561849911653,True,main10-V3-geometry
+V3,V3-P04,existing5_native,Uniform final erosion (output spacing 5 voxels),4038,3853,9.344615585447205,8.874198955671968,0,0,0,0.00016254820652950874,True,main10-V3-geometry
+V3,V3-P05,existing10_native,Uniform final erosion (output spacing 10 voxels),266,228,2.459416542109601,2.1011380829769615,0,0,0,3.7064896367946586e-05,True,main10-V3-geometry
+V3,V3-P05,support10_native,Fine-support finalization (output spacing 10 voxels),333,293,3.0767314604349596,2.6982167017661016,0,0,0,4.581774682992146e-05,True,main10-V3-geometry
+V3,V3-P05,existing5_native,Uniform final erosion (output spacing 5 voxels),1288,1216,2.9771177791346437,2.801335515474478,0,0,0,5.766499014878057e-05,True,main10-V3-geometry
+V3,V3-P09,existing10_native,Uniform final erosion (output spacing 10 voxels),559,495,5.15480010972756,4.556455449879138,0,0,0,0.00012614265933174148,True,main10-V3-geometry
+V3,V3-P09,support10_native,Fine-support finalization (output spacing 10 voxels),658,582,6.071986517736972,5.357234285004846,0,0,0,0.00014880810201355665,True,main10-V3-geometry
+V3,V3-P09,existing5_native,Uniform final erosion (output spacing 5 voxels),2581,2410,5.9585620426493415,5.5504505486259195,0,0,0,0.0001568949769302166,True,main10-V3-geometry
+V3,V3-P11,existing10_native,Uniform final erosion (output spacing 10 voxels),373,325,3.4231002952685547,2.991675833395642,0,0,0,8.28575849782193e-05,True,main10-V3-geometry
+V3,V3-P11,support10_native,Fine-support finalization (output spacing 10 voxels),449,395,4.123609018500861,3.636322068567588,0,0,0,0.00010856841140267887,True,main10-V3-geometry
+V3,V3-P11,existing5_native,Uniform final erosion (output spacing 5 voxels),1725,1619,3.9628529234519876,3.7284211384958983,0,0,0,0.00010746940051176209,True,main10-V3-geometry
+V3,V3-P13,existing10_native,Uniform final erosion (output spacing 10 voxels),48,23,0.44384048773643503,0.21179028415284334,0,0,0,1.0904011908950727e-07,True,main10-V3-geometry
+V3,V3-P13,support10_native,Fine-support finalization (output spacing 10 voxels),101,70,0.933585255827756,0.6444012095438679,0,0,0,3.9444983758502955e-06,True,main10-V3-geometry
+V3,V3-P13,existing5_native,Uniform final erosion (output spacing 5 voxels),375,310,0.867004634856735,0.7139924934449666,0,0,0,4.960700028584856e-06,True,main10-V3-geometry
+V3,V3-P14,existing10_native,Uniform final erosion (output spacing 10 voxels),1269,1181,11.679457049557426,10.870339897096697,0,0,0,3.893891550098644e-05,True,main10-V3-geometry
+V3,V3-P14,support10_native,Fine-support finalization (output spacing 10 voxels),1417,1319,13.044865716660103,12.139771877898262,0,0,0,4.417828573343583e-05,True,main10-V3-geometry
+V3,V3-P14,existing5_native,Uniform final erosion (output spacing 5 voxels),5579,5392,12.850605481215066,12.411666647830469,0,0,0,4.959512040397808e-05,True,main10-V3-geometry
+V3,V3-P15,existing10_native,Uniform final erosion (output spacing 10 voxels),261,207,2.4140822280369663,1.9052766276623856,0,0,0,0.00012093987432868892,True,main10-V3-geometry
+V3,V3-P15,support10_native,Fine-support finalization (output spacing 10 voxels),352,292,3.2533847667754396,2.6862024662370096,0,0,0,0.00012134304324904793,True,main10-V3-geometry
+V3,V3-P15,existing5_native,Uniform final erosion (output spacing 5 voxels),1335,1215,3.0892602127294,2.797192092417919,0,0,0,0.00014545195379059796,True,main10-V3-geometry
+V3,V3-P16,existing10_native,Uniform final erosion (output spacing 10 voxels),1112,1011,10.256545389634477,9.306626290343067,0,0,0,0.00010577315273990932,True,main10-V3-geometry
+V3,V3-P16,support10_native,Fine-support finalization (output spacing 10 voxels),1277,1166,11.768189202215499,10.735695493355426,0,0,0,0.00013652090264890067,True,main10-V3-geometry
+V3,V3-P16,existing5_native,Uniform final erosion (output spacing 5 voxels),5028,4805,11.59551900924535,11.06399311099177,0,0,0,0.000146945854555778,True,main10-V3-geometry
+V3,V3-P18,existing10_native,Uniform final erosion (output spacing 10 voxels),469,375,4.324889609937448,3.4551294236567,0,0,0,9.794312487770284e-06,True,main10-V3-geometry
+V3,V3-P18,support10_native,Fine-support finalization (output spacing 10 voxels),626,526,5.771029428324325,4.8462302295243616,0,0,0,1.062386839727279e-05,True,main10-V3-geometry
+V3,V3-P18,existing5_native,Uniform final erosion (output spacing 5 voxels),2384,2175,5.496929912912091,5.010870006643706,0,0,0,2.2996813785548867e-05,True,main10-V3-geometry
+V3,V3-P21,existing10_native,Uniform final erosion (output spacing 10 voxels),1532,1384,14.094717215104186,12.745742035930158,0,0,0,9.820308465693411e-05,True,main10-V3-geometry
+V3,V3-P21,support10_native,Fine-support finalization (output spacing 10 voxels),1754,1592,16.138492336389465,14.655840746383234,0,0,0,9.522209731558216e-05,True,main10-V3-geometry
+V3,V3-P21,existing5_native,Uniform final erosion (output spacing 5 voxels),6887,6574,15.854203519806552,15.138465997989972,0,0,0,0.00011211711706804112,True,main10-V3-geometry
+V3,V3-P22,existing10_native,Uniform final erosion (output spacing 10 voxels),1330,1184,12.23621167531417,10.898600284660372,0,0,0,8.317059537854631e-05,True,main10-V3-geometry
+V3,V3-P22,support10_native,Fine-support finalization (output spacing 10 voxels),1547,1388,14.237724009684065,12.78162031082432,0,0,0,9.284661207043685e-05,True,main10-V3-geometry
+V3,V3-P22,existing5_native,Uniform final erosion (output spacing 5 voxels),6070,5768,13.974128277704947,13.28255043641754,0,0,0,0.00010088574013009192,True,main10-V3-geometry
+V3,V3-P23,existing10_native,Uniform final erosion (output spacing 10 voxels),1044,917,9.611752352036332,8.44139595421533,0,0,0,7.020370450232004e-05,True,main10-V3-geometry
+V3,V3-P23,support10_native,Fine-support finalization (output spacing 10 voxels),1234,1095,11.36242199781558,10.080742112570478,0,0,0,8.398490094934666e-05,True,main10-V3-geometry
+V3,V3-P23,existing5_native,Uniform final erosion (output spacing 5 voxels),4833,4544,11.13298197008341,10.464237452206394,0,0,0,0.0001028020450483647,True,main10-V3-geometry
+V3,V3-P24,existing10_native,Uniform final erosion (output spacing 10 voxels),57,31,0.5263129337103474,0.2853613350166735,0,0,0,6.447974246235115e-07,True,main10-V3-geometry
+V3,V3-P24,support10_native,Fine-support finalization (output spacing 10 voxels),105,70,0.9676934858049688,0.644835953545395,0,0,0,9.711654259116446e-07,True,main10-V3-geometry
+V3,V3-P24,existing5_native,Uniform final erosion (output spacing 5 voxels),386,314,0.8904922167716609,0.7232270741895227,0,0,0,1.493300278133222e-06,True,main10-V3-geometry
+V3,V3-P25,existing10_native,Uniform final erosion (output spacing 10 voxels),296,195,2.7259011463879252,1.7967491123248958,0,0,0,8.058020695724585e-07,True,main10-V3-geometry
+V3,V3-P25,support10_native,Fine-support finalization (output spacing 10 voxels),462,353,4.254752560527081,3.25213065594702,0,0,0,2.7931241822938567e-06,True,main10-V3-geometry
+V3,V3-P25,existing5_native,Uniform final erosion (output spacing 5 voxels),1723,1498,3.968315561935057,3.450616677670442,0,0,0,1.1914756118985064e-05,True,main10-V3-geometry
+V3,V3-P26,existing10_native,Uniform final erosion (output spacing 10 voxels),229,182,2.1172779434807385,1.6742181608585454,0,0,0,3.056686363471982e-05,True,main10-V3-geometry
+V3,V3-P26,support10_native,Fine-support finalization (output spacing 10 voxels),315,264,2.911307262305872,2.4303503445388297,0,0,0,4.54523394565686e-05,True,main10-V3-geometry
+V3,V3-P26,existing5_native,Uniform final erosion (output spacing 5 voxels),1216,1119,2.811845256821026,2.5770093561491842,0,0,0,4.940743102178185e-05,True,main10-V3-geometry
+V3,V3-P28,existing10_native,Uniform final erosion (output spacing 10 voxels),15,3,0.13911137201872475,0.02762954437869888,0,0,0,1.2071401705054668e-06,True,main10-V3-geometry
+V3,V3-P28,support10_native,Fine-support finalization (output spacing 10 voxels),50,29,0.4627583167502397,0.2670814399257506,0,0,0,5.3130043037219955e-06,True,main10-V3-geometry
+V3,V3-P28,existing5_native,Uniform final erosion (output spacing 5 voxels),165,119,0.38199546042901256,0.27401307217973364,0,0,0,1.1252494707932754e-05,True,main10-V3-geometry
+V3,V3-P32,existing10_native,Uniform final erosion (output spacing 10 voxels),1652,1546,15.232114011804759,14.228588709684388,0,0,0,7.689281333844409e-05,True,main10-V3-geometry
+V3,V3-P32,support10_native,Fine-support finalization (output spacing 10 voxels),1825,1732,16.823323765329757,15.950324373061042,0,0,0,7.951790602786062e-05,True,main10-V3-geometry
+V3,V3-P32,existing5_native,Uniform final erosion (output spacing 5 voxels),7199,7006,16.607640145132002,16.13320733245083,0,0,0,9.822549823029117e-05,True,main10-V3-geometry

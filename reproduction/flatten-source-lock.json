@@ -1,0 +1,383 @@
+{
+  "upstream": "https://github.com/ScrollPrize/villa",
+  "commit": "fb8c2c4c2705746eefb42e9bb359560906f391e2",
+  "files": [
+    {
+      "path": "lasagna/analyze_zarr_channels.py",
+      "sha256": "ee850b4deed30556632bc3aa4c742b7f7f8e3401b32ca4496b53fee5ec1e0a46"
+    },
+    {
+      "path": "lasagna/approval_inpaint.py",
+      "sha256": "8da29fc51fccace6630d913b66e590b8d83ec0ae47f374fe23a6d2d749fbdb4b"
+    },
+    {
+      "path": "lasagna/atlas.py",
+      "sha256": "716481b45c9cb86c07d0901fb330e663546dab8130c6394f16ff1cd813236f62"
+    },
+    {
+      "path": "lasagna/batch_fit_cosine_grid.py",
+      "sha256": "95d019d8896e95d9d39351100a5b018660d1838356f2d153ae44248d2ce218f2"
+    },
+    {
+      "path": "lasagna/batch_unet_tiled_infer.py",
+      "sha256": "753852af4876e1c8a9b74413c7995df1a5354c5b4287aeb1ed7bdffa9cc76020"
+    },
+    {
+      "path": "lasagna/cli_data.py",
+      "sha256": "0464f50c15b4a64544c25017a76a19387701b26fcd935a894e98e2d5571c37e9"
+    },
+    {
+      "path": "lasagna/cli_json.py",
+      "sha256": "1b1fb2bdde4230f9e96cbe17b8d27f0917610aa2b53c04d38a42b6d7a6452831"
+    },
+    {
+      "path": "lasagna/cli_model.py",
+      "sha256": "e024536fd0d785f8385021d5e4f313eb12a9d38bff06aef8fbae28d9befa5fff"
+    },
+    {
+      "path": "lasagna/cli_opt.py",
+      "sha256": "07d47e50b358812648c1add11c51f511a122e495ec84b686ee232c784dd2b06c"
+    },
+    {
+      "path": "lasagna/cli_vis.py",
+      "sha256": "054ddc32890fc39f86faa4fb735e65f74e6a6215c79aad4ebd2def7b4d23cb46"
+    },
+    {
+      "path": "lasagna/common.py",
+      "sha256": "d402ccb3bc0cb7aa4c998a85635b39344101ed6c9c326b9d76cdd8e1023d0852"
+    },
+    {
+      "path": "lasagna/convert_fit_zarr_to_vc3d_omezarr.py",
+      "sha256": "939a9c958a245c7ce2a29ef5b8d7d482f7d6e9bf6c85f7af06ceffd6fe38b1dd"
+    },
+    {
+      "path": "lasagna/cyl_init_tool.py",
+      "sha256": "fc598f281dc0f813cb5243de508da814d18b684e2656a466d7e1408729856ed9"
+    },
+    {
+      "path": "lasagna/cyl_sdf_volume.py",
+      "sha256": "21b285b605dfb4137b87390e86a6ba0153461995f10b03147f312d71638037f9"
+    },
+    {
+      "path": "lasagna/debug_normals_extract.py",
+      "sha256": "c384efeba8e561cfa7c500586ed853a8778efb85f883cabad628ddb06ea19a82"
+    },
+    {
+      "path": "lasagna/dense_batch_flow.py",
+      "sha256": "f91c82b1fc22d2397bbc14d653a40b3f7e0d6ede31fe21a4a4c34d915d19a82f"
+    },
+    {
+      "path": "lasagna/dtypes.py",
+      "sha256": "bff9f3b1dc5cb31b6d8091e4aa86946ea70483631dacdc637dc3401797f2456b"
+    },
+    {
+      "path": "lasagna/estimate_stream_memory.py",
+      "sha256": "5cc3bf62bdb752dfbaff31395e79b5cb7a43ed47327d53f616102c0b6686181d"
+    },
+    {
+      "path": "lasagna/eval_unet_3d.py",
+      "sha256": "12495876f7c633d4f20ce36713fc6f9b6d9e66ae3ecd1bae328199f59c72abdc"
+    },
+    {
+      "path": "lasagna/fit.py",
+      "sha256": "f831bde66030d97bf45e2d48264a8f996b0b2747da5f9da20f1dd1f66935eb9e"
+    },
+    {
+      "path": "lasagna/fit2tifxyz.py",
+      "sha256": "91deef8f34ec4b0f739c132e8303c64f90e5d4cff95334498bae7d8c144c34db"
+    },
+    {
+      "path": "lasagna/fit_data.py",
+      "sha256": "3b16489594d29e4889fcea58de48381f25a7faa4224026d256fe62fe3566a943"
+    },
+    {
+      "path": "lasagna/fit_service.py",
+      "sha256": "155564d113eed6ce7b71499969198c9576e743ccaf8a9fba4641249177df5f0d"
+    },
+    {
+      "path": "lasagna/fitted_to_unet_labels.py",
+      "sha256": "2b0fde68c9e3c8d11030cfc6e2e4cd0115b700674a5075a501b0cb26c1a44fd7"
+    },
+    {
+      "path": "lasagna/flatten_clamped_adam.py",
+      "sha256": "d7425f30261f74da48d20841c7e9dfda26325f4f9a341f8a6a7c7a4ff022f68e"
+    },
+    {
+      "path": "lasagna/flatten_clamped_adam_triton.py",
+      "sha256": "30c442719d027883fe2dad01e6a5a36c9dd76438f90ad109f79c91926a9172b6"
+    },
+    {
+      "path": "lasagna/gen_post_data.py",
+      "sha256": "5df5833b1ad982d6e014160887e98ea62185c9566416d2b937036ef5c4998b67"
+    },
+    {
+      "path": "lasagna/gpu_pause.py",
+      "sha256": "1e11420c36682c4dddb87803028ff4ab5698e76f25ef2624c0467a1a238bb294"
+    },
+    {
+      "path": "lasagna/grid_sample_3d_u8.py",
+      "sha256": "5a1daea78a84a57f5e50273477af58f5d2e5834a48207a3fa2a40f2b6c6f3ece"
+    },
+    {
+      "path": "lasagna/grid_sample_3d_u8_diff.py",
+      "sha256": "0a5dfb8cddf13a70a682d6a51517082d423d0b32ea1d45e75e0f04630a9afda8"
+    },
+    {
+      "path": "lasagna/inference_provenance.py",
+      "sha256": "835e3799751bbc047f2d12b3f6e0c986b3d056574a8ee74dbe882dfc503e383d"
+    },
+    {
+      "path": "lasagna/init_shell_index.py",
+      "sha256": "55dd3e4d03efa615eee266596a7039316f4515b854aa509e5251809e316cd250"
+    },
+    {
+      "path": "lasagna/inv_map.py",
+      "sha256": "eb90c876f125aba9318c84ffe43737fc39d4cebab8aee6463f9c68d412182355"
+    },
+    {
+      "path": "lasagna/labels_to_cc_zarr.py",
+      "sha256": "9077d307f33c23b92c07e34aa173249c410d9f7a2f7b226a7f61e0e93ce9b3bc"
+    },
+    {
+      "path": "lasagna/labels_to_lasagna_normals.py",
+      "sha256": "da5197e8e1df10291a152ccb793fe160d951d35b805842e9c43381db4ba18dc8"
+    },
+    {
+      "path": "lasagna/labels_to_winding_volume.py",
+      "sha256": "8f0abd3cae91c86e501c45d577a1708feb214989163d1c54773ef8eed6fb0c24"
+    },
+    {
+      "path": "lasagna/lasagna_analyze.py",
+      "sha256": "e1999f6848780953a13b1d03f2da7ee53f56dda452258bbd7675bc93420740b8"
+    },
+    {
+      "path": "lasagna/lasagna_fit_data.py",
+      "sha256": "1a871d8154875d09ae103c6e0b7ebd5b16aa6bc80b4b886ef5686e54295b0d1a"
+    },
+    {
+      "path": "lasagna/lasagna_volume.py",
+      "sha256": "597db7575ef981049c1579f170c5562301eb11a7a4d37edceacd64829d4ff947"
+    },
+    {
+      "path": "lasagna/live_omezarr_cache.py",
+      "sha256": "7d8f9b790eab349b15cb4c64379d9717ab31bfd3700e844fba1f7f4f70f7378c"
+    },
+    {
+      "path": "lasagna/mix_channels.py",
+      "sha256": "7423a35a77eeef0e7770553cda8c334d67761c6b9c66fe8d60ef6f57c92d19df"
+    },
+    {
+      "path": "lasagna/mix_channels_parallel.py",
+      "sha256": "42f50af426e3f01bac8639405f08deab43bfa91740c7444841e0d97fc606d1c7"
+    },
+    {
+      "path": "lasagna/model.py",
+      "sha256": "21c6e85be5c394c70abeaa85a92d209b28cc443c40c3d7135b90463def0168a2"
+    },
+    {
+      "path": "lasagna/normal_encoding.py",
+      "sha256": "2e789c46704745a5575485b51b1f076f4f7780ee62a647004e2941bae210db2e"
+    },
+    {
+      "path": "lasagna/omezarr_pyramid.py",
+      "sha256": "96d44de6b0cfaba186282e878aab3aef9012fa57bfc2839fa5dc6ecd0f5b12ae"
+    },
+    {
+      "path": "lasagna/opt_loss_atlas_line.py",
+      "sha256": "2d47e6817bea8aadce364eb7a69af1be1d5ec67ec413fa51f9a151a0d42dfc51"
+    },
+    {
+      "path": "lasagna/opt_loss_bend.py",
+      "sha256": "825636caa90b78aac9ac7809a1e34525ea59efe9fa8c12bbccecba38869e1578"
+    },
+    {
+      "path": "lasagna/opt_loss_corr.py",
+      "sha256": "8819a493ab5007e40c00025299dda9356e33339ffd98ba54b51505f070ca9d40"
+    },
+    {
+      "path": "lasagna/opt_loss_cyl.py",
+      "sha256": "d1db34cd66d35b9edbd556e7066645d20c91619a7382755cd48ee10f8f4034b4"
+    },
+    {
+      "path": "lasagna/opt_loss_data.py",
+      "sha256": "6ec869c1cb5ce869957cd26fab2391ce5082fbbef0955ac55766f44dba9f20b4"
+    },
+    {
+      "path": "lasagna/opt_loss_dir.py",
+      "sha256": "b9b0777d854bb653438b1b5194cc5839ec89036836f664bbde2610a64ffbec2c"
+    },
+    {
+      "path": "lasagna/opt_loss_flatten.py",
+      "sha256": "8210ece41ff0cedd820d014954d633b0e2f5cb1656918a64da6f16906d32c424"
+    },
+    {
+      "path": "lasagna/opt_loss_pred_dt.py",
+      "sha256": "578f15180704517ac0356362a1146d5b089ae021a2a45b2980ccd769a4a9008f"
+    },
+    {
+      "path": "lasagna/opt_loss_smooth.py",
+      "sha256": "6fe44d10e35198401b7cc888dacee50a360ec210124291c7d08f57359dbac6dc"
+    },
+    {
+      "path": "lasagna/opt_loss_snap_surf.py",
+      "sha256": "8ea4beb42e64f3358a96d2289b7d289c05cf0d59550bc76a09461f8d97ccaa35"
+    },
+    {
+      "path": "lasagna/opt_loss_station.py",
+      "sha256": "b168c774e6fbd3cb3e59f296fb489343c07ce89438132e2d857401740d02c471"
+    },
+    {
+      "path": "lasagna/opt_loss_step.py",
+      "sha256": "075b6c24b6acfa2a5fe658fbbc7961c4800493dae82cfd35b584672e0ff59122"
+    },
+    {
+      "path": "lasagna/opt_loss_winding_density.py",
+      "sha256": "63fb3d95a4687c77bece2d6eba1b9f96529963d85e5e954c0a096d34303823e7"
+    },
+    {
+      "path": "lasagna/opt_loss_winding_volume.py",
+      "sha256": "f7fffc8e61f82f0fd21c9b8f86bec24bf2bc4f3a621b3a8213f0cb1f495d01fe"
+    },
+    {
+      "path": "lasagna/optimizer.py",
+      "sha256": "02867e0489a13fbd37c973ccb52ec5eb4077950fd522e8e4eca4c8df86f4b14b"
+    },
+    {
+      "path": "lasagna/predict3d_holescan.py",
+      "sha256": "90bfc386f308c71c26dc1e5a0f4675ae140e9ce92c89e7de688b083f1f3a52ef"
+    },
+    {
+      "path": "lasagna/preprocess_cos_omezarr.py",
+      "sha256": "f488136c31f7941edcea3f14ef2ed2e0e0b324acf918dbee8b6fc31b8cc533d7"
+    },
+    {
+      "path": "lasagna/progress_table.py",
+      "sha256": "c4c509ab6426e63704a3e7073989a93143f08a050290bf8de7dd96448ad62023"
+    },
+    {
+      "path": "lasagna/review_tiffs.py",
+      "sha256": "37e3683eb81fc3b8f41ff4cb927ccf8b439e808d13169d25aa20c2c1cb6c8031"
+    },
+    {
+      "path": "lasagna/setup.py",
+      "sha256": "48e0ee7eecfe136f5d6fba628b736073e7bd7c84172696a7490370e6f09bb86e"
+    },
+    {
+      "path": "lasagna/sparse_cache.py",
+      "sha256": "1915168c56989c8304344b0cde39d1326b8c2972fb528a860539b0825f7ee87f"
+    },
+    {
+      "path": "lasagna/sparse_grid_sample_3d_u8.py",
+      "sha256": "a7a1e52534f8b4e45bae0451ce949f2256aaea5c49f30c7524d0b33d4acd8c83"
+    },
+    {
+      "path": "lasagna/sparse_grid_sample_3d_u8_diff.py",
+      "sha256": "41aa66e4dd707f4d4792f2433fefd8bf70d103ad5e18a30977ffcd4d5da2d508"
+    },
+    {
+      "path": "lasagna/sparse_prefetch_chunks.py",
+      "sha256": "2109b3d95a8fd82e5485f465c0a8edbe669a338a4ea7fb761bc6ac54c230e2f5"
+    },
+    {
+      "path": "lasagna/sparse_tensorstore_cache.py",
+      "sha256": "ad6c2202b74305b7f91e761aeec351c5291664a0103c75743b612cb48b02832e"
+    },
+    {
+      "path": "lasagna/tensorstore_omezarr.py",
+      "sha256": "1267163c1a68dc664935fe5f967f5008b162c1ce3801dd12cc28e04168270150"
+    },
+    {
+      "path": "lasagna/tifxyz_io.py",
+      "sha256": "1e23e976f2a817e7a93662625bfbb9faa5e00171f51495b74139daf4dd380d5b"
+    },
+    {
+      "path": "lasagna/tifxyz_labels.py",
+      "sha256": "5ffef3cccc2a2ca1faeabf8803073fdbbc95e231b5f172d366e33eda4c4dcf46"
+    },
+    {
+      "path": "lasagna/tifxyz_lasagna_dataset.py",
+      "sha256": "e365f9a9b067a411dbb4434346fdd75667b68a6c7a52d121fcfc65ebb86f6465"
+    },
+    {
+      "path": "lasagna/tiled_infer.py",
+      "sha256": "6425c9578873e5bef4c573f92f27e98eb2ea9f539d232564418bd05128e9d1d8"
+    },
+    {
+      "path": "lasagna/tiled_predict3d.py",
+      "sha256": "1fe6d92981bfb296d88d5271f17beab7c45470925cd50085854469bf8e8ec752"
+    },
+    {
+      "path": "lasagna/train_tifxyz.py",
+      "sha256": "4f0737723da2a9c3b2f324987edf5ca0a023dd189caa9f4c1a0ae6a642e977f1"
+    },
+    {
+      "path": "lasagna/train_unet.py",
+      "sha256": "d50d464732c22b252ee79a5ee8511603e72b677e4ed66d54a9c3e1520fecef56"
+    },
+    {
+      "path": "lasagna/train_unet_3d.py",
+      "sha256": "1059407a5e5d6de310704a4f243fdb5691018e567288611e131e385f7bc6ef20"
+    },
+    {
+      "path": "lasagna/vc3d_fiber_format_adapter.py",
+      "sha256": "81f7f8017cefe45933b1e3a376806bec52ca3c4237ec51d9290d270668471c2f"
+    },
+    {
+      "path": "lasagna/volume_scale.py",
+      "sha256": "826a89beef28274191dcbbfb9cd69b675c34f0feedf94a773e25150c2c38526e"
+    },
+    {
+      "path": "lasagna/snap_surf/__init__.py",
+      "sha256": "23165fa568d1f328516abccfdf3f080dcc6f7925b3ad38ae7a5b27363513ce38"
+    },
+    {
+      "path": "lasagna/snap_surf/config.py",
+      "sha256": "1eba7a97c0e0d36035479723e79879627e83e0731cdcea002d6bdc317890beda"
+    },
+    {
+      "path": "lasagna/snap_surf/debug_obj.py",
+      "sha256": "ed9a2e51b370c96b0860097fe9eb9e7c45b3ec8a7bf3c268eb51a3002f13631c"
+    },
+    {
+      "path": "lasagna/snap_surf/legacy.py",
+      "sha256": "9d334db9d12efa8328e304a8731f6b267607b25b4ce6b7af46a45b23f38a71c6"
+    },
+    {
+      "path": "lasagna/snap_surf/map_fixture_io.py",
+      "sha256": "1bcda0ef2d3158410287a8f2faab2002672c7691748dca519da5101f09bd5f05"
+    },
+    {
+      "path": "lasagna/snap_surf/map_global.py",
+      "sha256": "58393f5eb038bc18ec6b4514067bb859bade0ba040696a9fa062ef4ab1193d7c"
+    },
+    {
+      "path": "lasagna/snap_surf/map_global_cli.py",
+      "sha256": "a71442bdfee3235cdd72182b823606e8bca5345c29eea3ebdfb66ea4c8494a62"
+    },
+    {
+      "path": "lasagna/snap_surf/map_objective.py",
+      "sha256": "692a58b00ef2fcdb4ca3db1a6d455313f1b91699e0bcc630060d62092b4b5213"
+    },
+    {
+      "path": "lasagna/snap_surf/map_pyramid.py",
+      "sha256": "6696d097deb4aa8356cde29a35c86eeb3879517a7632ac7c41a7640363adb746"
+    },
+    {
+      "path": "lasagna/snap_surf/state.py",
+      "sha256": "2a8d105e435a99b082990b030fdc3bd29154203fbc568d9bc638b09eaefe3195"
+    },
+    {
+      "path": "lasagna/snap_surf/tensor.py",
+      "sha256": "a93de4a2ce366f7196f08248780c893008b39e264897a6d8224e11700fa85fb0"
+    },
+    {
+      "path": "vesuvius/src/vc3d_fiber_format/__init__.py",
+      "sha256": "33359b2f12d76e6e23cef696230de0cfa9b24053d123844a12ff4aeddc1733bf"
+    },
+    {
+      "path": "lasagna/configs/flatten_fast.json",
+      "sha256": "882d1808a9b1a2847a01ed838121cf9459b4748e8ddcde31115f0fa8489bdc87"
+    }
+  ],
+  "scope": "93 actual consumer source files plus the exact fast recipe; does not pin all binary dependencies"
+}

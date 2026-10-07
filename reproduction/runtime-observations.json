@@ -1,0 +1,34 @@
+{
+  "scope": "Recorded CPU consumer environment; binary dependencies must be installed separately.",
+  "source_record_sha256": "8c869bd383f18ca8e272262d9deb19b9f92730c9a9ec8bc7847ad21de75cb6ea",
+  "case": "V1-P06/support5",
+  "upstream_commit": "fb8c2c4c2705746eefb42e9bb359560906f391e2",
+  "effective_module_dtype": {
+    "torch_float_hi": "torch.float32",
+    "numpy_float_hi": "float32",
+    "torch_intraop_threads": 1,
+    "torch_interop_threads": 10,
+    "torch_version": "2.8.0",
+    "numpy_version": "2.5.3"
+  },
+  "effective_environment": {
+    "LASAGNA_MAX_PRECISION_FLOAT": "32",
+    "LASAGNA_COMPILE_FLATTEN": "0",
+    "LASAGNA_FUSED_FLATTEN_ADAM_CLAMP": "0",
+    "LASAGNA_FLATTEN_DIAGNOSTICS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "consumer_platform": "macOS arm64",
+  "scientific_python_minor": "3.12",
+  "precision_exception": "The V1-P10 baseline at output spacing 5 voxels recorded an unset precision variable and used the pinned float32 default.",
+  "interface_test_environment": {
+    "Python": "3.14.4",
+    "NumPy": "2.4.2",
+    "SciPy": "1.17.1",
+    "scope": "Installer and wrapper tests, separate from scientific runs."
+  }
+}

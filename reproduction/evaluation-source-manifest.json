@@ -1,0 +1,1365 @@
+{
+  "schema": 1,
+  "ast_fingerprint_python": [
+    3,
+    14,
+    4
+  ],
+  "status": "PINNED_EVALUATION_SOURCES",
+  "path_replacements": [
+    {
+      "placeholder": "__HISTORICAL_PROJECT_ROOT__",
+      "root_id": 1
+    },
+    {
+      "placeholder": "__HISTORICAL_TASK_ROOT__",
+      "root_id": 2
+    },
+    {
+      "placeholder": "__HISTORICAL_WORK_ROOT__",
+      "root_id": 3
+    },
+    {
+      "placeholder": "__HISTORICAL_DATA_ROOT__",
+      "root_id": 4
+    },
+    {
+      "placeholder": "__HISTORICAL_HOME_ROOT__",
+      "root_id": 5
+    },
+    {
+      "placeholder": "__HISTORICAL_VOLUME_ROOT__",
+      "root_id": 6
+    }
+  ],
+  "transformation_scope": "Absolute path roots are represented by placeholders, with module-documentation edits recorded per file. Numerical expressions, tolerances, and selection rules are unchanged. AST checks distinguish documentation from executable code.",
+  "files": [
+    {
+      "file": "core/evaluate_patch.py",
+      "original_sha256": "16db214c0f6b4e2b8402a1b3f72dfd964c1da8315f8fb0182f60a4342c49c3f8",
+      "shareable_sha256": "821de8cd20cab01acb51c1ee45c9c5dab378bd7dab79bbc7fa242be253e2ba64",
+      "transform": "Declared path-root placeholders and module documentation; executable code unchanged; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": false,
+      "normalized_original_module_AST_sha256": "b566a1bab64ddb77ad06bcfb9a569a7d01e2612915945f0400937ec1f59e6988",
+      "shareable_module_AST_sha256": "d5b718af70f391240c7c90c34301fdb4066da6e7115457d7aad8c18b5b7eb081",
+      "functions": [
+        {
+          "name": "sha",
+          "line": 36,
+          "original_AST_sha256": "01a30804083afcef60614619478cbeddb13e30ed3536b6fee7137f689ea00c6f",
+          "shareable_AST_sha256": "01a30804083afcef60614619478cbeddb13e30ed3536b6fee7137f689ea00c6f",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "write_json",
+          "line": 44,
+          "original_AST_sha256": "4983ecdcb7f162014961896250a3be877d89be7995b5a21e5046d546ac1bfba2",
+          "shareable_AST_sha256": "4983ecdcb7f162014961896250a3be877d89be7995b5a21e5046d546ac1bfba2",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "write_npz",
+          "line": 52,
+          "original_AST_sha256": "9d11147eeadf7462f4db0f7f24639926cd1ef6d3aa90fd834c61c710085929f4",
+          "shareable_AST_sha256": "9d11147eeadf7462f4db0f7f24639926cd1ef6d3aa90fd834c61c710085929f4",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "all_quad",
+          "line": 59,
+          "original_AST_sha256": "b2be4e5f79b813de4d9fdc7cc70513894d13b1e4ff6aeac0572fa2f97bd3fef2",
+          "shareable_AST_sha256": "b2be4e5f79b813de4d9fdc7cc70513894d13b1e4ff6aeac0572fa2f97bd3fef2",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "grid_triangles",
+          "line": 63,
+          "original_AST_sha256": "42d81ad5c7a07c26e903fe776c81e8bd6f2ce74ebb0d7a026c2d86d7a65baf50",
+          "shareable_AST_sha256": "42d81ad5c7a07c26e903fe776c81e8bd6f2ce74ebb0d7a026c2d86d7a65baf50",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "face_stats",
+          "line": 78,
+          "original_AST_sha256": "aebe4c1a03ecd7d6804623130f43d814d0db243e99409c42f677ee485332ea27",
+          "shareable_AST_sha256": "aebe4c1a03ecd7d6804623130f43d814d0db243e99409c42f677ee485332ea27",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "core_mask",
+          "line": 85,
+          "original_AST_sha256": "1aa5a8e6ef6d50ce4453ab3685c92af7306b9ba2ec8a33a1261350c0a108f827",
+          "shareable_AST_sha256": "1aa5a8e6ef6d50ce4453ab3685c92af7306b9ba2ec8a33a1261350c0a108f827",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "load_grid",
+          "line": 89,
+          "original_AST_sha256": "bf17907cc0da5e0aaadbad0d2a7595254d5772839ac269bd68cfc7b771f360ca",
+          "shareable_AST_sha256": "bf17907cc0da5e0aaadbad0d2a7595254d5772839ac269bd68cfc7b771f360ca",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "prepare",
+          "line": 120,
+          "original_AST_sha256": "06b0ea26d543160d20039b96b2f62a0e80015641a6f3b2b3adaf315438b177ee",
+          "shareable_AST_sha256": "d30dac8dad33ee4d44bc2c58e2b92412006c16754c6d15fabe4992b15d7b5719",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        },
+        {
+          "name": "summary",
+          "line": 186,
+          "original_AST_sha256": "cfe2b86fdb23dc2f063c80ec6fd1640ff5560d844aea35f2d041ec47cb95ae2a",
+          "shareable_AST_sha256": "cfe2b86fdb23dc2f063c80ec6fd1640ff5560d844aea35f2d041ec47cb95ae2a",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "evaluate",
+          "line": 199,
+          "original_AST_sha256": "3e5b2b93f486d1d2310da99b4e34b90f4d8b1b91d436286cea2b7437b7bdff15",
+          "shareable_AST_sha256": "331a6c3a8064daaa2934c8f67a2a64062ed925c3131eefb4e11fcdb35c72d446",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        },
+        {
+          "name": "selftest",
+          "line": 280,
+          "original_AST_sha256": "cf98e220e223e80b480c5827d5b16c78c669c35211b2811548234f86ca7f124a",
+          "shareable_AST_sha256": "cf98e220e223e80b480c5827d5b16c78c669c35211b2811548234f86ca7f124a",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "main",
+          "line": 349,
+          "original_AST_sha256": "fedc9a1bed0ad346b04b19d324b8a5a383fcdd26f719d06192695113afb3ee67",
+          "shareable_AST_sha256": "fedc9a1bed0ad346b04b19d324b8a5a383fcdd26f719d06192695113afb3ee67",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "save_candidate",
+          "line": 305,
+          "original_AST_sha256": "47bed29653349513a9d147c9ed15c28772795e784afcf71808688386b19091ff",
+          "shareable_AST_sha256": "47bed29653349513a9d147c9ed15c28772795e784afcf71808688386b19091ff",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ],
+      "module_AST_equal_after_declared_path_and_documentation_changes": true,
+      "expected_transformed_module_AST_sha256": "d5b718af70f391240c7c90c34301fdb4066da6e7115457d7aad8c18b5b7eb081",
+      "documentation_changes": [
+        {
+          "scope": "module docstring",
+          "description": "Describe the reference-preparation and evaluation functions; remove machine-execution instructions."
+        }
+      ],
+      "executable_AST_unchanged_by_documentation_edit": true,
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "core/evaluate_patch_batch.py",
+      "original_sha256": "b2fd08f4726718888c5ad3ef762fcdf2b73a7206dfba647ce78f1ca15fc3bf1e",
+      "shareable_sha256": "1fdcf2efaa149c43632ff34af630b4db6534fd66504c78934dd4a2c640419e62",
+      "transform": "none; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "711cab2491d62362caa7ca7d92132e76a781b458f369c50c1f4b716329586824",
+      "shareable_module_AST_sha256": "7c0f2941c75106adc8953d8dd390b48f2bf4acc328bdb82acd148a58a8fe9bd3",
+      "functions": [
+        {
+          "name": "restrict_summary",
+          "line": 22,
+          "original_AST_sha256": "8d12940afec2271e42f0b27b4615503ae9711ad204723cdaded73fe598336fdd",
+          "shareable_AST_sha256": "8d12940afec2271e42f0b27b4615503ae9711ad204723cdaded73fe598336fdd",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "update_union",
+          "line": 33,
+          "original_AST_sha256": "bb79c978eba93bc9fa9f97e6be5afabfd62a9281b91b86014ad30fea9aee56e8",
+          "shareable_AST_sha256": "bb79c978eba93bc9fa9f97e6be5afabfd62a9281b91b86014ad30fea9aee56e8",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "read_candidate",
+          "line": 38,
+          "original_AST_sha256": "45435b2c078a4b3685a3ca7c0a4f5517d1329d192ee186ccd5847f541465b025",
+          "shareable_AST_sha256": "45435b2c078a4b3685a3ca7c0a4f5517d1329d192ee186ccd5847f541465b025",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "evaluate_batch",
+          "line": 62,
+          "original_AST_sha256": "b8988005df568cfcd3da51cc98f43d49f57c43cfc3e85817a6fada008af0253c",
+          "shareable_AST_sha256": "5b12e0b83e84ba12e90b96e62244c204482022522ec5c428893ae9d2f4eb1a85",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        },
+        {
+          "name": "selftest",
+          "line": 177,
+          "original_AST_sha256": "8ee14001c9ebf6478f7de1dac1d58e6328a70817787f0b84aa76edf5f93063bf",
+          "shareable_AST_sha256": "8ee14001c9ebf6478f7de1dac1d58e6328a70817787f0b84aa76edf5f93063bf",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "main",
+          "line": 236,
+          "original_AST_sha256": "c7a814bf9aeaef8405aeb0a0a90add8575c13a469ff491ef1528387f3f9918a7",
+          "shareable_AST_sha256": "c7a814bf9aeaef8405aeb0a0a90add8575c13a469ff491ef1528387f3f9918a7",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "7c0f2941c75106adc8953d8dd390b48f2bf4acc328bdb82acd148a58a8fe9bd3",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "core/expanded_references.py",
+      "original_sha256": "cc84abb04085bb37da6a5071746c01892572b6318ad541671ca50211194cb0eb",
+      "shareable_sha256": "57d463d5ac4c0f01f637f4edca6a5c4929a3934181c236e461e6023923d5909d",
+      "transform": "none; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "42d7423d614543c4485078c9791cbdcfba0659838265146c7c3b112c80d97d4c",
+      "shareable_module_AST_sha256": "f5f9a1884149c374aa8c8ec718bea87e09e1e7e6c30ef6fa502b107711c17620",
+      "functions": [
+        {
+          "name": "write_json",
+          "line": 12,
+          "original_AST_sha256": "06411a310ca8a1f4c0ff0102b280d74938ab612fe6a8e036f071b20ac0212a0d",
+          "shareable_AST_sha256": "06411a310ca8a1f4c0ff0102b280d74938ab612fe6a8e036f071b20ac0212a0d",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "polygon_area",
+          "line": 15,
+          "original_AST_sha256": "2b2545f821e6e3d459d752c5fccd14471af4e0b1b23a45c3b0f092b0ffd8e4db",
+          "shareable_AST_sha256": "2b2545f821e6e3d459d752c5fccd14471af4e0b1b23a45c3b0f092b0ffd8e4db",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "clipped_area",
+          "line": 20,
+          "original_AST_sha256": "eb0834ac68e97c2540b34c707a27529183e980d66abb95b6ccb5fd693c3f5611",
+          "shareable_AST_sha256": "eb0834ac68e97c2540b34c707a27529183e980d66abb95b6ccb5fd693c3f5611",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "edge_positive_clip",
+          "line": 37,
+          "original_AST_sha256": "ef74551becdb1c5810f1f44c14c0318149f351dce9eca6dc4d9be3020cc36c47",
+          "shareable_AST_sha256": "ef74551becdb1c5810f1f44c14c0318149f351dce9eca6dc4d9be3020cc36c47",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "components",
+          "line": 48,
+          "original_AST_sha256": "97e2cae33179428d16d0542d9e67b64dd21e1a9f622db03d1f0f989cdadca6f3",
+          "shareable_AST_sha256": "97e2cae33179428d16d0542d9e67b64dd21e1a9f622db03d1f0f989cdadca6f3",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "selftest",
+          "line": 77,
+          "original_AST_sha256": "4d5fbb6dc12726366924d33468bffcaf844ddd7092e722f6985443e0dd10ece9",
+          "shareable_AST_sha256": "4d5fbb6dc12726366924d33468bffcaf844ddd7092e722f6985443e0dd10ece9",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "qualify",
+          "line": 88,
+          "original_AST_sha256": "4970ce874cea41f3e877151a7ae41702d0e2d6ea1ec8c9d4ae0a972174df9458",
+          "shareable_AST_sha256": "4970ce874cea41f3e877151a7ae41702d0e2d6ea1ec8c9d4ae0a972174df9458",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "main",
+          "line": 142,
+          "original_AST_sha256": "af531efb756a03c879fda4c0a59299634a50219bcaa8e155d98af5e6317555ed",
+          "shareable_AST_sha256": "496a3649cc687eb3e2c3e3b4cd6add4ae97b2c86773f8fe961c9e963edaca61a",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        },
+        {
+          "name": "root",
+          "line": 55,
+          "original_AST_sha256": "acc0b0ffbc58815f77ff28d4519ff66c03afc507f1adee5e1eeebf615200f74a",
+          "shareable_AST_sha256": "acc0b0ffbc58815f77ff28d4519ff66c03afc507f1adee5e1eeebf615200f74a",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "f5f9a1884149c374aa8c8ec718bea87e09e1e7e6c30ef6fa502b107711c17620",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "core/evaluate_expanded_references.py",
+      "original_sha256": "a4c670a1a7679327235c18d91de93cae8344b0af441e57c31b666b47895e62e5",
+      "shareable_sha256": "03c3f0b239884edf90c097227e9a8362efca792f4b21bc101a356e8e76150744",
+      "transform": "none; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "682188c20b1582d05ac5eda2eaa826e88bf44c95a4613565ae710cabf94e3dc7",
+      "shareable_module_AST_sha256": "ddcc94c99afaefc5b1e025b0e10897ab5f8c26a9307ede785b879dfed796d5d6",
+      "functions": [
+        {
+          "name": "clipped_centroid",
+          "line": 24,
+          "original_AST_sha256": "79d4a05bb7ca86d757251cd17114ee5c791a506acbc852354496b6cc21e5bd76",
+          "shareable_AST_sha256": "79d4a05bb7ca86d757251cd17114ee5c791a506acbc852354496b6cc21e5bd76",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "domain_geometry",
+          "line": 49,
+          "original_AST_sha256": "c348823cbf035896904604129d03b2eb8c5fd31c373fc4f017843b363b46d6ac",
+          "shareable_AST_sha256": "c348823cbf035896904604129d03b2eb8c5fd31c373fc4f017843b363b46d6ac",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "area_mm2",
+          "line": 66,
+          "original_AST_sha256": "a5263d6cde81c436643b35616397796769ca01344166cb95ebac14427b1281a0",
+          "shareable_AST_sha256": "a5263d6cde81c436643b35616397796769ca01344166cb95ebac14427b1281a0",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "run",
+          "line": 69,
+          "original_AST_sha256": "fdc347614b2f06e80f7a8fe27ce04b1067977e1fc8e2eeec400f82cdca6a5a9e",
+          "shareable_AST_sha256": "fb783e8d87ecacb2bd8e08caa545609d0f1731ff000896dfc31d2fe212b59813",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        },
+        {
+          "name": "selftest",
+          "line": 160,
+          "original_AST_sha256": "d93e0678a685d420baedf42b9964dbfa97df5e4ea2ae26e91caaa6769a29cba7",
+          "shareable_AST_sha256": "d93e0678a685d420baedf42b9964dbfa97df5e4ea2ae26e91caaa6769a29cba7",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "main",
+          "line": 177,
+          "original_AST_sha256": "c0be18cda1e680bbfc14f07d9326920771158e2206a72460516f7ed9da57470e",
+          "shareable_AST_sha256": "c0be18cda1e680bbfc14f07d9326920771158e2206a72460516f7ed9da57470e",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "ddcc94c99afaefc5b1e025b0e10897ab5f8c26a9307ede785b879dfed796d5d6",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "core/score_frozen_validation.py",
+      "original_sha256": "14272c23597ec2c51c3af136d8c9d18d1746de102cccc66468300e1cbb6a2ed2",
+      "shareable_sha256": "86a10057001084a0c0ce4b4396007e05c3fc5518cf0fb124231c0fd3431266f4",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "0c43942bbd4b79fac251239435ff93f6ff551a995947c25fe3db06cbdd6b0165",
+      "shareable_module_AST_sha256": "0fc820b2c50f29a663c8f803281828f895f2c9dd41ba93f25cebe444822ddb03",
+      "functions": [
+        {
+          "name": "mm2",
+          "line": 17,
+          "original_AST_sha256": "ef8b5cba24a2bccf39f08b9840f5dc78378055848657464b47dabbd1e4ae4f02",
+          "shareable_AST_sha256": "ef8b5cba24a2bccf39f08b9840f5dc78378055848657464b47dabbd1e4ae4f02",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "measure",
+          "line": 20,
+          "original_AST_sha256": "2d2c990a1dfa14a4407b8dc21a8173916635efcfe3ebdba8aa14dc0d72896e8d",
+          "shareable_AST_sha256": "2d2c990a1dfa14a4407b8dc21a8173916635efcfe3ebdba8aa14dc0d72896e8d",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "read_patch",
+          "line": 26,
+          "original_AST_sha256": "e8a77f76d66b7303af3ab94e6b6cff9c65118391a3458305c28107257d833891",
+          "shareable_AST_sha256": "e8a77f76d66b7303af3ab94e6b6cff9c65118391a3458305c28107257d833891",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "quads_area",
+          "line": 47,
+          "original_AST_sha256": "356ffb03fdf0786962bec59bc968b9b57a3ca2d4532b38762ecae149cbb7a144",
+          "shareable_AST_sha256": "356ffb03fdf0786962bec59bc968b9b57a3ca2d4532b38762ecae149cbb7a144",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "merge",
+          "line": 52,
+          "original_AST_sha256": "c491dba294a1be84e2800ff8f6432680f73a1c7e8ad4d9e7ad3a4aef25a3f4b1",
+          "shareable_AST_sha256": "c491dba294a1be84e2800ff8f6432680f73a1c7e8ad4d9e7ad3a4aef25a3f4b1",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "run",
+          "line": 61,
+          "original_AST_sha256": "0545f3ef525de7e6cc1ca04d4670ce357d6291b0fc2c057d54e15005550d25d3",
+          "shareable_AST_sha256": "911cc3c8772352030ab0e19727aa46cd48e603d25d0e72a001f976915d6ae89b",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        },
+        {
+          "name": "measure",
+          "line": 164,
+          "original_AST_sha256": "2d2c990a1dfa14a4407b8dc21a8173916635efcfe3ebdba8aa14dc0d72896e8d",
+          "shareable_AST_sha256": "2d2c990a1dfa14a4407b8dc21a8173916635efcfe3ebdba8aa14dc0d72896e8d",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "0fc820b2c50f29a663c8f803281828f895f2c9dd41ba93f25cebe444822ddb03",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "core/diagnose_replayed_stages.py",
+      "original_sha256": "7e2c1dfe99c5997ed8127220dae818980fdf037a049bf0709b1eb4e9cbefe981",
+      "shareable_sha256": "6ff8f04cad20bddc9aeb8b080a7f1b81228790796d17a76f095a9349056ef95d",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "7d0a97b365c67c31fc9b095bad261197e45e17362fb2661652f2c288c6eadfb5",
+      "shareable_module_AST_sha256": "0b443e4af47442c3631f40c6500c1af1731ef459f80fc9ebed3d76a2261c4f56",
+      "functions": [
+        {
+          "name": "reference",
+          "line": 14,
+          "original_AST_sha256": "926e77130aef1f84f48e27ae11d7f62f9606b290d647dd316baab3c44a2d9210",
+          "shareable_AST_sha256": "3680f1773faf486869fa0314ee00661ec0da04109b3edf0f33efcfa6ab25ceac",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": true,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "describe",
+          "line": 39,
+          "original_AST_sha256": "a77acfe7524c012d0439d4d9904b5de6a404190bd443d5e61171e0105d45d6df",
+          "shareable_AST_sha256": "a77acfe7524c012d0439d4d9904b5de6a404190bd443d5e61171e0105d45d6df",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "summarize_points",
+          "line": 45,
+          "original_AST_sha256": "39ca6d2ec53a4b23ec52e6d65185bf38048e1e094fdd5ea27efc16e2d88bb02b",
+          "shareable_AST_sha256": "39ca6d2ec53a4b23ec52e6d65185bf38048e1e094fdd5ea27efc16e2d88bb02b",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "grid_edges",
+          "line": 67,
+          "original_AST_sha256": "2f91d397b6fcf7746d70e8e1bd82dc1948de0b7ac08f53fec6fe99381bb81a23",
+          "shareable_AST_sha256": "2f91d397b6fcf7746d70e8e1bd82dc1948de0b7ac08f53fec6fe99381bb81a23",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "run",
+          "line": 78,
+          "original_AST_sha256": "d73400fb0252c0c911b427872bb2ee18739b949a9e3b513779c6ea8c6d1e8397",
+          "shareable_AST_sha256": "ad166e3307e14fb3afe77a31115fab0bff9ef2243df8a3b1624ea3cb61edc1da",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "0b443e4af47442c3631f40c6500c1af1731ef459f80fc9ebed3d76a2261c4f56",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "core/evaluate_flatten_consumer.py",
+      "original_sha256": "b66545c91d5247012c83473cea4640f4cbfa38a9ae946da7b9fb0280b034f89f",
+      "shareable_sha256": "abaa90f3a5042f857f2532b64a4596954543222224b003b5c5cf874a99d0446a",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "18c4cf9826382cc32b28ecc4a5e45408f12535e942498b68f7d5185f348641e7",
+      "shareable_module_AST_sha256": "c4c8a99297d7d0a886cb08a02aabd2e1e4b7c350bcbb68b402b1986db39465bd",
+      "functions": [
+        {
+          "name": "mesh",
+          "line": 21,
+          "original_AST_sha256": "58395cd0d2daa71f20944d49ddc5c4c7a6fe28dda2440236266716f7ba373004",
+          "shareable_AST_sha256": "58395cd0d2daa71f20944d49ddc5c4c7a6fe28dda2440236266716f7ba373004",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "load_xyz",
+          "line": 29,
+          "original_AST_sha256": "4fcc265f0f75313af5c49ced170d88a258098899fa4cf7d74e868ef12bc83479",
+          "shareable_AST_sha256": "4fcc265f0f75313af5c49ced170d88a258098899fa4cf7d74e868ef12bc83479",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "stats",
+          "line": 38,
+          "original_AST_sha256": "29bbd161d8631a0e3a2cd49f36ac3e0d20b03a14e8093790c53b210f36e5ec9a",
+          "shareable_AST_sha256": "29bbd161d8631a0e3a2cd49f36ac3e0d20b03a14e8093790c53b210f36e5ec9a",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "inputs",
+          "line": 47,
+          "original_AST_sha256": "08b524a211b3793f17fb97d334c2c9f5c00c6e77caaacd21c06e82426535b962",
+          "shareable_AST_sha256": "08b524a211b3793f17fb97d334c2c9f5c00c6e77caaacd21c06e82426535b962",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "score_ref",
+          "line": 97,
+          "original_AST_sha256": "553a12309d058156bc7a9d6c4cc33b210a3d0b7398853da976cf7fb71d2ce474",
+          "shareable_AST_sha256": "553a12309d058156bc7a9d6c4cc33b210a3d0b7398853da976cf7fb71d2ce474",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "run",
+          "line": 121,
+          "original_AST_sha256": "066942173e88ee38022282fdf0f34983ba190b7f5ae7f7e68e80d0512ec853b1",
+          "shareable_AST_sha256": "ba684e9ce5374edf63819e07426f75538be9daf79cbe5b7fa08de43817706a52",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "c4c8a99297d7d0a886cb08a02aabd2e1e4b7c350bcbb68b402b1986db39465bd",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "core/flatten_cohort_geometry.py",
+      "original_sha256": "5320d20a798f5c352dc01f86a5d93e2d796080c086a567888a7b8b8dd818092b",
+      "shareable_sha256": "683062a0951465fe65295bf3f3c89111112d1f2109cc07f614efbfa149af5e1f",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "8e4b2c4cce045c8b7e45c1c09943a5092d968d96d22c4652c49293b9bb3184f1",
+      "shareable_module_AST_sha256": "2874e332b5c7dc3a88fc6f04eed9900b9b72fadf2708c074f374ac764710c9b5",
+      "functions": [
+        {
+          "name": "inspect_export",
+          "line": 17,
+          "original_AST_sha256": "505ea013abdda66a40a5e9763428befc1aac9adf3e3780658e9faed7a0e0ad1e",
+          "shareable_AST_sha256": "505ea013abdda66a40a5e9763428befc1aac9adf3e3780658e9faed7a0e0ad1e",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "verify_qualified",
+          "line": 69,
+          "original_AST_sha256": "9ac508426665fe71c708bfe1ec218bfb8b36a38db3cdbc9d05f615c3f54c3cea",
+          "shareable_AST_sha256": "9ac508426665fe71c708bfe1ec218bfb8b36a38db3cdbc9d05f615c3f54c3cea",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "prepare",
+          "line": 81,
+          "original_AST_sha256": "8f55c5e77aa0846299e8ea74cbef50e87d8f38d20e67a2090115f399fbbe2592",
+          "shareable_AST_sha256": "1067eb3e8d8c03e03bc1c02a37b6fe844be56775446a8fb42e63d1154abc948a",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        },
+        {
+          "name": "selftest",
+          "line": 120,
+          "original_AST_sha256": "8f7ddfa0c2ec2e13ff7364311f22198e275b047717a75e332e7b2a8a052f9385",
+          "shareable_AST_sha256": "9d2c88b5503b1a869d55e72fd412cba0e729480062532a5bb3ee356ec8d6a1b0",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": true,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "2874e332b5c7dc3a88fc6f04eed9900b9b72fadf2708c074f374ac764710c9b5",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "core/qualify_disjoint_references.py",
+      "original_sha256": "4f157064f086c1171a4f810ee27695d1a65ee116ecafbea0934626a0e51f26a5",
+      "shareable_sha256": "f559e0290c59289821697beb20e4e21d770c132256258b820cb0d08acc03409b",
+      "transform": "none; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "69f11e64a282dfe8f9c4a67fb3efcb7130740e1e7a379a5be6c066f757e514aa",
+      "shareable_module_AST_sha256": "fdd3675106ec8d098ff3a4a06a5ae6c39462631ae790e1ba36da0d29cb39e6cd",
+      "functions": [
+        {
+          "name": "read_source",
+          "line": 12,
+          "original_AST_sha256": "16f02b5971794477b463e4038afd5281d39fb60104cf2bec37af631577deb9e8",
+          "shareable_AST_sha256": "16f02b5971794477b463e4038afd5281d39fb60104cf2bec37af631577deb9e8",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "bounds",
+          "line": 23,
+          "original_AST_sha256": "db186af91de4bac167f0c5c797ac2c98f339318f2aadbb61f1d506f17a23fb20",
+          "shareable_AST_sha256": "db186af91de4bac167f0c5c797ac2c98f339318f2aadbb61f1d506f17a23fb20",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "broad_rows",
+          "line": 27,
+          "original_AST_sha256": "c04828b237babe6718931b8d5a35145686bc280d91b14d3eb944840d5cb43085",
+          "shareable_AST_sha256": "c04828b237babe6718931b8d5a35145686bc280d91b14d3eb944840d5cb43085",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "geometry",
+          "line": 36,
+          "original_AST_sha256": "a572bc8ad4cb7ba521463c9c4eb4de33ddb905a7edcbe84eea633ed7bcb23a71",
+          "shareable_AST_sha256": "a572bc8ad4cb7ba521463c9c4eb4de33ddb905a7edcbe84eea633ed7bcb23a71",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "main",
+          "line": 46,
+          "original_AST_sha256": "a31e878616e2d66640100f1ae2bf5eb2e3dea8605f17c84c30643f0cd047363c",
+          "shareable_AST_sha256": "1e0a0a30fe6c77d2b6c3ec074008913a026be775625e0c875dda29fa49b68e63",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        },
+        {
+          "name": "finalize_existing",
+          "line": 87,
+          "original_AST_sha256": "052fb0f928171bedf2a2ded4960b8bedb49d087c7c49f13328f74e8bc248b7e8",
+          "shareable_AST_sha256": "b6991a98e92c7c05f3d5108236eed869465d9623cabc79a5226fb0d5a025e19c",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "fdd3675106ec8d098ff3a4a06a5ae6c39462631ae790e1ba36da0d29cb39e6cd",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "core/fetch_verified.py",
+      "original_sha256": "5a73e8fa8d49fdee5c3304a09e03f47e200116cab0b0626f92ae6a311dee93e9",
+      "shareable_sha256": "fff96f115e981833f91aac30f824ab9bbbb1aec1b1ecee280616db009c33b483",
+      "transform": "none; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "978f76673d74e0abd92d1fd15ca749986e36960fd6aa4de0d23d0aae0fa2f456",
+      "shareable_module_AST_sha256": "b41909e64a64bebef57e012716eaaf1beea323e743854ab2376745637b9dd8fe",
+      "functions": [
+        {
+          "name": "digest",
+          "line": 11,
+          "original_AST_sha256": "72ab28a452b23ead76cb9c9fc06e3259a3e1fc705a1324a05565394a6c915da4",
+          "shareable_AST_sha256": "72ab28a452b23ead76cb9c9fc06e3259a3e1fc705a1324a05565394a6c915da4",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "fetch",
+          "line": 19,
+          "original_AST_sha256": "747ab50320b7b3d18d54db47ce960abe960623be6fe135e7542d62c1f242b352",
+          "shareable_AST_sha256": "2ee7520434b4063d0780ae61b9c2565878e7bfffd06d98670cc674b6cb92f8e5",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "b41909e64a64bebef57e012716eaaf1beea323e743854ab2376745637b9dd8fe",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "spacing10-followup/evaluate_references.py",
+      "original_sha256": "cd5ba913c6246f0a3ce64b43536db803a06f574997005f30b7ab935f7e5e9465",
+      "shareable_sha256": "c27f7c6e3d8450dd56aee1ee5d595ff3f746f97f29b523e9052816815503b382",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "71ad4bafbdf969efa4b916e29362a78a627a7829c1d44fcd828db5cf2a546654",
+      "shareable_module_AST_sha256": "095beef41900ccc6370e7c574d7400bb601d93e3c394e7b3104f6296872b75f7",
+      "functions": [
+        {
+          "name": "measure",
+          "line": 18,
+          "original_AST_sha256": "b806abe2664d06ed9777866f5eed54ea24e96f36dc016a0ec756045050955000",
+          "shareable_AST_sha256": "b806abe2664d06ed9777866f5eed54ea24e96f36dc016a0ec756045050955000",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "load_case",
+          "line": 22,
+          "original_AST_sha256": "e136de1821e098b9542b390fee56fb90e264bb742a1660e485748d54b0e598df",
+          "shareable_AST_sha256": "e136de1821e098b9542b390fee56fb90e264bb742a1660e485748d54b0e598df",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "evaluate",
+          "line": 46,
+          "original_AST_sha256": "8cc791eb37ed8a496643ff5dc15b5892b1c22eb93778bd929e82e65c4e1d3ff3",
+          "shareable_AST_sha256": "8cc791eb37ed8a496643ff5dc15b5892b1c22eb93778bd929e82e65c4e1d3ff3",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "numeric_equal",
+          "line": 62,
+          "original_AST_sha256": "29aa64400e235860f9e659924e9fb0e8e3045d7118072f12d7ff545641f2ac72",
+          "shareable_AST_sha256": "29aa64400e235860f9e659924e9fb0e8e3045d7118072f12d7ff545641f2ac72",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "check_expected",
+          "line": 72,
+          "original_AST_sha256": "9e6c9c0b65fda722eb9f7f07c6fcea42f543b4ea29fae3cad94aacc41d200de1",
+          "shareable_AST_sha256": "9e6c9c0b65fda722eb9f7f07c6fcea42f543b4ea29fae3cad94aacc41d200de1",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "run",
+          "line": 86,
+          "original_AST_sha256": "a12ad09dd3bd7361b36315de6bb888e478e1f649f10bf98755cd52028b0b32fa",
+          "shareable_AST_sha256": "6ca4ff88d990742d81dfca349e1a220e6e44aa8c37adb5a97512ef3e3e5da3c6",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "095beef41900ccc6370e7c574d7400bb601d93e3c394e7b3104f6296872b75f7",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "spacing10-followup/evaluate_native_consumer.py",
+      "original_sha256": "ba74de0a07db0b56cb6aa7d2440ea363539cad9af9390cdc3668b6e74a4bb94e",
+      "shareable_sha256": "4b5393bbad99b976614d7bd0828b191d46330c22ae2e8058be9305c452474428",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "8366d0462deee21fccacfe718537d79e6d7d7b6ff53f2664577b7f94a1add37c",
+      "shareable_module_AST_sha256": "05c382bd3d321e18e1d1ac09671f9e4ad79d01c34252dba9995e8e2c84a9ff64",
+      "functions": [
+        {
+          "name": "qualify",
+          "line": 18,
+          "original_AST_sha256": "c1d7fd2acffdaa8e57f706aaece5015a984d90664cae2df2a353487eeb8ed7e7",
+          "shareable_AST_sha256": "c1d7fd2acffdaa8e57f706aaece5015a984d90664cae2df2a353487eeb8ed7e7",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "compact",
+          "line": 36,
+          "original_AST_sha256": "de163024b130cc2fdfce90d4f452be01e6d31a3e0e58e29a12318df020cc04db",
+          "shareable_AST_sha256": "de163024b130cc2fdfce90d4f452be01e6d31a3e0e58e29a12318df020cc04db",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "score_stages",
+          "line": 40,
+          "original_AST_sha256": "e3d53535698636f0c4ce5bec5a9f33b705209893d02659d4634f26b476174372",
+          "shareable_AST_sha256": "e3d53535698636f0c4ce5bec5a9f33b705209893d02659d4634f26b476174372",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "check_source",
+          "line": 50,
+          "original_AST_sha256": "8263c1e1edb6734c7ca4549aace4af9d8d727ac63d4fe5d8ad5dfeab5f1f398a",
+          "shareable_AST_sha256": "8263c1e1edb6734c7ca4549aace4af9d8d727ac63d4fe5d8ad5dfeab5f1f398a",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "run",
+          "line": 58,
+          "original_AST_sha256": "03fc00fa4ea1718a99294a4202a717daac88092434fd46ab8440c38130217077",
+          "shareable_AST_sha256": "8d6721a85eba50c4d51fa3112b7c56791c30f381a0f6deda06cdc316c30956cd",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": true,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "05c382bd3d321e18e1d1ac09671f9e4ad79d01c34252dba9995e8e2c84a9ff64",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "spacing10-followup/bulk_consumer_geometry.py",
+      "original_sha256": "e0b67bead78c1bb92784dde00f9f965ac33747d552438e31d01be98be665f8c6",
+      "shareable_sha256": "bfab08eb50a379164a8c9121bbed6cc0ece0a6c333b2aa3e9fd6ec12996e8683",
+      "transform": "none; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "01b29150258dd4e5dbaa46d4530f8c63c856eca9cbf46bf00761cbee21cd0b9b",
+      "shareable_module_AST_sha256": "e3d60c5350f784bbfef8ae9dc9e3e7b93048f2f7f0d2d041ce4a194767884cd7",
+      "functions": [
+        {
+          "name": "write",
+          "line": 16,
+          "original_AST_sha256": "1d61e2681be5b96253cacda233bdfc46240e026cd4b8a999c8ee82eea489fd2d",
+          "shareable_AST_sha256": "1d61e2681be5b96253cacda233bdfc46240e026cd4b8a999c8ee82eea489fd2d",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "key",
+          "line": 22,
+          "original_AST_sha256": "bc35b1b22728d9ee30b20cd080d42c77f821f1900a0cd2b60ab67b8539d38adf",
+          "shareable_AST_sha256": "bc35b1b22728d9ee30b20cd080d42c77f821f1900a0cd2b60ab67b8539d38adf",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "prepare",
+          "line": 25,
+          "original_AST_sha256": "e76b476320b7eb9d540fcb42d97bb77673efc38d519a1a32eb13819af6cc02fd",
+          "shareable_AST_sha256": "849098f34bc4f0bc1427696fdaa521acd91024c33e84473bffa82c5fd5cf1509",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "e3d60c5350f784bbfef8ae9dc9e3e7b93048f2f7f0d2d041ce4a194767884cd7",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "spacing10-followup/bulk_score_consumer.py",
+      "original_sha256": "ce7e31494e0c4c7abbe6aed1f1cc175d5c55bff1b54fc8e7272b342ca0173554",
+      "shareable_sha256": "b749568645cafb1096236d7bb78924722a4466461d5e1eb8c8d83026d840ea9e",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "266e2c8d1b2d4a3c6dfab2613fa39e9138cf99f94e49f4d054e2fd19adbdd02a",
+      "shareable_module_AST_sha256": "b91ece25955a008e00183b758859652ff7f77345efc5fce22ba0b52b10b40de3",
+      "functions": [
+        {
+          "name": "run",
+          "line": 19,
+          "original_AST_sha256": "14dace2544c1f0a65c4e7252f8344f82e44f3ff5ddbb1e597b5fa4ae949284f7",
+          "shareable_AST_sha256": "a7dca2e25ae57417ef0a0fe208d3a0f916c7f52ef5a70f776155bb4e6cd7ae7e",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "b91ece25955a008e00183b758859652ff7f77345efc5fce22ba0b52b10b40de3",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "spacing10-followup/native32_det_probe.py",
+      "original_sha256": "b61b468dc714f110b37fec8999b0224fd6a2e7c238f26c9975f994dd6f3b9d5a",
+      "shareable_sha256": "b61b468dc714f110b37fec8999b0224fd6a2e7c238f26c9975f994dd6f3b9d5a",
+      "transform": "none",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "ecea36f8e587c0a2473e33209ede909489156e198bd34d57190a5a0bc456166b",
+      "shareable_module_AST_sha256": "ecea36f8e587c0a2473e33209ede909489156e198bd34d57190a5a0bc456166b",
+      "functions": [
+        {
+          "name": "mask",
+          "line": 13,
+          "original_AST_sha256": "c8f3af8869f68619c276963afedfa8f386a09ba3d24ac4b2d39ca3688b37c62c",
+          "shareable_AST_sha256": "c8f3af8869f68619c276963afedfa8f386a09ba3d24ac4b2d39ca3688b37c62c",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "audit",
+          "line": 56,
+          "original_AST_sha256": "024d588d4b1633f187b3790f6fd655c2d026e72aa86aab252a6604a56e940ff0",
+          "shareable_AST_sha256": "024d588d4b1633f187b3790f6fd655c2d026e72aa86aab252a6604a56e940ff0",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ]
+    },
+    {
+      "file": "spacing10-independent-V3/prepare_consumer_geometry_v2.py",
+      "original_sha256": "a98ca988c1cc214767219bdc2468786723f7c96245c2a66bbf7a303b6f36b091",
+      "shareable_sha256": "3bbd11da9cf9b63726262dbe4b8c173aefedf9b898ce9837edc52517966aa3d6",
+      "transform": "none; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "5c4c5ef47a12778fb6dda0915f47128d274152f0e2c2e86d588c89d297f6354f",
+      "shareable_module_AST_sha256": "74597cede603e4b1ab69eb12c2d67cb4f11e7f81a1e3d5fc17182fa035a9f0a0",
+      "functions": [
+        {
+          "name": "write",
+          "line": 16,
+          "original_AST_sha256": "1d61e2681be5b96253cacda233bdfc46240e026cd4b8a999c8ee82eea489fd2d",
+          "shareable_AST_sha256": "1d61e2681be5b96253cacda233bdfc46240e026cd4b8a999c8ee82eea489fd2d",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "key",
+          "line": 22,
+          "original_AST_sha256": "bc35b1b22728d9ee30b20cd080d42c77f821f1900a0cd2b60ab67b8539d38adf",
+          "shareable_AST_sha256": "bc35b1b22728d9ee30b20cd080d42c77f821f1900a0cd2b60ab67b8539d38adf",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "prepare",
+          "line": 25,
+          "original_AST_sha256": "1a219ac2c0a0804d9b21c49929cc713c2672b1556fb84caa963a1186e50a9b97",
+          "shareable_AST_sha256": "91503f273538fd26cc78c35b7bf7ee792b4c3c31b41def2c45fdac3dbeb072c5",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "74597cede603e4b1ab69eb12c2d67cb4f11e7f81a1e3d5fc17182fa035a9f0a0",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "spacing10-independent-V3/ram_reference_v3.py",
+      "original_sha256": "e7276bb51623fa6b7aa108cf9c48099ab85ef7b8c15337987b8816e0eb6ddfe3",
+      "shareable_sha256": "ab0e4496cd1f553b84faea2e6ed9b6b1de57078a2382f1d5d9c3424f53b79ce3",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "1c30321d0d65005b28dc399e61df5ce4ce937ca46947b6586d0352279a753199",
+      "shareable_module_AST_sha256": "a23411952b10e92d04d56fc3eddfcf691585abb3cbeb49cdf400ba58b635833d",
+      "functions": [
+        {
+          "name": "array_sha",
+          "line": 14,
+          "original_AST_sha256": "eaaf27fb896a83c480e93d2f760e776a0bd38516ee8d359b28640f5b31106123",
+          "shareable_AST_sha256": "eaaf27fb896a83c480e93d2f760e776a0bd38516ee8d359b28640f5b31106123",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "load",
+          "line": 16,
+          "original_AST_sha256": "928217d8535ebc7ef8acac2be5f6d5883dba504307305b47a864d5609861a028",
+          "shareable_AST_sha256": "292b82672621926329c6748f8a5113f1e4c2a95b2fefb3d541c3e03e3b3d576f",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": true,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "a23411952b10e92d04d56fc3eddfcf691585abb3cbeb49cdf400ba58b635833d",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "spacing10-independent-V3/score_consumer.py",
+      "original_sha256": "e836a5bb9f5df15fe0653540e2de1c5306c518706043c82287b4c8e08aa103b2",
+      "shareable_sha256": "c47a8c53e9ba16ffd500d4f0e7735d2a2486367e643a0aada7afb417c32457f7",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "7d997af9c3489b30ef5e5e04fe62734a0e6d8fceebf28966535109a72851b809",
+      "shareable_module_AST_sha256": "19d8038651f13ac8556a4d0db18e7c2d3ad342c5968790b21301562effffd9cb",
+      "functions": [
+        {
+          "name": "run",
+          "line": 20,
+          "original_AST_sha256": "2caa159dbfe6cb5c1d6923813391b1d60d1a51617b19195f00097d6a402b7198",
+          "shareable_AST_sha256": "a20d21d367c4538742b6832603a0d8bef3e617c764432a030ed8b33630d04dd8",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "19d8038651f13ac8556a4d0db18e7c2d3ad342c5968790b21301562effffd9cb",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "spacing10-independent-V3/qualify_ram_reference.py",
+      "original_sha256": "59f8e82e38a3a3cf908d5d9d17f73d11d921da2710cc98823f856cc7cc0f0244",
+      "shareable_sha256": "93764d04a542626d13cb37b64c6dc68912f7cdc9d841e571848e27eda3f26621",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "24b1059d175cc2d28966144955bf8a019286b9e3c61031ee0c84edf5e0720bcc",
+      "shareable_module_AST_sha256": "88820f3d2a93ea893a13626622137727e537a4647524717d4e3dac3e004ef182",
+      "functions": [
+        {
+          "name": "compare",
+          "line": 37,
+          "original_AST_sha256": "853b44b20db301dc346eed2724e3a11e9e7974fcf201598d4b631a913e094b0f",
+          "shareable_AST_sha256": "853b44b20db301dc346eed2724e3a11e9e7974fcf201598d4b631a913e094b0f",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "88820f3d2a93ea893a13626622137727e537a4647524717d4e3dac3e004ef182",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "spacing5-evaluation/score_existing_consumers.py",
+      "original_sha256": "02f47c79fe62c0741b1d46aa11d376d408976c984f5dc7323d2568fed96b748e",
+      "shareable_sha256": "e2fbc1477928ff2120cc9e297088bd53e31951d82d10651b87c1b0fe17db8c4b",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "40d57be7ccf5113c2f943d5a177e5948708aec89e780abd250cd39d404d637c9",
+      "shareable_module_AST_sha256": "e1fd0a685bc99b6eda1b64ba469e98468115d1b19646f2516c95648b84541abd",
+      "functions": [
+        {
+          "name": "run",
+          "line": 18,
+          "original_AST_sha256": "70dfdf0c246c18786a9f7ce28ca35d573443d86056ccbe3a55a6f7b2f1f2939e",
+          "shareable_AST_sha256": "345039d5b8baf8bc05f20f2cbb53e8957b4887854259bc015439f1d5ae714439",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "e1fd0a685bc99b6eda1b64ba469e98468115d1b19646f2516c95648b84541abd",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "spacing5-development-evaluation/score_development.py",
+      "original_sha256": "2ddf053449e1b2e8308f0d3e8684fda4001370c339d198d1118c70af07db4246",
+      "shareable_sha256": "196947da61734ba2455af212fb8ffc932232da71157eba838a586d83241e4431",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "9c0ae15785ff85cc20800bee7d8023fff3016bc1823be5d3a49d0bd10082e096",
+      "shareable_module_AST_sha256": "1997668663c75cd4b05795a97653aa89bf0c69dfe07e213ee958530a221bfbbd",
+      "functions": [
+        {
+          "name": "run",
+          "line": 19,
+          "original_AST_sha256": "8fbf24e8bddcf399d344aa6cdf7865cd27d3d3c5f95724899c767a493a6d0218",
+          "shareable_AST_sha256": "c5d2816e94948919beb5195af5fc2e13779f41233ae524e6fd829797360db6b0",
+          "exact_AST_equal": false,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true,
+          "identifier_strings_renamed": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "1997668663c75cd4b05795a97653aa89bf0c69dfe07e213ee958530a221bfbbd",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "paired-SDir65/run_paired.py",
+      "original_sha256": "beb5fc857a42bef81204845d31efff44b5454295cc035b5dcab2e2d3f466d638",
+      "shareable_sha256": "beb5fc857a42bef81204845d31efff44b5454295cc035b5dcab2e2d3f466d638",
+      "transform": "none",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "9e912c5ced4a4fab4e7c2e13204a01659cfe0b3a9fe38d44cee321fbcc70c348",
+      "shareable_module_AST_sha256": "9e912c5ced4a4fab4e7c2e13204a01659cfe0b3a9fe38d44cee321fbcc70c348",
+      "functions": [
+        {
+          "name": "physical_area",
+          "line": 14,
+          "original_AST_sha256": "15e10b21755ba2d3d513b8635eb01b7afcea4ca6e4badcb8baf33a090f81c106",
+          "shareable_AST_sha256": "15e10b21755ba2d3d513b8635eb01b7afcea4ca6e4badcb8baf33a090f81c106",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "read",
+          "line": 18,
+          "original_AST_sha256": "4ad0ac5cef4d79a9c93bba118c93f309b9d2244294cabea60f01824e2272cdf0",
+          "shareable_AST_sha256": "4ad0ac5cef4d79a9c93bba118c93f309b9d2244294cabea60f01824e2272cdf0",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ]
+    },
+    {
+      "file": "paired-SDir65/raw-audit/run_raw_audit.py",
+      "original_sha256": "2c5ece02ac31b0c0a4eb394ecc9f65b3ab3c75053ad696b9e63caf83fe712491",
+      "shareable_sha256": "ae815ad4c6676ccebc87d8fe6fe1b5e6142495bd0335f87ce97355818590e141",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "9a3a18378adf910dc709d10a2de78c05fe62e020eaeffb242c4a92710a410dff",
+      "shareable_module_AST_sha256": "e6585f6f34a00abf6953257b7b3094b30ca622089e1cce4c28e3cb9428e4ce30",
+      "functions": [
+        {
+          "name": "physical_area",
+          "line": 14,
+          "original_AST_sha256": "15e10b21755ba2d3d513b8635eb01b7afcea4ca6e4badcb8baf33a090f81c106",
+          "shareable_AST_sha256": "15e10b21755ba2d3d513b8635eb01b7afcea4ca6e4badcb8baf33a090f81c106",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "read",
+          "line": 18,
+          "original_AST_sha256": "4ad0ac5cef4d79a9c93bba118c93f309b9d2244294cabea60f01824e2272cdf0",
+          "shareable_AST_sha256": "4ad0ac5cef4d79a9c93bba118c93f309b9d2244294cabea60f01824e2272cdf0",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ],
+      "expected_transformed_module_AST_sha256": "e6585f6f34a00abf6953257b7b3094b30ca622089e1cce4c28e3cb9428e4ce30",
+      "identifier_strings_renamed": true
+    },
+    {
+      "file": "paired-SDir5-posthoc/run_paired5.py",
+      "original_sha256": "8e0f43ea91363552e80daa23125d281101110fafce854f70686d400c5dd47bfe",
+      "shareable_sha256": "8e0f43ea91363552e80daa23125d281101110fafce854f70686d400c5dd47bfe",
+      "transform": "none",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "cbbaa8f06a5dfa5f2c85110db1fe10ae758c3258232b3ef6316925debc044710",
+      "shareable_module_AST_sha256": "cbbaa8f06a5dfa5f2c85110db1fe10ae758c3258232b3ef6316925debc044710",
+      "functions": [
+        {
+          "name": "physical_area",
+          "line": 14,
+          "original_AST_sha256": "15e10b21755ba2d3d513b8635eb01b7afcea4ca6e4badcb8baf33a090f81c106",
+          "shareable_AST_sha256": "15e10b21755ba2d3d513b8635eb01b7afcea4ca6e4badcb8baf33a090f81c106",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "read",
+          "line": 18,
+          "original_AST_sha256": "75e11940ca9616c955c72b168088513dd73efc29be4f8ae9ecf8a185a583d305",
+          "shareable_AST_sha256": "75e11940ca9616c955c72b168088513dd73efc29be4f8ae9ecf8a185a583d305",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ]
+    },
+    {
+      "file": "paired-SDir5-development/run_paired5.py",
+      "original_sha256": "52b2fa9f95d9696d1b75e9662ddd83753ac2a4a36dc75643c73ac9add63604b0",
+      "shareable_sha256": "52b2fa9f95d9696d1b75e9662ddd83753ac2a4a36dc75643c73ac9add63604b0",
+      "transform": "none",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "2e5bc55a81fc585347a6c13b6561071e159cfeda31c488aacecbd4c8912331a6",
+      "shareable_module_AST_sha256": "2e5bc55a81fc585347a6c13b6561071e159cfeda31c488aacecbd4c8912331a6",
+      "functions": [
+        {
+          "name": "physical_area",
+          "line": 14,
+          "original_AST_sha256": "15e10b21755ba2d3d513b8635eb01b7afcea4ca6e4badcb8baf33a090f81c106",
+          "shareable_AST_sha256": "15e10b21755ba2d3d513b8635eb01b7afcea4ca6e4badcb8baf33a090f81c106",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "read",
+          "line": 18,
+          "original_AST_sha256": "75e11940ca9616c955c72b168088513dd73efc29be4f8ae9ecf8a185a583d305",
+          "shareable_AST_sha256": "75e11940ca9616c955c72b168088513dd73efc29be4f8ae9ecf8a185a583d305",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ]
+    },
+    {
+      "file": "P29-ct-probe/run_probe.py",
+      "original_sha256": "b355919f9c8910787796f2dc8f98cd1d3a94abc0e88fd4e2e712b9f3a1f786e7",
+      "shareable_sha256": "b355919f9c8910787796f2dc8f98cd1d3a94abc0e88fd4e2e712b9f3a1f786e7",
+      "transform": "none",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "906b58cd7eaaf7f4cbe71014a4244db741a2293dcd95a73630b9ae8e44775c0d",
+      "shareable_module_AST_sha256": "906b58cd7eaaf7f4cbe71014a4244db741a2293dcd95a73630b9ae8e44775c0d",
+      "functions": [
+        {
+          "name": "load",
+          "line": 17,
+          "original_AST_sha256": "61485a5a6fd018996c8b85a1bff87171e72ca7770e93ae68c6dfe217fb7cfa83",
+          "shareable_AST_sha256": "61485a5a6fd018996c8b85a1bff87171e72ca7770e93ae68c6dfe217fb7cfa83",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        },
+        {
+          "name": "lines",
+          "line": 52,
+          "original_AST_sha256": "010a4d420c3aa716f86a0c393377eaa88db43738e7cb441f4f2d0975378eeeb0",
+          "shareable_AST_sha256": "010a4d420c3aa716f86a0c393377eaa88db43738e7cb441f4f2d0975378eeeb0",
+          "exact_AST_equal": true,
+          "only_declared_path_literals_changed": false,
+          "AST_equal_after_declared_path_map": true
+        }
+      ]
+    },
+    {
+      "file": "P05-output-step-supplement/evaluate_supplement.py",
+      "original_sha256": "4fa55e93edba50504858154834f616ea4f1803941d8b277176f928b8a516ee6f",
+      "shareable_sha256": "7dcb5eeede71b0b272e1155c93479a0c56777dd22a97ca742d26001383e48ec6",
+      "transform": "declared absolute path-root placeholders only; comments/docstrings may be redacted too; identifier strings renamed for publication; logic unchanged.",
+      "module_AST_equal_after_declared_path_map": true,
+      "normalized_original_module_AST_sha256": "c6aa761ed236b6a2d7438bcae317fbe2139071d22b01f54ecb99558b13f51cbc",
+      "shareable_module_AST_sha256": "55e2f3b00c61ae1fe4ffb9eb66c2247fc8587d33ee6124a44c96ae394a0ccd76",
+      "functions": [],
+      "expected_transformed_module_AST_sha256": "55e2f3b00c61ae1fe4ffb9eb66c2247fc8587d33ee6124a44c96ae394a0ccd76",
+      "identifier_strings_renamed": true
+    }
+  ],
+  "unmodified_upstream": [
+    {
+      "file": "numeric-sources/villa/model.py",
+      "sha256": "21c6e85be5c394c70abeaa85a92d209b28cc443c40c3d7135b90463def0168a2",
+      "repository": "https://github.com/ScrollPrize/villa",
+      "commit": "fb8c2c4c2705746eefb42e9bb359560906f391e2",
+      "upstream_path": "lasagna/model.py",
+      "url": "https://github.com/ScrollPrize/villa/blob/fb8c2c4c2705746eefb42e9bb359560906f391e2/lasagna/model.py",
+      "license_file": "../licenses/VILLA-MIT.txt",
+      "modified": false
+    },
+    {
+      "file": "numeric-sources/villa/opt_loss_flatten.py",
+      "sha256": "8210ece41ff0cedd820d014954d633b0e2f5cb1656918a64da6f16906d32c424",
+      "repository": "https://github.com/ScrollPrize/villa",
+      "commit": "fb8c2c4c2705746eefb42e9bb359560906f391e2",
+      "upstream_path": "lasagna/opt_loss_flatten.py",
+      "url": "https://github.com/ScrollPrize/villa/blob/fb8c2c4c2705746eefb42e9bb359560906f391e2/lasagna/opt_loss_flatten.py",
+      "license_file": "../licenses/VILLA-MIT.txt",
+      "modified": false
+    },
+    {
+      "file": "numeric-sources/villa/dtypes.py",
+      "sha256": "bff9f3b1dc5cb31b6d8091e4aa86946ea70483631dacdc637dc3401797f2456b",
+      "repository": "https://github.com/ScrollPrize/villa",
+      "commit": "fb8c2c4c2705746eefb42e9bb359560906f391e2",
+      "upstream_path": "lasagna/dtypes.py",
+      "url": "https://github.com/ScrollPrize/villa/blob/fb8c2c4c2705746eefb42e9bb359560906f391e2/lasagna/dtypes.py",
+      "license_file": "../licenses/VILLA-MIT.txt",
+      "modified": false
+    },
+    {
+      "file": "numeric-sources/spiralcheck/geometry.py",
+      "sha256": "5bd51f202e0bd2dba3425b3559cf5e306ee4c492e41f92cad7dc361043fbe578",
+      "repository": "https://github.com/Nicodol/spiralcheck",
+      "commit": "d1b50e2957409a870225fb9f5dcc5e25f7a0f9da",
+      "license_file": "numeric-sources/spiralcheck/LICENSE",
+      "modified": false
+    }
+  ],
+  "archive_replay_requirements": [
+    "Input CT, reference, track, and checkpoint artifacts with matching checksums.",
+    "Explicit values for path placeholders and the recorded input manifests.",
+    "The pinned numerical environment, precision, and optimization recipe.",
+    "Original-source and path-substituted source versions have distinct checksums."
+  ],
+  "dependencies": "Scientific execution requires the complete pinned Lasagna environment and the checksum-identified input artifacts.",
+  "identifier_renaming": "Internal project prefixes in schema names, work-directory names and the HTTP User-Agent were renamed to neutral names (iss, ink-surface-support) for publication; identifier strings renamed for publication; logic unchanged. Affected files and functions are marked identifier_strings_renamed."
+}

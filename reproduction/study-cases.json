@@ -1,0 +1,4411 @@
+{
+  "schema": "ink-surface-support-study-cases/1",
+  "status": "RECORDED_STUDY_CONFIGURATION",
+  "scope": "96 primary-study attempts per arm and fixed development cases",
+  "seed_semantics": "seed_row is local to exact PackedTracks bytes and matching CrossingCsr. It is not a global physical identifier. Original random_count=1 gates were retained, while external fixed prefix32 imposed exactly32 attempts, not32 successes. Do not substitute --seeds CLI, which bypasses random-mode gates.",
+  "selection": {
+    "rng": 0,
+    "top_percent": 30,
+    "without_replacement": true,
+    "attempts_per_main_region": 32,
+    "failure_replacement": false
+  },
+  "arm_overrides": {
+    "existing10_native": {
+      "output_spacing": 10,
+      "coarse_mask_mode": "erode"
+    },
+    "support10_native": {
+      "output_spacing": 10,
+      "coarse_mask_mode": "support"
+    },
+    "existing5_native": {
+      "output_spacing": 5,
+      "coarse_mask_mode": "erode"
+    }
+  },
+  "base_args_caveat": "original_base_native_args preserve inherited output_spacing20; apply explicit arm_overrides above for principal native calls. Never interpret inherited20 as the executed principal arm.",
+  "regions": {
+    "V1": {
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "shape_zyx": [
+        1536,
+        1536,
+        1536
+      ],
+      "input_id": "V1-native-packed",
+      "input_sha256": {
+        "tracks.vctracks/tortuosities.f64": "aea853f81da2baa7e35d932a5c3f3694ba2ae5395f23882dd65d1634364b2956",
+        "tracks.vctracks/metadata.json": "29311c698a008049d627b8b346e4c4167cd267160137d67b4a7a5821b402af87",
+        "tracks.vctracks/coordinates.i32": "f7180fd35ed1f3095fdec47ef9adeb316cc2f66cb7d237e83dea92e6a3d8237d",
+        "tracks.vctracks/z_bounds.i32": "472ee2980cbe8a463d346ef12612c4c2e15a531ea4072c02303a2762f4cc7f13",
+        "tracks.vctracks/source_ids.u64": "99be17e3f02aa37a05c159d89a0b2293b62dbc8c0afc6dd5a536686ab4d4b656",
+        "tracks.vctracks/arclengths.f64": "d82048b91fe073e67edc7852c72e8a8376b5466a0345bb6ef7a6d023f62834c2",
+        "tracks.vctracks/header.bin": "4d88476f46218021f1a55c36a7bb1f48507ca13e547ac4e838e137b2b63fff27",
+        "tracks.vctracks/family_codes.i8": "d4d5635092d2dc8603fa052277cc491b7e38cc43832efc14fe49f824099ae7c1",
+        "tracks.vctracks/offsets.i64": "179f628242f30403b445bb11feb60b1dc79a13cfb768b79b94db9225937389b8",
+        "crossings.npz": "8497686dfcd1f48cdb90c989a8c107c2523100f7a9bf9dd841fa1f1f7d984212"
+      },
+      "prepare_record_sha256": "78ab728c390db0375d4b14b0f8a8fa4fa03798e7e96c5bb4865a0760f0c66963",
+      "prefix_seal_sha256": "9d7fe42ea889e44b1e85fa0e426f63c52528322f915725c249f6f2b38c0a104e",
+      "original_base_native_args": {
+        "seeds": null,
+        "random_count": 1,
+        "random_seed": 0,
+        "random_top_percent": 30.0,
+        "min_valid_vertices": 20000,
+        "growth_min_span": 80.0,
+        "min_connect": 3,
+        "min_size": 0.0,
+        "max_size": 1.327104,
+        "max_thick_cell_frac": 0.05,
+        "reject_any_fold_fixes": false,
+        "gate_tol": 9.0,
+        "resample_spacing": 5.0,
+        "min_track_arclength": 40.0,
+        "output_spacing": 20.0,
+        "border_erode_vx": 40.0,
+        "workers": 1,
+        "overwrite": false
+      },
+      "fixed_prefix32": [
+        9143,
+        13781,
+        13345,
+        8536,
+        1233,
+        14119,
+        2824,
+        8837,
+        6079,
+        7269,
+        8582,
+        14128,
+        5419,
+        4382,
+        8531,
+        1202,
+        3393,
+        6366,
+        11493,
+        6393,
+        18050,
+        2177,
+        3489,
+        12105,
+        17039,
+        6429,
+        3825,
+        12200,
+        15094,
+        7186,
+        17003,
+        10887
+      ],
+      "extraction": {
+        "input_sha256": "224957407a796b6328e2f18417d4152f5ac4625d369bd65d2703e94dac9e8e21",
+        "global_phase": {
+          "h": [
+            16,
+            8
+          ],
+          "vy": [
+            64,
+            20
+          ],
+          "vx": [
+            64,
+            8
+          ]
+        },
+        "local_phase": [
+          8,
+          20,
+          8
+        ],
+        "geometry": {
+          "downsample_factor": 4,
+          "z_chunk_depth_h": 4,
+          "z_chunk_stride_h": 16,
+          "yx_chunk_thickness_v": 4,
+          "yx_stride_v": 64,
+          "dust_threshold": 400,
+          "max_area_threshold": 640000
+        },
+        "skeleton_kwargs": {
+          "teasar_params": {
+            "scale": 1.0,
+            "const": 2.0
+          },
+          "anisotropy": [
+            4,
+            4,
+            4
+          ],
+          "dust_threshold": 400,
+          "fix_branching": true,
+          "fix_borders": true,
+          "fill_holes": false
+        },
+        "code_sha256": "3b410bdcd63fcd07b42d3a283cd0477ac8435b39476312453c81a132ad5e141a",
+        "track_count": 18376,
+        "point_count": 2479800,
+        "sampling": {
+          "h": {
+            "local_starts": [
+              8,
+              24,
+              40,
+              56,
+              72,
+              88,
+              104,
+              120,
+              136,
+              152,
+              168,
+              184,
+              200,
+              216,
+              232,
+              248,
+              264,
+              280,
+              296,
+              312,
+              328,
+              344,
+              360,
+              376,
+              392,
+              408,
+              424,
+              440,
+              456,
+              472,
+              488,
+              504,
+              520,
+              536,
+              552,
+              568,
+              584,
+              600,
+              616,
+              632,
+              648,
+              664,
+              680,
+              696,
+              712,
+              728,
+              744,
+              760,
+              776,
+              792,
+              808,
+              824,
+              840,
+              856,
+              872,
+              888,
+              904,
+              920,
+              936,
+              952,
+              968,
+              984,
+              1000,
+              1016,
+              1032,
+              1048,
+              1064,
+              1080,
+              1096,
+              1112,
+              1128,
+              1144,
+              1160,
+              1176,
+              1192,
+              1208,
+              1224,
+              1240,
+              1256,
+              1272,
+              1288,
+              1304,
+              1320,
+              1336,
+              1352,
+              1368,
+              1384,
+              1400,
+              1416,
+              1432,
+              1448,
+              1464,
+              1480,
+              1496,
+              1512,
+              1528
+            ],
+            "global_starts": [
+              16136,
+              16152,
+              16168,
+              16184,
+              16200,
+              16216,
+              16232,
+              16248,
+              16264,
+              16280,
+              16296,
+              16312,
+              16328,
+              16344,
+              16360,
+              16376,
+              16392,
+              16408,
+              16424,
+              16440,
+              16456,
+              16472,
+              16488,
+              16504,
+              16520,
+              16536,
+              16552,
+              16568,
+              16584,
+              16600,
+              16616,
+              16632,
+              16648,
+              16664,
+              16680,
+              16696,
+              16712,
+              16728,
+              16744,
+              16760,
+              16776,
+              16792,
+              16808,
+              16824,
+              16840,
+              16856,
+              16872,
+              16888,
+              16904,
+              16920,
+              16936,
+              16952,
+              16968,
+              16984,
+              17000,
+              17016,
+              17032,
+              17048,
+              17064,
+              17080,
+              17096,
+              17112,
+              17128,
+              17144,
+              17160,
+              17176,
+              17192,
+              17208,
+              17224,
+              17240,
+              17256,
+              17272,
+              17288,
+              17304,
+              17320,
+              17336,
+              17352,
+              17368,
+              17384,
+              17400,
+              17416,
+              17432,
+              17448,
+              17464,
+              17480,
+              17496,
+              17512,
+              17528,
+              17544,
+              17560,
+              17576,
+              17592,
+              17608,
+              17624,
+              17640,
+              17656
+            ],
+            "thickness": 4
+          },
+          "vy": {
+            "support_bounds_local": [
+              0,
+              1535
+            ],
+            "local_starts": [
+              20,
+              84,
+              148,
+              212,
+              276,
+              340,
+              404,
+              468,
+              532,
+              596,
+              660,
+              724,
+              788,
+              852,
+              916,
+              980,
+              1044,
+              1108,
+              1172,
+              1236,
+              1300,
+              1364,
+              1428,
+              1492
+            ],
+            "global_starts": [
+              3604,
+              3668,
+              3732,
+              3796,
+              3860,
+              3924,
+              3988,
+              4052,
+              4116,
+              4180,
+              4244,
+              4308,
+              4372,
+              4436,
+              4500,
+              4564,
+              4628,
+              4692,
+              4756,
+              4820,
+              4884,
+              4948,
+              5012,
+              5076
+            ],
+            "thickness_actual_code": 4,
+            "z_domain": [
+              0,
+              1536
+            ]
+          },
+          "vx": {
+            "support_bounds_local": [
+              0,
+              1535
+            ],
+            "local_starts": [
+              8,
+              72,
+              136,
+              200,
+              264,
+              328,
+              392,
+              456,
+              520,
+              584,
+              648,
+              712,
+              776,
+              840,
+              904,
+              968,
+              1032,
+              1096,
+              1160,
+              1224,
+              1288,
+              1352,
+              1416,
+              1480
+            ],
+            "global_starts": [
+              3848,
+              3912,
+              3976,
+              4040,
+              4104,
+              4168,
+              4232,
+              4296,
+              4360,
+              4424,
+              4488,
+              4552,
+              4616,
+              4680,
+              4744,
+              4808,
+              4872,
+              4936,
+              5000,
+              5064,
+              5128,
+              5192,
+              5256,
+              5320
+            ],
+            "thickness_actual_code": 4,
+            "z_domain": [
+              0,
+              1536
+            ]
+          }
+        },
+        "input_hash_scope": "prediction.npy complete file"
+      }
+    },
+    "V2": {
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "shape_zyx": [
+        1536,
+        1536,
+        1536
+      ],
+      "input_id": "V2-native-packed",
+      "input_sha256": {
+        "tracks.vctracks/tortuosities.f64": "4662b4a79f170fff608b50d83c5e2ea1c807cd0c2dba8a99676cc92a24dfb11b",
+        "tracks.vctracks/metadata.json": "7cc76e3be7d64b2f25167155726b6f38e98586d738b8ee29b99f1efa2fbf98c4",
+        "tracks.vctracks/coordinates.i32": "d9cf33d1f6ddb97f141a6b8f45a5bae95023ff15c8175dc4d6fe1d7146337cea",
+        "tracks.vctracks/z_bounds.i32": "e88960b025c1fd8b4ba84c0b9e2dfc5144409a242e462b49d166eac8fe9afae9",
+        "tracks.vctracks/source_ids.u64": "9958c8a57ff172bf7fe94dd0c25cdbbce00ea197c8f484c0941580ed25be77f3",
+        "tracks.vctracks/arclengths.f64": "d62619f4dbbb4e14c79812a2fc912c204970c20bdb2902f43fa00a91ef25296a",
+        "tracks.vctracks/header.bin": "52888b5ae3416a6b4c25239445a1d0723a47ff92dedb30d7c68380638199a451",
+        "tracks.vctracks/family_codes.i8": "ca51662efded73ade3d67cc173f38a6e509bbb17bd9626354bd82ce02894dbe0",
+        "tracks.vctracks/offsets.i64": "9f9ca8266ccf684f933d68c770a11c5ad2a26973f5f91d14204670e9fa685a4c",
+        "crossings.npz": "fb73ccd3414696cca14a5375c1621ec591c5c4fc3bdebe7b99bd51ac21610217"
+      },
+      "prepare_record_sha256": "935e0819e95f4f24cececd1b69ca2ae4b8958999e1ce26718376157b2b5bd463",
+      "prefix_seal_sha256": "89c4969ffe6ec1fddc5aaf7567e27507054db58302316ae7103bc221067b8d8b",
+      "original_base_native_args": {
+        "seeds": null,
+        "random_count": 1,
+        "random_seed": 0,
+        "random_top_percent": 30.0,
+        "min_valid_vertices": 20000,
+        "growth_min_span": 80.0,
+        "min_connect": 3,
+        "min_size": 0.0,
+        "max_size": 1.327104,
+        "max_thick_cell_frac": 0.05,
+        "reject_any_fold_fixes": false,
+        "gate_tol": 9.0,
+        "resample_spacing": 5.0,
+        "min_track_arclength": 40.0,
+        "output_spacing": 20.0,
+        "border_erode_vx": 40.0,
+        "workers": 1,
+        "overwrite": false
+      },
+      "fixed_prefix32": [
+        13215,
+        13223,
+        10654,
+        6205,
+        12534,
+        5979,
+        2686,
+        7725,
+        280,
+        4000,
+        1217,
+        11591,
+        10581,
+        5765,
+        6468,
+        11445,
+        525,
+        2808,
+        12272,
+        16729,
+        2147,
+        3601,
+        3172,
+        16373,
+        6441,
+        2120,
+        1455,
+        14469,
+        10529,
+        12197,
+        2757,
+        18215
+      ],
+      "extraction": {
+        "input_sha256": "59798e5e9d3c4d28b5d94a51b3874cccedbe344203dbce749cc90dd5ce4050d1",
+        "global_phase": {
+          "h": [
+            16,
+            8
+          ],
+          "vy": [
+            64,
+            20
+          ],
+          "vx": [
+            64,
+            8
+          ]
+        },
+        "local_phase": [
+          8,
+          20,
+          8
+        ],
+        "geometry": {
+          "downsample_factor": 4,
+          "z_chunk_depth_h": 4,
+          "z_chunk_stride_h": 16,
+          "yx_chunk_thickness_v": 4,
+          "yx_stride_v": 64,
+          "dust_threshold": 400,
+          "max_area_threshold": 640000
+        },
+        "skeleton_kwargs": {
+          "teasar_params": {
+            "scale": 1.0,
+            "const": 2.0
+          },
+          "anisotropy": [
+            4,
+            4,
+            4
+          ],
+          "dust_threshold": 400,
+          "fix_branching": true,
+          "fix_borders": true,
+          "fill_holes": false
+        },
+        "code_sha256": "3b410bdcd63fcd07b42d3a283cd0477ac8435b39476312453c81a132ad5e141a",
+        "track_count": 18796,
+        "point_count": 2394135,
+        "sampling": {
+          "h": {
+            "local_starts": [
+              8,
+              24,
+              40,
+              56,
+              72,
+              88,
+              104,
+              120,
+              136,
+              152,
+              168,
+              184,
+              200,
+              216,
+              232,
+              248,
+              264,
+              280,
+              296,
+              312,
+              328,
+              344,
+              360,
+              376,
+              392,
+              408,
+              424,
+              440,
+              456,
+              472,
+              488,
+              504,
+              520,
+              536,
+              552,
+              568,
+              584,
+              600,
+              616,
+              632,
+              648,
+              664,
+              680,
+              696,
+              712,
+              728,
+              744,
+              760,
+              776,
+              792,
+              808,
+              824,
+              840,
+              856,
+              872,
+              888,
+              904,
+              920,
+              936,
+              952,
+              968,
+              984,
+              1000,
+              1016,
+              1032,
+              1048,
+              1064,
+              1080,
+              1096,
+              1112,
+              1128,
+              1144,
+              1160,
+              1176,
+              1192,
+              1208,
+              1224,
+              1240,
+              1256,
+              1272,
+              1288,
+              1304,
+              1320,
+              1336,
+              1352,
+              1368,
+              1384,
+              1400,
+              1416,
+              1432,
+              1448,
+              1464,
+              1480,
+              1496,
+              1512,
+              1528
+            ],
+            "global_starts": [
+              13832,
+              13848,
+              13864,
+              13880,
+              13896,
+              13912,
+              13928,
+              13944,
+              13960,
+              13976,
+              13992,
+              14008,
+              14024,
+              14040,
+              14056,
+              14072,
+              14088,
+              14104,
+              14120,
+              14136,
+              14152,
+              14168,
+              14184,
+              14200,
+              14216,
+              14232,
+              14248,
+              14264,
+              14280,
+              14296,
+              14312,
+              14328,
+              14344,
+              14360,
+              14376,
+              14392,
+              14408,
+              14424,
+              14440,
+              14456,
+              14472,
+              14488,
+              14504,
+              14520,
+              14536,
+              14552,
+              14568,
+              14584,
+              14600,
+              14616,
+              14632,
+              14648,
+              14664,
+              14680,
+              14696,
+              14712,
+              14728,
+              14744,
+              14760,
+              14776,
+              14792,
+              14808,
+              14824,
+              14840,
+              14856,
+              14872,
+              14888,
+              14904,
+              14920,
+              14936,
+              14952,
+              14968,
+              14984,
+              15000,
+              15016,
+              15032,
+              15048,
+              15064,
+              15080,
+              15096,
+              15112,
+              15128,
+              15144,
+              15160,
+              15176,
+              15192,
+              15208,
+              15224,
+              15240,
+              15256,
+              15272,
+              15288,
+              15304,
+              15320,
+              15336,
+              15352
+            ],
+            "thickness": 4
+          },
+          "vy": {
+            "support_bounds_local": [
+              0,
+              1535
+            ],
+            "local_starts": [
+              20,
+              84,
+              148,
+              212,
+              276,
+              340,
+              404,
+              468,
+              532,
+              596,
+              660,
+              724,
+              788,
+              852,
+              916,
+              980,
+              1044,
+              1108,
+              1172,
+              1236,
+              1300,
+              1364,
+              1428,
+              1492
+            ],
+            "global_starts": [
+              4372,
+              4436,
+              4500,
+              4564,
+              4628,
+              4692,
+              4756,
+              4820,
+              4884,
+              4948,
+              5012,
+              5076,
+              5140,
+              5204,
+              5268,
+              5332,
+              5396,
+              5460,
+              5524,
+              5588,
+              5652,
+              5716,
+              5780,
+              5844
+            ],
+            "thickness_actual_code": 4,
+            "z_domain": [
+              0,
+              1536
+            ]
+          },
+          "vx": {
+            "support_bounds_local": [
+              0,
+              1535
+            ],
+            "local_starts": [
+              8,
+              72,
+              136,
+              200,
+              264,
+              328,
+              392,
+              456,
+              520,
+              584,
+              648,
+              712,
+              776,
+              840,
+              904,
+              968,
+              1032,
+              1096,
+              1160,
+              1224,
+              1288,
+              1352,
+              1416,
+              1480
+            ],
+            "global_starts": [
+              3336,
+              3400,
+              3464,
+              3528,
+              3592,
+              3656,
+              3720,
+              3784,
+              3848,
+              3912,
+              3976,
+              4040,
+              4104,
+              4168,
+              4232,
+              4296,
+              4360,
+              4424,
+              4488,
+              4552,
+              4616,
+              4680,
+              4744,
+              4808
+            ],
+            "thickness_actual_code": 4,
+            "z_domain": [
+              0,
+              1536
+            ]
+          }
+        },
+        "input_hash_scope": "prediction.npy complete file"
+      }
+    },
+    "V3": {
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "shape_zyx": [
+        1536,
+        1536,
+        1536
+      ],
+      "input_id": "V3-native-packed",
+      "input_sha256": {
+        "tracks.vctracks/tortuosities.f64": "995046224d9b6a1d1e932db39035da349aaa0d1ba579dd91c7124f5a450ec6a9",
+        "tracks.vctracks/metadata.json": "eec9e0c6cf2726dd6584950895d0559f67fce2e6e9c1b1acf6c86fd29dd453f3",
+        "tracks.vctracks/coordinates.i32": "043677054db307c1cd58abe8671455cb54b7ac586863989939a2db75a960965f",
+        "tracks.vctracks/z_bounds.i32": "40f8aa8ae478e90dbfb04dee0293a4cedec6199298012090b7d8a76329baf3e0",
+        "tracks.vctracks/source_ids.u64": "ec87796ebd7be15532fadaf45fa894b74dfa2956bbdbb9d116efff9389007e6b",
+        "tracks.vctracks/arclengths.f64": "ea89c91bc823842ed75c124a46ffb84f2d0515700549e1141b1823dceade0794",
+        "tracks.vctracks/header.bin": "b32181178f73d96898808b1f9b825cc915375ccb6b0f7ce317e2d441f7b5abd8",
+        "tracks.vctracks/family_codes.i8": "67d65bd7d8dfd53a6cb571007c7f0461a70f8658ef2d63ab7a2670e06a3d2f6d",
+        "tracks.vctracks/offsets.i64": "e2723c2a23f39880e17fda7086642a5a312fc7bdee3c33e51aa76e03e99ed659",
+        "crossings.npz": "fe3afb30cd0a685c6024041f6a8d4ea509c6d38a756fd444d6fc765e63deeea6"
+      },
+      "original_base_native_args": {
+        "seeds": null,
+        "random_count": 1,
+        "random_seed": 0,
+        "random_top_percent": 30.0,
+        "min_valid_vertices": 20000,
+        "growth_min_span": 80.0,
+        "min_connect": 3,
+        "min_size": 0.0,
+        "max_size": 1.327104,
+        "max_thick_cell_frac": 0.05,
+        "reject_any_fold_fixes": false,
+        "gate_tol": 9.0,
+        "resample_spacing": 5.0,
+        "min_track_arclength": 40.0,
+        "output_spacing": 20.0,
+        "border_erode_vx": 40.0,
+        "workers": 1,
+        "overwrite": false
+      },
+      "fixed_prefix32": [
+        3789,
+        25778,
+        2352,
+        18005,
+        2731,
+        7444,
+        14190,
+        9739,
+        1140,
+        2165,
+        4572,
+        15211,
+        21142,
+        14898,
+        25972,
+        13114,
+        11002,
+        9396,
+        26397,
+        12088,
+        10530,
+        13756,
+        11089,
+        19103,
+        7049,
+        5544,
+        23741,
+        13763,
+        13375,
+        22563,
+        8683,
+        17399
+      ],
+      "track_count": 26538,
+      "top30_cutoff": 519.1269837220811,
+      "top30_count": 7962,
+      "extraction": {
+        "input_sha256": "c93aabceeaed116f46e7269459e8a3d134836e209915196cdd5f547928b44320",
+        "global_phase": {
+          "h": [
+            16,
+            8
+          ],
+          "vy": [
+            64,
+            20
+          ],
+          "vx": [
+            64,
+            8
+          ]
+        },
+        "local_phase": [
+          8,
+          20,
+          8
+        ],
+        "geometry": {
+          "downsample_factor": 4,
+          "z_chunk_depth_h": 4,
+          "z_chunk_stride_h": 16,
+          "yx_chunk_thickness_v": 4,
+          "yx_stride_v": 64,
+          "dust_threshold": 400,
+          "max_area_threshold": 640000
+        },
+        "skeleton_kwargs": {
+          "teasar_params": {
+            "scale": 1.0,
+            "const": 2.0
+          },
+          "anisotropy": [
+            4,
+            4,
+            4
+          ],
+          "dust_threshold": 400,
+          "fix_branching": true,
+          "fix_borders": true,
+          "fill_holes": false
+        },
+        "code_sha256": "1c32cb57fc26ebcec3b2389bab6f9c1093e4df3ceb6ae494bd8ab11dd43fa22f",
+        "track_count": 26538,
+        "point_count": 2449437,
+        "sampling": {
+          "h": {
+            "local_starts": [
+              8,
+              24,
+              40,
+              56,
+              72,
+              88,
+              104,
+              120,
+              136,
+              152,
+              168,
+              184,
+              200,
+              216,
+              232,
+              248,
+              264,
+              280,
+              296,
+              312,
+              328,
+              344,
+              360,
+              376,
+              392,
+              408,
+              424,
+              440,
+              456,
+              472,
+              488,
+              504,
+              520,
+              536,
+              552,
+              568,
+              584,
+              600,
+              616,
+              632,
+              648,
+              664,
+              680,
+              696,
+              712,
+              728,
+              744,
+              760,
+              776,
+              792,
+              808,
+              824,
+              840,
+              856,
+              872,
+              888,
+              904,
+              920,
+              936,
+              952,
+              968,
+              984,
+              1000,
+              1016,
+              1032,
+              1048,
+              1064,
+              1080,
+              1096,
+              1112,
+              1128,
+              1144,
+              1160,
+              1176,
+              1192,
+              1208,
+              1224,
+              1240,
+              1256,
+              1272,
+              1288,
+              1304,
+              1320,
+              1336,
+              1352,
+              1368,
+              1384,
+              1400,
+              1416,
+              1432,
+              1448,
+              1464,
+              1480,
+              1496,
+              1512,
+              1528
+            ],
+            "global_starts": [
+              12104,
+              12120,
+              12136,
+              12152,
+              12168,
+              12184,
+              12200,
+              12216,
+              12232,
+              12248,
+              12264,
+              12280,
+              12296,
+              12312,
+              12328,
+              12344,
+              12360,
+              12376,
+              12392,
+              12408,
+              12424,
+              12440,
+              12456,
+              12472,
+              12488,
+              12504,
+              12520,
+              12536,
+              12552,
+              12568,
+              12584,
+              12600,
+              12616,
+              12632,
+              12648,
+              12664,
+              12680,
+              12696,
+              12712,
+              12728,
+              12744,
+              12760,
+              12776,
+              12792,
+              12808,
+              12824,
+              12840,
+              12856,
+              12872,
+              12888,
+              12904,
+              12920,
+              12936,
+              12952,
+              12968,
+              12984,
+              13000,
+              13016,
+              13032,
+              13048,
+              13064,
+              13080,
+              13096,
+              13112,
+              13128,
+              13144,
+              13160,
+              13176,
+              13192,
+              13208,
+              13224,
+              13240,
+              13256,
+              13272,
+              13288,
+              13304,
+              13320,
+              13336,
+              13352,
+              13368,
+              13384,
+              13400,
+              13416,
+              13432,
+              13448,
+              13464,
+              13480,
+              13496,
+              13512,
+              13528,
+              13544,
+              13560,
+              13576,
+              13592,
+              13608,
+              13624
+            ],
+            "thickness": 4
+          },
+          "vy": {
+            "support_bounds_local": [
+              0,
+              1535
+            ],
+            "local_starts": [
+              20,
+              84,
+              148,
+              212,
+              276,
+              340,
+              404,
+              468,
+              532,
+              596,
+              660,
+              724,
+              788,
+              852,
+              916,
+              980,
+              1044,
+              1108,
+              1172,
+              1236,
+              1300,
+              1364,
+              1428,
+              1492
+            ],
+            "global_starts": [
+              4244,
+              4308,
+              4372,
+              4436,
+              4500,
+              4564,
+              4628,
+              4692,
+              4756,
+              4820,
+              4884,
+              4948,
+              5012,
+              5076,
+              5140,
+              5204,
+              5268,
+              5332,
+              5396,
+              5460,
+              5524,
+              5588,
+              5652,
+              5716
+            ],
+            "thickness_actual_code": 4,
+            "z_domain": [
+              0,
+              1536
+            ]
+          },
+          "vx": {
+            "support_bounds_local": [
+              0,
+              1535
+            ],
+            "local_starts": [
+              8,
+              72,
+              136,
+              200,
+              264,
+              328,
+              392,
+              456,
+              520,
+              584,
+              648,
+              712,
+              776,
+              840,
+              904,
+              968,
+              1032,
+              1096,
+              1160,
+              1224,
+              1288,
+              1352,
+              1416,
+              1480
+            ],
+            "global_starts": [
+              3272,
+              3336,
+              3400,
+              3464,
+              3528,
+              3592,
+              3656,
+              3720,
+              3784,
+              3848,
+              3912,
+              3976,
+              4040,
+              4104,
+              4168,
+              4232,
+              4296,
+              4360,
+              4424,
+              4488,
+              4552,
+              4616,
+              4680,
+              4744
+            ],
+            "thickness_actual_code": 4,
+            "z_domain": [
+              0,
+              1536
+            ]
+          }
+        },
+        "input_hash_scope": "qualified512chunkmanifest,notNPY"
+      }
+    },
+    "C0": {
+      "origin_l2_zyx": [
+        16000,
+        5248,
+        3584
+      ],
+      "shape_zyx": [
+        1024,
+        1024,
+        1024
+      ],
+      "input_id": "C0-dust400-native-packed",
+      "input_sha256": {
+        "tracks.vctracks/arclengths.f64": "64a6070495d1d96d991f02587eea026e2b832515f94cd8195898aa312b6463f1",
+        "tracks.vctracks/coordinates.i32": "6c6372c5f5a4747bde5ce134198cbf4e41775e33e799e6381fdd34c9c2f89648",
+        "tracks.vctracks/family_codes.i8": "28146bacc3ee41decd31dd1dea49411b13a013121209ffc6efcacefa8b48f921",
+        "tracks.vctracks/header.bin": "ac745bae7b500592708c819d86d1bd0d9ab431c765aa7306281d80a1652977a6",
+        "tracks.vctracks/metadata.json": "9458d9bb11f24926fbead73373a12c99fc466374064e371a8418cd45415e534a",
+        "tracks.vctracks/offsets.i64": "24290f63783b9920a606dffdb7b1fd0551f04ffb05274365359b1bceab92cca4",
+        "tracks.vctracks/source_ids.u64": "c3d7ca47973e72f153db5a2b5719af5c7cb9739c6e4037c85c030deda705f316",
+        "tracks.vctracks/tortuosities.f64": "6be9f59cf53e05fbc42518a9e7781f8000680d16602fa48bea81b7f5b602b30d",
+        "tracks.vctracks/z_bounds.i32": "b94eaae62ab8a5111f74e6deb6108a81004cec23deb838506af1a266eb1c1112",
+        "crossings.npz": "06468204841ab479581cbc2f5c76750ca7c2e51614caedc04a63073bd6ebaead"
+      },
+      "original_base_native_args": {
+        "seeds": null,
+        "random_count": 1,
+        "random_seed": 0,
+        "random_top_percent": 30.0,
+        "min_valid_vertices": 20000,
+        "growth_min_span": 80.0,
+        "min_connect": 3,
+        "min_size": 0.0,
+        "max_size": 1.327104,
+        "max_thick_cell_frac": 0.05,
+        "reject_any_fold_fixes": false,
+        "gate_tol": 9.0,
+        "resample_spacing": 5.0,
+        "min_track_arclength": 40.0,
+        "output_spacing": 20.0,
+        "border_erode_vx": 40.0,
+        "workers": 1,
+        "overwrite": false
+      },
+      "extraction": {
+        "configuration_status": "FULL_GENERATION_SETTINGS_NOT_SPECIFIED",
+        "known_condition": "C0 original dust400; do not substitute C1 dust6",
+        "other_settings": null
+      },
+      "selection_context": "Seen adaptive baseline-only development prefix; not a holdout",
+      "fixed_prefix32": [
+        1246,
+        940,
+        4350,
+        3824,
+        1703,
+        4820,
+        3026,
+        1883,
+        1022,
+        1477,
+        300,
+        1906,
+        1768,
+        1777,
+        1847,
+        1069,
+        2008,
+        2154,
+        4841,
+        1192,
+        1125,
+        586,
+        1493,
+        1553,
+        1470,
+        5070,
+        550,
+        3435,
+        1904,
+        5138,
+        1790,
+        4667
+      ]
+    }
+  },
+  "principal_attempts": [
+    {
+      "region": "V1",
+      "case": "V1-P01",
+      "attempt_order_1based": 1,
+      "seed_row": 9143,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "b43c746327f315c3eae46f933b0aa552a6f55b4847b77cf952eec0c2e0d2431b",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P02",
+      "attempt_order_1based": 2,
+      "seed_row": 13781,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "e2e1e1c448d196453ee8263927259011ecc7d7c381ae2de130c4aa520e760037",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P03",
+      "attempt_order_1based": 3,
+      "seed_row": 13345,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "1182a6e9e8ee7ec63a3e599afbf057a1afd9c23eea08f00d10cf978675933cba",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P04",
+      "attempt_order_1based": 4,
+      "seed_row": 8536,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "e5e3280317d11a9cb3cae554ec07ea0cd89032cd5eab0b4a1615a4f304463ed2",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P05",
+      "attempt_order_1based": 5,
+      "seed_row": 1233,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "66a122d60772460d3f43468e45523d7f77974a73037bf613cd0464fe24e07f0b",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P06",
+      "attempt_order_1based": 6,
+      "seed_row": 14119,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "30570f42f4993a14c2bc03859c1e4a9be8c2bbf5be947790430f81955a68a8cc",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P07",
+      "attempt_order_1based": 7,
+      "seed_row": 2824,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "15bb4fc27ccd2fd38423f23488ff4ffab55672279389ce5305d765bef6064329",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P08",
+      "attempt_order_1based": 8,
+      "seed_row": 8837,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "038916c95785b0bfe35e51b56b9e898215ef89877a5723261ea2b3344269ab37",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P09",
+      "attempt_order_1based": 9,
+      "seed_row": 6079,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "0e0abbc25c3d62a536a5e9addb144cebde8b0b069af242169cc153cef4db569a",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P10",
+      "attempt_order_1based": 10,
+      "seed_row": 7269,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "bbeaa3c7e7de5b6fa369cd76ee5fca4cf507554be6546b937a293ac680ff8ea1",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P11",
+      "attempt_order_1based": 11,
+      "seed_row": 8582,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P12",
+      "attempt_order_1based": 12,
+      "seed_row": 14128,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "POSTFRONT_FAILED",
+        "support10_native": "POSTFRONT_FAILED",
+        "existing5_native": "POSTFRONT_FAILED"
+      },
+      "shared_postclean_sha256": "46b0a82d9f587dcb96776f4f69ce38daf141f2988c32003920ea2521186623b6",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P13",
+      "attempt_order_1based": 13,
+      "seed_row": 5419,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P14",
+      "attempt_order_1based": 14,
+      "seed_row": 4382,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "2531089869f25ae7373d2ee58d5684f1c6f12b480e67774c6baaeeb1e7fd1870",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P15",
+      "attempt_order_1based": 15,
+      "seed_row": 8531,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "b0ebed8fad2aa0796b184bc217e171cae9384454e269a921ad622e34851c80e1",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P16",
+      "attempt_order_1based": 16,
+      "seed_row": 1202,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "41394c0aa2acdf1218ea75f52460e44a45dec64cb2b08dd8dd078ff0d44f437b",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P17",
+      "attempt_order_1based": 17,
+      "seed_row": 3393,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P18",
+      "attempt_order_1based": 18,
+      "seed_row": 6366,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "0c04fe587dc528e1c40899140eaf277ca4aa34594aa81f1838e95a6a9aa2fad6",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P19",
+      "attempt_order_1based": 19,
+      "seed_row": 11493,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "61b45e2cae07e8175251c2e09e05e4f21a91690cce1bedb5fe2712160cc1f677",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P20",
+      "attempt_order_1based": 20,
+      "seed_row": 6393,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "7227d5edb4e5b56679e7e6af1c8d9bcd95f3dd63273addd1785d9311392c8b84",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P21",
+      "attempt_order_1based": 21,
+      "seed_row": 18050,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "9928abb47023f4a19f4f0484a0cade53ce74826401017b8cf33a784510f451c2",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P22",
+      "attempt_order_1based": 22,
+      "seed_row": 2177,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "83886dbebded0ff4e826d1397299d25a441a9dde93a6485afa4dcdaf3e5d16ac",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P23",
+      "attempt_order_1based": 23,
+      "seed_row": 3489,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "POSTFRONT_FAILED",
+        "support10_native": "POSTFRONT_FAILED",
+        "existing5_native": "POSTFRONT_FAILED"
+      },
+      "shared_postclean_sha256": "5673dbfc5df23719dff0ebe16544fd596d4d1a280a5a2202a2f80dfe3d019a58",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P24",
+      "attempt_order_1based": 24,
+      "seed_row": 12105,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "3d882476cb42c0eb248adce3ec6330753320e283e6d82835858c7bc24195e1fb",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P25",
+      "attempt_order_1based": 25,
+      "seed_row": 17039,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P26",
+      "attempt_order_1based": 26,
+      "seed_row": 6429,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "527d6b8c110d3b4dd3f9b9e6c62de33d48faeb9f16edd68f74a7a371556ddde7",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P27",
+      "attempt_order_1based": 27,
+      "seed_row": 3825,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P28",
+      "attempt_order_1based": 28,
+      "seed_row": 12200,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "af8e39422f96d89fe60c6c1002920ac82e855b2c02f6582863e2bf8ff9d60ea7",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P29",
+      "attempt_order_1based": 29,
+      "seed_row": 15094,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "756b36fad9e93f397443b29daee91ea9d244c2a2d944c68815d4327c28102ebc",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P30",
+      "attempt_order_1based": 30,
+      "seed_row": 7186,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "7bb28b8029107685fa8f3ae1d14f0fc46401bf555489b9069f6800dea7fbd338",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P31",
+      "attempt_order_1based": 31,
+      "seed_row": 17003,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V1",
+      "case": "V1-P32",
+      "attempt_order_1based": 32,
+      "seed_row": 10887,
+      "input_id": "V1-native-packed",
+      "origin_l2_zyx": [
+        16128,
+        3584,
+        3840
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "1967 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "support10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "1967 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "existing5_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "1967 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P01",
+      "attempt_order_1based": 1,
+      "seed_row": 13215,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "f6d86615c15207ea79e53f8536b8e14b06ae725ac8bbdb2c5ba8f5acbd0d0ef4",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P02",
+      "attempt_order_1based": 2,
+      "seed_row": 13223,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "c142232adc53d51808e99bfd6d455b548dd3d85163914bea107704b628b607a8",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P03",
+      "attempt_order_1based": 3,
+      "seed_row": 10654,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "d077fcc2276ef21cad51b82325434f46f4e0fb35689a9c4cd3c1c3a57361ec76",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P04",
+      "attempt_order_1based": 4,
+      "seed_row": 6205,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "POSTFRONT_FAILED",
+        "support10_native": "POSTFRONT_FAILED",
+        "existing5_native": "POSTFRONT_FAILED"
+      },
+      "shared_postclean_sha256": "5d85a9bdc399fdcbce029327306ca329bcc51552d7d58268075378b23851f36f",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P05",
+      "attempt_order_1based": 5,
+      "seed_row": 12534,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "8bd8c3f52424e6251bcab90dde007f00acd661acbaf11ce12794067c8deb31c0",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P06",
+      "attempt_order_1based": 6,
+      "seed_row": 5979,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P07",
+      "attempt_order_1based": 7,
+      "seed_row": 2686,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P08",
+      "attempt_order_1based": 8,
+      "seed_row": 7725,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "22dc63447c658270479000caef8d3059d080b93fe66a42ebd2fb202b296c7927",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P09",
+      "attempt_order_1based": 9,
+      "seed_row": 280,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "4979c17fd151512ef1bafbe8eebe8cdfee7edde5fb846856dea582ee49a50400",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P10",
+      "attempt_order_1based": 10,
+      "seed_row": 4000,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "ab2bc582c9e095deb5ed6a13be741dd36381609c29de46abcfe0399440f9844e",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P11",
+      "attempt_order_1based": 11,
+      "seed_row": 1217,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "3173 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "support10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "3173 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "existing5_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "3173 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P12",
+      "attempt_order_1based": 12,
+      "seed_row": 11591,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P13",
+      "attempt_order_1based": 13,
+      "seed_row": 10581,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "a7d4d8154f51dd5b3b56ef995d5cd07a076650ef90fd7ae962fd52ba752ab968",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P14",
+      "attempt_order_1based": 14,
+      "seed_row": 5765,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "73a99c433a9d725f9322f33068f51ca51888a418cc001ce31b3748e0761b3992",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P15",
+      "attempt_order_1based": 15,
+      "seed_row": 6468,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "658b279d8745b2d9d56a8b5910975a5e6b7aef7298b9ccba088af2e0848e102e",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P16",
+      "attempt_order_1based": 16,
+      "seed_row": 11445,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "ef31273ee1f28a921bafb0f24c5b657578d3a5a8bea788fefa4ca817a468658f",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P17",
+      "attempt_order_1based": 17,
+      "seed_row": 525,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P18",
+      "attempt_order_1based": 18,
+      "seed_row": 2808,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "bd7e24c8a29da32cf76b364828b41103cb9fa75cb50a911f4be4862abc54df9d",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P19",
+      "attempt_order_1based": 19,
+      "seed_row": 12272,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "7013b9f078ae5d673b02b0716a84fd10362c251c7a09ce08f5bbdf0602c99a72",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P20",
+      "attempt_order_1based": 20,
+      "seed_row": 16729,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "ee703ca5fabb648d39d7ae222b25a9bebc52895dc5db0b8b577e0f718ae3a282",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P21",
+      "attempt_order_1based": 21,
+      "seed_row": 2147,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "7b8d3ba660a6ec2c62d8f99db8e0031f098c5ced35044ab8f1fbd8e555402ecb",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P22",
+      "attempt_order_1based": 22,
+      "seed_row": 3601,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "bcb2b3699cdd3363e5a70df9bec106b1ff5111d1b9afa93342bc177cc19b273e",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P23",
+      "attempt_order_1based": 23,
+      "seed_row": 3172,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "4b5e9c77b8613d9b2c9aaf9574108902a1f0295177c11fd905142e43fec1f350",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P24",
+      "attempt_order_1based": 24,
+      "seed_row": 16373,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P25",
+      "attempt_order_1based": 25,
+      "seed_row": 6441,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "98f75430185a6d3330799ad2bd50fdab0f69a5dbdcd8f6dedd638be84e3da3d0",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P26",
+      "attempt_order_1based": 26,
+      "seed_row": 2120,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "b0023198d7f6a782297fce303c365f6d5781cb8ade4894ec78ed6b3e104cd16a",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P27",
+      "attempt_order_1based": 27,
+      "seed_row": 1455,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P28",
+      "attempt_order_1based": 28,
+      "seed_row": 14469,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "3a199e504e1ddbb06ddd78ebbf32302b75f7d4b53eb9bb4b95b4e2eb08785dd2",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P29",
+      "attempt_order_1based": 29,
+      "seed_row": 10529,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "2acadfd164296927a71b58383cdc7867702cc66f9e47274a8dc6e05fbc18a0ff",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P30",
+      "attempt_order_1based": 30,
+      "seed_row": 12197,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "2af3d06b4b7f32f5d0eeae9e3492ddef49a61e9d0678e56f57419e7fbcd59c7b",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P31",
+      "attempt_order_1based": 31,
+      "seed_row": 2757,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "b1ccfdc20e4318676ce9c428e19a489107fa7c946439d6b3ca8eb428db62d3bb",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V2",
+      "case": "V2-P32",
+      "attempt_order_1based": 32,
+      "seed_row": 18215,
+      "input_id": "V2-native-packed",
+      "origin_l2_zyx": [
+        13824,
+        4352,
+        3328
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "fa4da6bd9e42b3b969c66aee9e01975dde87dbf6222a2b715edae763ceaa69b3",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P01",
+      "attempt_order_1based": 1,
+      "seed_row": 3789,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "7e60b23b2ec5bf5fff7f3cd0b123f220289a0a615cfc6ee2bcd45b6191b0f091",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P02",
+      "attempt_order_1based": 2,
+      "seed_row": 25778,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "2936 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "support10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "2936 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "existing5_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "2936 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P03",
+      "attempt_order_1based": 3,
+      "seed_row": 2352,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "1775 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "support10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "1775 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "existing5_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "1775 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P04",
+      "attempt_order_1based": 4,
+      "seed_row": 18005,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "8a4a3dba60ac213b7071a5ce0341eda82d5d3144dcd1cb253854770eab5acb5c",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P05",
+      "attempt_order_1based": 5,
+      "seed_row": 2731,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "671a2e278dd0ab191f4520688d9db0d27e95be66037c8a07c488a77b20d2499f",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P06",
+      "attempt_order_1based": 6,
+      "seed_row": 7444,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "3028 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "support10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "3028 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "existing5_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "3028 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P07",
+      "attempt_order_1based": 7,
+      "seed_row": 14190,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P08",
+      "attempt_order_1based": 8,
+      "seed_row": 9739,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P09",
+      "attempt_order_1based": 9,
+      "seed_row": 1140,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "853422b3379921bd4d2aa29c7484182449cba18c926d9d4d0df18c3af8ae0a32",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P10",
+      "attempt_order_1based": 10,
+      "seed_row": 2165,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "1507 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "support10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "1507 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "existing5_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "1507 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P11",
+      "attempt_order_1based": 11,
+      "seed_row": 4572,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "787294c5d7c0e3fb0b67ec2e2b6ab547fb0c2f3e2e71c5ea7c7821f6fe82aa7d",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P12",
+      "attempt_order_1based": 12,
+      "seed_row": 15211,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "POSTFRONT_FAILED",
+        "support10_native": "POSTFRONT_FAILED",
+        "existing5_native": "POSTFRONT_FAILED"
+      },
+      "shared_postclean_sha256": "bb03ef4c7a97b84282d7419fd5829a5b2214a72f53d007733430a11c19f24f43",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P13",
+      "attempt_order_1based": 13,
+      "seed_row": 21142,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "3e02db756e889c5a309c6863030a813c33f1ff11ecce80fd25cc2a76c949a757",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P14",
+      "attempt_order_1based": 14,
+      "seed_row": 14898,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "0ea46e6c4824f893d1d0d7939c22f35ecfd7c0a74e406ec54a8e8ef13d27bc5a",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P15",
+      "attempt_order_1based": 15,
+      "seed_row": 25972,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "2d8f6aa4bd22f560a0047c7e9005d9ecfe5c6d3515d37c0a5259e523581dc356",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P16",
+      "attempt_order_1based": 16,
+      "seed_row": 13114,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "44802ca3e34b4cedf8ed0addbf3b43be21ce6428390cfee9dd6775268b9725a9",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P17",
+      "attempt_order_1based": 17,
+      "seed_row": 11002,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "POSTFRONT_FAILED",
+        "support10_native": "POSTFRONT_FAILED",
+        "existing5_native": "POSTFRONT_FAILED"
+      },
+      "shared_postclean_sha256": "4e66e9775fd238e6ecd04498339ba99113310fbdd96539418008004af6f26f48",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P18",
+      "attempt_order_1based": 18,
+      "seed_row": 9396,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "ad4ed23267dfb5b66e5143a9d45ebfa635c24e05574653aa1b0192307256abfd",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P19",
+      "attempt_order_1based": 19,
+      "seed_row": 26397,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P20",
+      "attempt_order_1based": 20,
+      "seed_row": 12088,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P21",
+      "attempt_order_1based": 21,
+      "seed_row": 10530,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "71c5569580c956282dac3d01ca0fe54836ff6847458f2c2e987e34ea521ce7d2",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P22",
+      "attempt_order_1based": 22,
+      "seed_row": 13756,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "aabf664c1efdccf2f7fa23fd09589ba21bde0173fe83b3fb648d2dbf2f38e9e5",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P23",
+      "attempt_order_1based": 23,
+      "seed_row": 11089,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "029ba3d9891cb97893423c025994ec3c31a207d6fe911e237947e68287fd1181",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P24",
+      "attempt_order_1based": 24,
+      "seed_row": 19103,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "410e0af8f70c8f5dbf234f944e4225736f26893098ab56732bb3f0d496dda773",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P25",
+      "attempt_order_1based": 25,
+      "seed_row": 7049,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "65b358f3b21a4637fda8b33025b40489ebb921cb1c77bc556bd8f76a20d37bca",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P26",
+      "attempt_order_1based": 26,
+      "seed_row": 5544,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "b3a326e770ae1304409874dbd77f65dd12fef0567a1726c52c69d96060c5dfc1",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P27",
+      "attempt_order_1based": 27,
+      "seed_row": 23741,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "2708 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "support10_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "2708 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        },
+        "existing5_native": {
+          "ok": false,
+          "discarded": true,
+          "reason": "2708 valid vertices < scaled --min-valid-vertices 3201 at 5-vx spacing"
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P28",
+      "attempt_order_1based": 28,
+      "seed_row": 13763,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "cc1b2700d247ecedde3861447f557e65518a6cfce38630d2a7c900d6d91ce84f",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P29",
+      "attempt_order_1based": 29,
+      "seed_row": 13375,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P30",
+      "attempt_order_1based": 30,
+      "seed_row": 22563,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P31",
+      "attempt_order_1based": 31,
+      "seed_row": 8683,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "COMMON_FRONT_FAILED",
+        "support10_native": "COMMON_FRONT_FAILED",
+        "existing5_native": "COMMON_FRONT_FAILED"
+      },
+      "shared_postclean_sha256": null,
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": false
+        },
+        "support10_native": {
+          "ok": false
+        },
+        "existing5_native": {
+          "ok": false
+        }
+      }
+    },
+    {
+      "region": "V3",
+      "case": "V3-P32",
+      "attempt_order_1based": 32,
+      "seed_row": 17399,
+      "input_id": "V3-native-packed",
+      "origin_l2_zyx": [
+        12096,
+        4224,
+        3264
+      ],
+      "expected_gate_status_by_arm": {
+        "existing10_native": "ACCEPTED",
+        "support10_native": "ACCEPTED",
+        "existing5_native": "ACCEPTED"
+      },
+      "shared_postclean_sha256": "4dd4d79d00ae0331a1851f0ea814c6d5c3cd3e7ce361ca50903b98d52cc1cab3",
+      "gate_failure_summary_by_arm": {
+        "existing10_native": {
+          "ok": true
+        },
+        "support10_native": {
+          "ok": true
+        },
+        "existing5_native": {
+          "ok": true
+        }
+      }
+    }
+  ],
+  "fixed_development_cases": [
+    {
+      "case": "C0-P05",
+      "region": "C0",
+      "attempt_order_1based": 5,
+      "seed_row": 1703,
+      "seed_source_id": 133143986232,
+      "input_id": "C0-dust400-native-packed",
+      "origin_l2_zyx": [
+        16000,
+        5248,
+        3584
+      ],
+      "original_production_status": "ACCEPTED",
+      "selection": "Previously seen development cases; not new heldout samples",
+      "downstream_branch_status": "See result evidence; original production status is not substituted for every later branch status"
+    },
+    {
+      "case": "C0-P29",
+      "region": "C0",
+      "attempt_order_1based": 29,
+      "seed_row": 1904,
+      "seed_source_id": 150323855387,
+      "input_id": "C0-dust400-native-packed",
+      "origin_l2_zyx": [
+        16000,
+        5248,
+        3584
+      ],
+      "original_production_status": "ACCEPTED",
+      "selection": "Previously seen development cases; not new heldout samples",
+      "downstream_branch_status": "See result evidence; original production status is not substituted for every later branch status"
+    }
+  ],
+  "supplement_case_aliases": {
+    "spacing5_mechanism": [
+      "V1-P10",
+      "V1-P06",
+      "V1-P12"
+    ],
+    "spacing5_development": [
+      "C0-P05",
+      "C0-P29",
+      "V1-P06"
+    ],
+    "fixed3_initial": [
+      "C0-P05",
+      "C0-P29",
+      "V1-P06"
+    ]
+  },
+  "source_records": [
+    {
+      "logical_id": "spacing10-followup/native-cohort-preparation/native64-manifest.json",
+      "sha256": "6496894081f1419cbc2b7d4aed5527241ab1592cb12192556d88d0614fdfb24a"
+    },
+    {
+      "logical_id": "spacing10-followup/native-cohort-preparation/summary-r3.json",
+      "sha256": "cbc13107fa485ef4063ba8e088f81624ec411f43e1385ccaa04da1cd51f0db4a"
+    },
+    {
+      "logical_id": "V3-stageA/native32-summary.json",
+      "sha256": "df3685258586c0c7c7c4b87d94569f0d544fb5dfac208047fc8474ebb9f90e80"
+    },
+    {
+      "logical_id": "V3-stageA/prepare-report.json",
+      "sha256": "20221291d6c031f6483533ba2933ab2a6e894e2e96f3b630d669ae2a802fe72b"
+    },
+    {
+      "logical_id": "tracks-patch-review/cohort32-production-result.json",
+      "sha256": "5f53c28d76e14631c9d7c9faf088d804cd1e70ba400982d824bf0aa1958e4541"
+    },
+    {
+      "logical_id": "V1-extract-runtime.json",
+      "sha256": "42b02a20c2ba570e227ce2ff3500ec509337b82ef784a5ae1f8eeb03e5df53b6"
+    },
+    {
+      "logical_id": "V2-extract-runtime.json",
+      "sha256": "cd0fc7a78a022d6308e8d31c25e69ddc10845e34467f42a139f88a6940632191"
+    },
+    {
+      "logical_id": "V3-stageA/extract-report.json",
+      "sha256": "25d8799bf7660e3e993b6522c747c47a2c7c5761c9385b47998f9c844876e515"
+    }
+  ],
+  "remaining_replay_requirements": [
+    "PackedTracks and CrossingCsr contents must match the recorded checksums.",
+    "Use the recorded extraction implementation and install its binary dependencies.",
+    "Null fields are unknown, not inferred.",
+    "Packing identity can depend on compiled dependency versions and platform."
+  ],
+  "frame": "XYZ patch coordinates local L2; origin recorded ZYX; full-resolution registered-reference XYZ /4 then subtract reversed origin for local queries",
+  "source_record_identifiers": "source_records.logical_id names identify historical records, not paths in this repository. Current producer paths are vendor/output-spacing-10/grow_track_graph.py and vendor/output-spacing-5/grow_track_graph.py; vendor/SOURCE.json records their unchanged scientific source hashes."
+}

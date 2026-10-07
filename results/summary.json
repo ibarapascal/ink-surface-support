@@ -1,0 +1,430 @@
+{
+  "schema": 1,
+  "scope": "Tables reconstructed from recorded measurements.",
+  "arm_definitions": {
+    "existing10_native": {
+      "label": "Uniform final erosion (output spacing 10 voxels)",
+      "finalization": "Uniform final erosion",
+      "surface_output_spacing_voxels": 10,
+      "flatten_output_step_voxels": 10,
+      "working_grid_interval_voxels": 5,
+      "ct_grid_voxel_size_um": 9.6
+    },
+    "support10_native": {
+      "label": "Fine-support finalization (output spacing 10 voxels)",
+      "finalization": "Fine-support finalization",
+      "surface_output_spacing_voxels": 10,
+      "flatten_output_step_voxels": 10,
+      "working_grid_interval_voxels": 5,
+      "ct_grid_voxel_size_um": 9.6
+    },
+    "existing5_native": {
+      "label": "Uniform final erosion (output spacing 5 voxels)",
+      "finalization": "Uniform final erosion",
+      "surface_output_spacing_voxels": 5,
+      "flatten_output_step_voxels": 5,
+      "working_grid_interval_voxels": 5,
+      "ct_grid_voxel_size_um": 9.6
+    },
+    "original5": {
+      "label": "Uniform final erosion (output spacing 5 voxels)",
+      "finalization": "Uniform final erosion",
+      "surface_output_spacing_voxels": 5,
+      "flatten_output_step_voxels": 5,
+      "working_grid_interval_voxels": 5,
+      "ct_grid_voxel_size_um": 9.6
+    },
+    "support5": {
+      "label": "Fine-support finalization (output spacing 5 voxels)",
+      "finalization": "Fine-support finalization",
+      "surface_output_spacing_voxels": 5,
+      "flatten_output_step_voxels": 5,
+      "working_grid_interval_voxels": 5,
+      "ct_grid_voxel_size_um": 9.6
+    },
+    "original2_5": {
+      "label": "Uniform final erosion (output spacing 2.5 voxels)",
+      "finalization": "Uniform final erosion",
+      "surface_output_spacing_voxels": 2.5,
+      "flatten_output_step_voxels": 2.5,
+      "working_grid_interval_voxels": 5,
+      "ct_grid_voxel_size_um": 9.6
+    },
+    "existing10_to10": {
+      "label": "Uniform final erosion (surface output spacing 10 voxels; flatten output step 10 voxels)",
+      "finalization": "Uniform final erosion",
+      "surface_output_spacing_voxels": 10,
+      "flatten_output_step_voxels": 10,
+      "working_grid_interval_voxels": 5,
+      "ct_grid_voxel_size_um": 9.6
+    },
+    "support10_to10": {
+      "label": "Fine-support finalization (surface output spacing 10 voxels; flatten output step 10 voxels)",
+      "finalization": "Fine-support finalization",
+      "surface_output_spacing_voxels": 10,
+      "flatten_output_step_voxels": 10,
+      "working_grid_interval_voxels": 5,
+      "ct_grid_voxel_size_um": 9.6
+    },
+    "existing5_to5": {
+      "label": "Uniform final erosion (surface output spacing 5 voxels; flatten output step 5 voxels)",
+      "finalization": "Uniform final erosion",
+      "surface_output_spacing_voxels": 5,
+      "flatten_output_step_voxels": 5,
+      "working_grid_interval_voxels": 5,
+      "ct_grid_voxel_size_um": 9.6
+    },
+    "existing10_to5": {
+      "label": "Uniform final erosion (surface output spacing 10 voxels; flatten output step 5 voxels)",
+      "finalization": "Uniform final erosion",
+      "surface_output_spacing_voxels": 10,
+      "flatten_output_step_voxels": 5,
+      "working_grid_interval_voxels": 5,
+      "ct_grid_voxel_size_um": 9.6
+    },
+    "support10_to5": {
+      "label": "Fine-support finalization (surface output spacing 10 voxels; flatten output step 5 voxels)",
+      "finalization": "Fine-support finalization",
+      "surface_output_spacing_voxels": 10,
+      "flatten_output_step_voxels": 5,
+      "working_grid_interval_voxels": 5,
+      "ct_grid_voxel_size_um": 9.6
+    }
+  },
+  "domain_definitions": {
+    "B1408": {
+      "label": "Primary 1408-cubed-voxel evaluation box",
+      "shape_voxels": [
+        1408,
+        1408,
+        1408
+      ],
+      "definition": "The 1536-cubed input box with 64 voxels excluded at each boundary."
+    },
+    "A384": {
+      "label": "Secondary central 384-cubed-voxel evaluation box",
+      "shape_voxels": [
+        384,
+        384,
+        384
+      ],
+      "definition": "The central 512-cubed box with 64 voxels excluded at each boundary."
+    },
+    "existing_exploratory_B896": {
+      "label": "896-cubed-voxel evaluation box for development patch C0-P05",
+      "shape_voxels": [
+        896,
+        896,
+        896
+      ]
+    },
+    "original_frozen_core384": {
+      "label": "384-cubed-voxel evaluation box for development patch C0-P29",
+      "shape_voxels": [
+        384,
+        384,
+        384
+      ]
+    }
+  },
+  "main_counts": {
+    "regions": 3,
+    "seen_regions": [
+      "V1",
+      "V2"
+    ],
+    "method_unseen_physical_regions": [
+      "V3"
+    ],
+    "attempts_per_region_arm": 32,
+    "arms": 3,
+    "consumer_outputs": 195,
+    "no_consumer_input_slots": 93,
+    "successful_source_pairs": 65,
+    "independent_GT": false
+  },
+  "main_B4": [
+    {
+      "region": "V1",
+      "asset": "20231210121321",
+      "denominator_mm2": 504.74052537962086,
+      "arms": {
+        "existing10_native": 36.6381121238577,
+        "support10_native": 40.562754061553164,
+        "existing5_native": 41.16369470747828
+      },
+      "statuses": {
+        "existing10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "support10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "existing5_native": "GEOMETRIC_SUPPORT_ONLY"
+      }
+    },
+    {
+      "region": "V1",
+      "asset": "20230702185753",
+      "denominator_mm2": 582.7957765055165,
+      "arms": {
+        "existing10_native": 0.0,
+        "support10_native": 0.0,
+        "existing5_native": 0.0
+      },
+      "statuses": {
+        "existing10_native": "INCONCLUSIVE_NO_REFERENCE_INTERSECTION",
+        "support10_native": "INCONCLUSIVE_NO_REFERENCE_INTERSECTION",
+        "existing5_native": "INCONCLUSIVE_NO_REFERENCE_INTERSECTION"
+      }
+    },
+    {
+      "region": "V1",
+      "asset": "20230929220926",
+      "denominator_mm2": 585.2807818176371,
+      "arms": {
+        "existing10_native": 19.452434297098563,
+        "support10_native": 22.687881721602004,
+        "existing5_native": 23.654393353352475
+      },
+      "statuses": {
+        "existing10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "support10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "existing5_native": "GEOMETRIC_SUPPORT_ONLY"
+      }
+    },
+    {
+      "region": "V2",
+      "asset": "20231210121321",
+      "denominator_mm2": 502.5951389648357,
+      "arms": {
+        "existing10_native": 18.17980697215891,
+        "support10_native": 20.212629580398907,
+        "existing5_native": 20.72073470317483
+      },
+      "statuses": {
+        "existing10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "support10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "existing5_native": "GEOMETRIC_SUPPORT_ONLY"
+      }
+    },
+    {
+      "region": "V2",
+      "asset": "20230702185753",
+      "denominator_mm2": 544.6636892741071,
+      "arms": {
+        "existing10_native": 0.0,
+        "support10_native": 0.0,
+        "existing5_native": 0.0
+      },
+      "statuses": {
+        "existing10_native": "INCONCLUSIVE_NO_REFERENCE_INTERSECTION",
+        "support10_native": "INCONCLUSIVE_NO_REFERENCE_INTERSECTION",
+        "existing5_native": "INCONCLUSIVE_NO_REFERENCE_INTERSECTION"
+      }
+    },
+    {
+      "region": "V2",
+      "asset": "20230929220926",
+      "denominator_mm2": 865.678632875586,
+      "arms": {
+        "existing10_native": 3.582088438406999,
+        "support10_native": 4.758538906791788,
+        "existing5_native": 4.984021802496582
+      },
+      "statuses": {
+        "existing10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "support10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "existing5_native": "GEOMETRIC_SUPPORT_ONLY"
+      }
+    },
+    {
+      "region": "V3",
+      "asset": "20231210121321",
+      "denominator_mm2": 378.7810149581011,
+      "arms": {
+        "existing10_native": 9.997461175675543,
+        "support10_native": 11.103839388024985,
+        "existing5_native": 11.38993300629581
+      },
+      "statuses": {
+        "existing10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "support10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "existing5_native": "GEOMETRIC_SUPPORT_ONLY"
+      }
+    },
+    {
+      "region": "V3",
+      "asset": "20230702185753",
+      "denominator_mm2": 484.18074709409194,
+      "arms": {
+        "existing10_native": 13.92641993016813,
+        "support10_native": 15.427895358288037,
+        "existing5_native": 15.585052180020012
+      },
+      "statuses": {
+        "existing10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "support10_native": "GEOMETRIC_SUPPORT_ONLY",
+        "existing5_native": "GEOMETRIC_SUPPORT_ONLY"
+      }
+    },
+    {
+      "region": "V3",
+      "asset": "20230929220926",
+      "denominator_mm2": 719.4566034358165,
+      "arms": {
+        "existing10_native": 0.0,
+        "support10_native": 0.0,
+        "existing5_native": 0.0
+      },
+      "statuses": {
+        "existing10_native": "INCONCLUSIVE_NO_REFERENCE_INTERSECTION",
+        "support10_native": "INCONCLUSIVE_NO_REFERENCE_INTERSECTION",
+        "existing5_native": "INCONCLUSIVE_NO_REFERENCE_INTERSECTION"
+      }
+    }
+  ],
+  "paired_distortion": [
+    {
+      "study": "main10-common65",
+      "pairs": 65,
+      "cases_with_positive_mean_delta": 65,
+      "pooled": {
+        "original_common": {
+          "n": 72066,
+          "source_area_mm2": 664.2356142380206,
+          "area_weighted_mean": 0.00017848873692653537,
+          "area_weighted_p50_p90_p95": [
+            5.3882598876953125e-05,
+            0.0004253387451171875,
+            0.000732421875
+          ],
+          "min": -4.76837158203125e-07,
+          "max": 0.02385854721069336
+        },
+        "support_common": {
+          "n": 72066,
+          "source_area_mm2": 664.2356142380206,
+          "area_weighted_mean": 0.00019935516216729022,
+          "area_weighted_p50_p90_p95": [
+            6.67572021484375e-05,
+            0.00047397613525390625,
+            0.0008044242858886719
+          ],
+          "min": -2.384185791015625e-07,
+          "max": 0.02565765380859375
+        },
+        "paired_delta_support_minus_original": {
+          "n": 72066,
+          "source_area_mm2": 664.2356142380206,
+          "area_weighted_mean": 2.086642524075486e-05,
+          "area_weighted_p50_p90_p95": [
+            7.62939453125e-06,
+            8.440017700195312e-05,
+            0.0001468658447265625
+          ],
+          "min": -0.016614913940429688,
+          "max": 0.011102676391601562
+        },
+        "fixed_original_area_mm2_all65": 664.2356142380206,
+        "total_added_support_area_mm2": 97.89868568751913
+      }
+    },
+    {
+      "study": "spacing5-mechanism-common2",
+      "pairs": 2,
+      "cases_with_positive_mean_delta": 2,
+      "pooled": {
+        "original_common": {
+          "n": 18186,
+          "source_area_mm2": 41.90914354170811,
+          "area_weighted_mean": 0.00013760687812742743,
+          "area_weighted_p50_p90_p95": [
+            7.295608520507812e-05,
+            0.0003304481506347656,
+            0.0004582405090332031
+          ],
+          "min": -4.76837158203125e-07,
+          "max": 0.009972572326660156
+        },
+        "support_common": {
+          "n": 18186,
+          "source_area_mm2": 41.90914354170811,
+          "area_weighted_mean": 0.00014038536669351022,
+          "area_weighted_p50_p90_p95": [
+            7.486343383789062e-05,
+            0.0003371238708496094,
+            0.000461578369140625
+          ],
+          "min": -4.76837158203125e-07,
+          "max": 0.009903907775878906
+        },
+        "paired_delta_support_minus_original": {
+          "n": 18186,
+          "source_area_mm2": 41.90914354170811,
+          "area_weighted_mean": 2.778488566082795e-06,
+          "area_weighted_p50_p90_p95": [
+            2.384185791015625e-06,
+            1.6689300537109375e-05,
+            2.47955322265625e-05
+          ],
+          "min": -0.0027451515197753906,
+          "max": 0.0020074844360351562
+        },
+        "fixed_original_area_mm2_all2": 41.90914354170811,
+        "total_added_support_area_mm2": 1.9884623241810198
+      }
+    },
+    {
+      "study": "spacing5-development-common2",
+      "pairs": 2,
+      "cases_with_positive_mean_delta": 2,
+      "pooled": {
+        "original_common": {
+          "n": 2975,
+          "source_area_mm2": 6.884941283172135,
+          "area_weighted_mean": 0.0004246140250152031,
+          "area_weighted_p50_p90_p95": [
+            0.00019407272338867188,
+            0.0009679794311523438,
+            0.0013370513916015625
+          ],
+          "min": -2.384185791015625e-07,
+          "max": 0.013033866882324219
+        },
+        "support_common": {
+          "n": 2975,
+          "source_area_mm2": 6.884941283172135,
+          "area_weighted_mean": 0.00047884838495137767,
+          "area_weighted_p50_p90_p95": [
+            0.00024271011352539062,
+            0.0011973381042480469,
+            0.0016226768493652344
+          ],
+          "min": 0.0,
+          "max": 0.009698867797851562
+        },
+        "paired_delta_support_minus_original": {
+          "n": 2975,
+          "source_area_mm2": 6.884941283172135,
+          "area_weighted_mean": 5.423435993617458e-05,
+          "area_weighted_p50_p90_p95": [
+            3.4809112548828125e-05,
+            0.0002841949462890625,
+            0.000400543212890625
+          ],
+          "min": -0.009533405303955078,
+          "max": 0.008140087127685547
+        },
+        "fixed_original_area_mm2_all2": 6.884941283172138,
+        "total_added_support_area_mm2": 1.0365069255151915
+      }
+    }
+  ],
+  "limitations": [
+    "The regions use the same scan and registered reference assets; V3 is not independent ground truth.",
+    "Reference assets are evaluated separately. Output areas are gross and may overlap.",
+    "No reference intersection is inconclusive; a zero reference denominator is NA.",
+    "Mean distortion loss increases at the same original source cells in all 65 primary-study cases.",
+    "The measurements do not establish paper identity, fiber preservation, cross-layer safety, whole-scroll benefit, or text recovery.",
+    "All arms use a working-grid interval of 5 voxels; denser output does not add scan information.",
+    "The P10 baseline with output spacing 5 voxels resolved the pinned default to float32 from a recorded unset environment.",
+    "A failed execution wrapper was retained as failed; its outputs passed a separate artifact and CLI qualification."
+  ]
+}

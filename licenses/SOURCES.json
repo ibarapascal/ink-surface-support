@@ -1,0 +1,21 @@
+{
+  "retrieved_on": "2026-10-07",
+  "upstream": {
+    "file": "VILLA-MIT.txt",
+    "url": "https://raw.githubusercontent.com/ScrollPrize/villa/fb8c2c4c2705746eefb42e9bb359560906f391e2/LICENSE",
+    "bytes": 1075,
+    "sha256": "87070eec603117b5365e2172999e81b08890aef91c1673383cf9779ee9c89976"
+  },
+  "new_project_license": {
+    "file": "../LICENSE",
+    "status": "MIT",
+    "copyright": "2026 ibarapascal",
+    "scope": "Project code, helper, tools, tests and documentation; excludes third-party rights and underlying data"
+  },
+  "data_terms_links": [
+    "https://scrollprize.org/data",
+    "https://dl.ash2txt.org/LICENSE.txt",
+    "https://creativecommons.org/licenses/by-nc/4.0/legalcode.en"
+  ],
+  "not_a_binary_dependency_license_audit": true
+}

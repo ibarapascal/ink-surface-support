@@ -1,0 +1,2 @@
+# Figure rendering (reproduction/render_figures.py). Python >= 3.11.
+matplotlib==3.10.8

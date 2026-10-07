@@ -1,0 +1,44 @@
+{
+  "evidence_sha256": "f8b324219f0a251eb8bf7bdd1f105bb11dee122b056031105b8d912956ab83ee",
+  "renderer_sha256": "fa865abbc6740503469a93a6f798d139f01101ba6152d81384d64d0e11fa5dd9",
+  "matplotlib_version": "3.10.8",
+  "source": "Rendered from results/evidence.json by reproduction/render_figures.py.",
+  "artifacts": [
+    {
+      "file": "figures/main10-seen-B1408.png",
+      "sha256": "b3d92ce8bb01b9021b39cffc029349af54a95798559c7fa85834a4fedf3cc14c"
+    },
+    {
+      "file": "figures/main10-seen-A384.png",
+      "sha256": "77c6bf64be3576fbb22730f6a0008ca1b958d14fef2fe2e889d5d329dfda6e27"
+    },
+    {
+      "file": "figures/V3-reference-curves.png",
+      "sha256": "edee433c9b04d9d0148208315ef562e9f18e765504c828dd9796a7202299ee13"
+    },
+    {
+      "file": "figures/main10-seen-cost.png",
+      "sha256": "5064b54ebee61050dd0a2fd4ab609590f38248f9fc9443150f6591d694b52211"
+    },
+    {
+      "file": "figures/V3-consumer-cost.png",
+      "sha256": "7b6e05cdff71ac8189948a7dbadff6379600aef2a77c0b213d4d72b77d5e43db"
+    },
+    {
+      "file": "figures/spacing5-development-coverage.png",
+      "sha256": "8d1a70c2b21e3681477b4960918c4fa7a8ba8b290e58abfc82138b14fb125519"
+    },
+    {
+      "file": "figures/paired-distortion.png",
+      "sha256": "f46b5157e45f6d97989549aab7fce01531a05e4657690b56a992900de442b9fc"
+    },
+    {
+      "file": "assets/overview.png",
+      "sha256": "1e45551d05368230b89e91af0e8248cafbb246d5db9e460d4637724b406ec7c1"
+    },
+    {
+      "file": "assets/social-preview.png",
+      "sha256": "70e3da11b660f5c4322dd6c812b22c4c6a528459251383925605f73aa1534bf1"
+    }
+  ]
+}

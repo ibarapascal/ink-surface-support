@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/Nicodol/spiralcheck",
+  "commit": "d1b50e2957409a870225fb9f5dcc5e25f7a0f9da",
+  "license": "MIT",
+  "algorithm_modifications": false,
+  "files": {
+    "geometry.py": "5bd51f202e0bd2dba3425b3559cf5e306ee4c492e41f92cad7dc361043fbe578",
+    "LICENSE": "f449525a06ba9901a15d1c9183e98cc98632445a0f64bbd4cd67ce2788335729"
+  }
+}
